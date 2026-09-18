@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "synthetic": true,
+    "not_human_results": true,
+    "instruction": "Release only after independent practice. Discuss disagreements; freeze definitions before main annotation."
+  },
+  "pairs": {
+    "PRAC001": {
+      "answer_agree": "SAME",
+      "method_agree": "SAME",
+      "method_reason": "",
+      "method_vague": "",
+      "rationale": "算式与文字描述同一乘法"
+    },
+    "PRAC002": {
+      "answer_agree": "DIFF",
+      "method_agree": "SAME",
+      "method_reason": "",
+      "method_vague": "",
+      "rationale": "答案不同不改变所述操作"
+    },
+    "PRAC003": {
+      "answer_agree": "SAME",
+      "method_agree": "DIFF",
+      "method_reason": "",
+      "method_vague": "",
+      "rationale": "两种明确不同操作"
+    },
+    "PRAC004": {
+      "answer_agree": "SAME",
+      "method_agree": "VAGUE",
+      "method_reason": "uninformative",
+      "method_vague": "A",
+      "rationale": "A 无具体操作"
+    },
+    "PRAC005": {
+      "answer_agree": "SAME",
+      "method_agree": "VAGUE",
+      "method_reason": "missing",
+      "method_vague": "A",
+      "rationale": "A 缺失"
+    },
+    "PRAC006": {
+      "answer_agree": "DIFF",
+      "method_agree": "VAGUE",
+      "method_reason": "missing",
+      "method_vague": "BOTH",
+      "rationale": "两条均缺失"
+    },
+    "PRAC007": {
+      "answer_agree": "SAME",
+      "method_agree": "SAME",
+      "method_reason": "",
+      "method_vague": "",
+      "rationale": "同一减法及对象"
+    },
+    "PRAC008": {
+      "answer_agree": "DIFF",
+      "method_agree": "DIFF",
+      "method_reason": "",
+      "method_vague": "",
+      "rationale": "相同动词但操作对象不同"
+    },
+    "PRAC009": {
+      "answer_agree": "SAME",
+      "method_agree": "DIFF",
+      "method_reason": "",
+      "method_vague": "",
+      "rationale": "相邻步骤是不同操作"
+    },
+    "PRAC010": {
+      "answer_agree": "SAME",
+      "method_agree": "VAGUE",
+      "method_reason": "uninformative",
+      "method_vague": "BOTH",
+      "rationale": "一个只给结果，一个复述目标"
+    },
+    "PRAC011": {
+      "answer_agree": "SAME",
+      "method_agree": "SAME",
+      "method_reason": "",
+      "method_vague": "",
+      "rationale": "数词和数字等价"
+    },
+    "PRAC012": {
+      "answer_agree": "UNSURE",
+      "method_agree": "SAME",
+      "method_reason": "",
+      "method_vague": "",
+      "rationale": "答案缺失但 KEY 可比"
+    },
+    "PRAC013": {
+      "answer_agree": "SAME",
+      "method_agree": "SAME",
+      "method_reason": "",
+      "method_vague": "",
+      "rationale": "选项格式变体"
+    },
+    "PRAC014": {
+      "answer_agree": "DIFF",
+      "method_agree": "SAME",
+      "method_reason": "",
+      "method_vague": "",
+      "rationale": "输出结构不同，KEY 相同"
+    },
+    "PRAC015": {
+      "answer_agree": "DIFF",
+      "method_agree": "DIFF",
+      "method_reason": "",
+      "method_vague": "",
+      "rationale": "数字与字符串不同"
+    },
+    "PRAC016": {
+      "answer_agree": "SAME",
+      "method_agree": "SAME",
+      "method_reason": "",
+      "method_vague": "",
+      "rationale": "同一字符计数操作"
+    },
+    "PRAC017": {
+      "answer_agree": "SAME",
+      "method_agree": "UNSURE",
+      "method_reason": "granularity_mismatch",
+      "method_vague": "",
+      "rationale": "算法名与局部操作无法确认是同一决定性操作"
+    },
+    "PRAC018": {
+      "answer_agree": "SAME",
+      "method_agree": "VAGUE",
+      "method_reason": "uninformative",
+      "method_vague": "A",
+      "rationale": "主题相关也可能没有具体操作"
+    },
+    "PRAC019": {
+      "answer_agree": "SAME",
+      "method_agree": "SAME",
+      "method_reason": "",
+      "method_vague": "",
+      "rationale": "乘法交换顺序不改变操作"
+    },
+    "PRAC020": {
+      "answer_agree": "SAME",
+      "method_agree": "SAME",
+      "method_reason": "",
+      "method_vague": "",
+      "rationale": "相同错误答案和相同操作；不评正确性"
+    }
+  }
+}

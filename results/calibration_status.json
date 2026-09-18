@@ -1,0 +1,42 @@
+{
+  "protocol": "v4-20260916",
+  "n_pairs": 300,
+  "annotator_status": {
+    "A": "labelled",
+    "B": "labelled",
+    "C": "labelled"
+  },
+  "missing_labels": {
+    "A": {
+      "answer": 0,
+      "method": 0
+    },
+    "B": {
+      "answer": 0,
+      "method": 0
+    },
+    "C": {
+      "answer": 0,
+      "method": 0
+    }
+  },
+  "open_issues": {},
+  "sources": {
+    "A": "annotation/结果/annotator_A.tsv",
+    "B": "annotation/结果/annotator_B.tsv",
+    "C": "annotation/结果/annotator_C.tsv"
+  },
+  "input_sha256": {
+    "key": "2c3d4e2d29c347cf8acdea518067389e072f60e5f6d70c1f1677e74e9f17dcc3",
+    "blank_template": "297ee45f73a15b42ebc89b9f200be1798e8a83b64547d2ef2076a7ebf074caab",
+    "scorer": "a457a8919b202456231cdaff47a9b899400e4fa3b9d102f772e29a5b565c94b7",
+    "normalizer": "ba187080b93b3335676e8eb5c9725124c2a8573418ada589a1a03dd518df2325",
+    "A": "f67798599c69004b4bb9bdccb33f58bb10ccb2cc46235bf0c5e51d0b52f22ddd",
+    "B": "e25d06a2dcbbec13fcfb0598e8689f7d65ae03dc2dd4cefba4eb15f89a540f16",
+    "C": "c4a7cf7246f77de68aeb3094c3c399b1efcd5532773705a5f7a1078b51d47ece"
+  },
+  "normalization_audit": "results/annotation_normalization_audit.json",
+  "scored": true,
+  "scoring_output": "results/annotation_scoring.json",
+  "scoring_output_sha256": "7b3296921b7a51bb2e1116f2ef4ff23b6d82008a54901b4a5d66c9648e20787f"
+}

@@ -1,0 +1,15 @@
+{
+  "protocol": "v4-20260916",
+  "note": "Coordinator-supplied values for cells a returned sheet left blank. The returned sheets in annotation/结果/ are never edited; each entry here is applied after the reason-driven conformance rule and is logged verbatim in results/annotation_normalization_audit.json.",
+  "corrections": [
+    {
+      "annotator": "C",
+      "pair_id": "P100",
+      "column": "method_vague",
+      "value": "两条",
+      "supplied_by": "coordinator (annotator C's own judgement, confirmed 2026-09-17)",
+      "date": "2026-09-17",
+      "reason": "Annotator C marked the method axis VAGUE with reason=uninformative but left the vague side blank, which the frozen guide requires. A's KEY describes re.search's return value in general and B's KEY restates the found position, so both sides are uninformative."
+    }
+  ]
+}

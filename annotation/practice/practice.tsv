@@ -1,0 +1,21 @@
+pair_id	task_id	bench	question	A_answer	A_key	B_answer	B_key	answer_agree	method_agree	method_reason	method_vague	note
+PRAC001	synthetic_01	synthetic	每盒 7 个零件，共 6 盒，总数多少？	42	7 × 6	42.0	multiply seven by six					
+PRAC002	synthetic_02	synthetic	每盒 7 个零件，共 6 盒，总数多少？	42	将每盒数量乘以盒数	41	items per box times number of boxes					
+PRAC003	synthetic_03	synthetic	求方程 x²-5x+6=0 的根。	2,3	factor the quadratic	2,3	apply the quadratic formula					
+PRAC004	synthetic_04	synthetic	每盒 7 个零件，共 6 盒，总数多少？	42	Find the answer	42	Multiply items per box by box count					
+PRAC005	synthetic_05	synthetic	每盒 7 个零件，共 6 盒，总数多少？	42		42	Multiply seven by six					
+PRAC006	synthetic_06	synthetic	每盒 7 个零件，共 6 盒，总数多少？	42		41						
+PRAC007	synthetic_07	synthetic	总计 23 个球，红球 8 个，求非红球数。	15	Subtract red count from total	15	总数减去红球数					
+PRAC008	synthetic_08	synthetic	总计 23 个球，红球 8 个、蓝球 5 个，求非红球数。	15	Subtract red count from total	18	Subtract blue count from total					
+PRAC009	synthetic_09	synthetic	每辆车 4 个轮子，9 辆车，用剩轮子由库存扣除，库存 50 个。	14	Multiply vehicle count by four	14	Subtract used wheels from stock					
+PRAC010	synthetic_10	synthetic	每盒 7 个零件，共 6 盒，总数多少？	42	42	42	The total number of parts					
+PRAC011	synthetic_11	synthetic	计算 54÷6。	9	Divide fifty-four by six	9	divide 54 by 6					
+PRAC012	synthetic_12	synthetic	计算 54÷6。		Divide fifty-four by six	9	divide 54 by 6					
+PRAC013	synthetic_13	synthetic	选择大于 10 的数：A=3，B=8，C=12，D=4。	C	Compare each option to ten	C.	比较每个选项是否大于十					
+PRAC014	synthetic_14	synthetic	函数返回列表 [4,5]，比较两个输出。	[4,5]	Return the ordered list	(4,5)	Return the ordered list					
+PRAC015	synthetic_15	synthetic	题目明确要求返回数值 8；引号表示真实的字符串返回值。	8	Return numeric eight	'8'	Convert eight to a string					
+PRAC016	synthetic_16	synthetic	计算字符串 pear 的长度。	4	count characters in pear	4	"return len(""pear"")"					
+PRAC017	synthetic_17	synthetic	对加权有向图求从 s 到 t 的最短路径，边权均非负。	12	Run Dijkstra from s	12	Relax the outgoing edges of s					
+PRAC018	synthetic_18	synthetic	每盒 7 个零件，共 6 盒，总数多少？	42	Calculate the requested total	42	7 times 6					
+PRAC019	synthetic_19	synthetic	共有 3 行，每行 8 个座位，求座位数。	24	Multiply rows by seats per row	24	Multiply seats per row by rows					
+PRAC020	synthetic_20	synthetic	共有 3 行，每行 8 个座位，求座位数。	11	Add rows to seats per row	11	Add seats per row to rows					

@@ -1,0 +1,337 @@
+{
+  "protocol": "v4-20260916",
+  "purpose": "Conformance audit for the returned human-annotation sheets",
+  "rule": {
+    "decisive_rows": "keep category; method_reason and method_vague cleared",
+    "vague_reasons": [
+      "missing",
+      "uninformative",
+      "-> VAGUE (method_vague retained)"
+    ],
+    "unsure_reasons": [
+      "granularity_mismatch",
+      "domain_uncertainty",
+      "other",
+      "-> UNSURE (method_vague cleared)"
+    ],
+    "source_columns": "restored verbatim from pairs_blind.tsv",
+    "reason_spelling_repairs": {
+      "uniformative": "uninformative"
+    }
+  },
+  "manual_corrections": {
+    "file": "annotation/manual_corrections.json",
+    "sha256": "11eb0c600ae5be3a2c196b852cc9fd4bd591686c4c1da00381a52c2a90706fef",
+    "n": 1
+  },
+  "files_moved": [],
+  "annotators": {
+    "A": {
+      "source": "annotation/结果/annotator_A.tsv",
+      "encoding": "utf-8-sig",
+      "decoded_replacement_chars": 0,
+      "source_sha256": "9f8a427fcff1aabc14819af68909ce36fc3a5200814be61b53ab7366797f3c36",
+      "status": "labelled",
+      "rows": 300,
+      "unlabelled_rows": 0,
+      "text_repairs": {
+        "A_answer": {
+          "n": 20,
+          "examples": [
+            "P005",
+            "P013",
+            "P017"
+          ]
+        },
+        "B_answer": {
+          "n": 16,
+          "examples": [
+            "P013",
+            "P017",
+            "P050"
+          ]
+        }
+      },
+      "label_changes": {
+        "n": 103,
+        "by_rule": {
+          "category re-derived from reason": 83,
+          "reason/side cleared on decisive row": 20
+        },
+        "examples": [
+          {
+            "pair_id": "P001",
+            "rule": "category re-derived from reason",
+            "before": "DIFF|VAGUE|granularity_mismatch|A",
+            "after": "DIFF|UNSURE|granularity_mismatch|"
+          },
+          {
+            "pair_id": "P003",
+            "rule": "category re-derived from reason",
+            "before": "SAME|UNSURE|missing|BOTH",
+            "after": "SAME|VAGUE|missing|BOTH"
+          },
+          {
+            "pair_id": "P007",
+            "rule": "category re-derived from reason",
+            "before": "DIFF|VAGUE|granularity_mismatch|A",
+            "after": "DIFF|UNSURE|granularity_mismatch|"
+          },
+          {
+            "pair_id": "P009",
+            "rule": "category re-derived from reason",
+            "before": "SAME|VAGUE|granularity_mismatch|A",
+            "after": "SAME|UNSURE|granularity_mismatch|"
+          },
+          {
+            "pair_id": "P014",
+            "rule": "reason/side cleared on decisive row",
+            "before": "SAME|DIFF|domain_uncertainty|",
+            "after": "SAME|DIFF||"
+          }
+        ]
+      },
+      "canonicalisations": {
+        "n": 300,
+        "by_rule": {
+          "token canonicalisation": 300
+        },
+        "examples": [
+          {
+            "pair_id": "P001",
+            "from": "diff|vague|granularity_mismatch|A",
+            "to": "DIFF|VAGUE|granularity_mismatch|A"
+          },
+          {
+            "pair_id": "P002",
+            "from": "same|vague|uninformative|both",
+            "to": "SAME|VAGUE|uninformative|BOTH"
+          },
+          {
+            "pair_id": "P003",
+            "from": "same|unsure|missing|both",
+            "to": "SAME|UNSURE|missing|BOTH"
+          },
+          {
+            "pair_id": "P004",
+            "from": "same|same||",
+            "to": "SAME|SAME||"
+          },
+          {
+            "pair_id": "P005",
+            "from": "same|same||",
+            "to": "SAME|SAME||"
+          }
+        ]
+      },
+      "corrections_applied": [],
+      "issues": [],
+      "staged_sha256": "f67798599c69004b4bb9bdccb33f58bb10ccb2cc46235bf0c5e51d0b52f22ddd"
+    },
+    "B": {
+      "source": "annotation/结果/annotator_B.tsv",
+      "encoding": "gb18030",
+      "decoded_replacement_chars": 0,
+      "source_sha256": "21508ade08c5425e13865291913937c962ed6f80eaa2e33e817beec2b33ab70a",
+      "status": "labelled",
+      "rows": 300,
+      "unlabelled_rows": 0,
+      "text_repairs": {
+        "A_answer": {
+          "n": 20,
+          "examples": [
+            "P005",
+            "P013",
+            "P017"
+          ]
+        },
+        "A_key": {
+          "n": 2,
+          "examples": [
+            "P172",
+            "P281"
+          ]
+        },
+        "B_answer": {
+          "n": 16,
+          "examples": [
+            "P013",
+            "P017",
+            "P050"
+          ]
+        }
+      },
+      "label_changes": {
+        "n": 0,
+        "by_rule": {},
+        "examples": []
+      },
+      "canonicalisations": {
+        "n": 300,
+        "by_rule": {
+          "token canonicalisation": 300
+        },
+        "examples": [
+          {
+            "pair_id": "P001",
+            "from": "异|含糊|uninformative|A",
+            "to": "DIFF|VAGUE|uninformative|A"
+          },
+          {
+            "pair_id": "P002",
+            "from": "同|含糊|missing|B",
+            "to": "SAME|VAGUE|missing|B"
+          },
+          {
+            "pair_id": "P003",
+            "from": "同|含糊|missing|两条",
+            "to": "SAME|VAGUE|missing|BOTH"
+          },
+          {
+            "pair_id": "P004",
+            "from": "同|同||",
+            "to": "SAME|SAME||"
+          },
+          {
+            "pair_id": "P005",
+            "from": "同|同||",
+            "to": "SAME|SAME||"
+          }
+        ]
+      },
+      "corrections_applied": [],
+      "issues": [],
+      "staged_sha256": "e25d06a2dcbbec13fcfb0598e8689f7d65ae03dc2dd4cefba4eb15f89a540f16"
+    },
+    "C": {
+      "source": "annotation/结果/annotator_C.tsv",
+      "encoding": "gb18030+replace",
+      "decoded_replacement_chars": 4,
+      "source_sha256": "c3d98d125d72276b26914286ae69bd8b9f2510308a727b2f7bbb7052f7162294",
+      "status": "labelled",
+      "rows": 300,
+      "unlabelled_rows": 0,
+      "text_repairs": {
+        "A_answer": {
+          "n": 22,
+          "examples": [
+            "P005",
+            "P013",
+            "P017"
+          ]
+        },
+        "A_key": {
+          "n": 11,
+          "examples": [
+            "P017",
+            "P044",
+            "P114"
+          ]
+        },
+        "B_answer": {
+          "n": 19,
+          "examples": [
+            "P013",
+            "P017",
+            "P050"
+          ]
+        },
+        "B_key": {
+          "n": 4,
+          "examples": [
+            "P230",
+            "P235",
+            "P259"
+          ]
+        },
+        "question": {
+          "n": 10,
+          "examples": [
+            "P009",
+            "P088",
+            "P098"
+          ]
+        }
+      },
+      "label_changes": {
+        "n": 4,
+        "by_rule": {
+          "category re-derived from reason": 1,
+          "reason spelling repaired": 3
+        },
+        "examples": [
+          {
+            "pair_id": "P031",
+            "rule": "category re-derived from reason",
+            "before": "UNSURE|UNSURE|uniformative|A",
+            "after": "UNSURE|VAGUE|uninformative|A"
+          },
+          {
+            "pair_id": "P100",
+            "rule": "reason spelling repaired",
+            "before": "SAME|VAGUE|uniformative|BOTH",
+            "after": "SAME|VAGUE|uninformative|BOTH"
+          },
+          {
+            "pair_id": "P136",
+            "rule": "reason spelling repaired",
+            "before": "SAME|VAGUE|uniformative|B",
+            "after": "SAME|VAGUE|uninformative|B"
+          },
+          {
+            "pair_id": "P137",
+            "rule": "reason spelling repaired",
+            "before": "UNSURE|VAGUE|uniformative|A",
+            "after": "UNSURE|VAGUE|uninformative|A"
+          }
+        ]
+      },
+      "canonicalisations": {
+        "n": 300,
+        "by_rule": {
+          "token canonicalisation": 300
+        },
+        "examples": [
+          {
+            "pair_id": "P001",
+            "from": "异|异||",
+            "to": "DIFF|DIFF||"
+          },
+          {
+            "pair_id": "P002",
+            "from": "同|含糊|missing|B",
+            "to": "SAME|VAGUE|missing|B"
+          },
+          {
+            "pair_id": "P003",
+            "from": "同|含糊|missing|两条",
+            "to": "SAME|VAGUE|missing|BOTH"
+          },
+          {
+            "pair_id": "P004",
+            "from": "同|同||",
+            "to": "SAME|SAME||"
+          },
+          {
+            "pair_id": "P005",
+            "from": "同|同||",
+            "to": "SAME|SAME||"
+          }
+        ]
+      },
+      "corrections_applied": [
+        {
+          "pair_id": "P100",
+          "column": "method_vague",
+          "from": "",
+          "to": "两条",
+          "supplied_by": "coordinator (annotator C's own judgement, confirmed 2026-09-17)",
+          "date": "2026-09-17",
+          "reason": "Annotator C marked the method axis VAGUE with reason=uninformative but left the vague side blank, which the frozen guide requires. A's KEY describes re.search's return value in general and B's KEY restates the found position, so both sides are uninformative."
+        }
+      ],
+      "issues": [],
+      "staged_sha256": "c4a7cf7246f77de68aeb3094c3c399b1efcd5532773705a5f7a1078b51d47ece"
+    }
+  }
+}
