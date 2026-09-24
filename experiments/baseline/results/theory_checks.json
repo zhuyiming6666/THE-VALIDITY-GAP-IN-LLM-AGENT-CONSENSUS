@@ -1,0 +1,86 @@
+{
+ "n_checks": 16,
+ "n_failed": 0,
+ "checks": [
+  {
+   "check": "Thm 1: A(h) equals the probability all h draws collide (exact sum)",
+   "ok": true,
+   "detail": "h=2..5 exact for p=[0.5, 0.25, 0.15, 0.1]"
+  },
+  {
+   "check": "Thm 1: A(h) <= p_max^(h-1) and equality iff single class",
+   "ok": true,
+   "detail": "bound holds on 5 distributions, h=2..7"
+  },
+  {
+   "check": "Thm 1: R\u00e9nyi identity A(h) = exp(-(h-1) H_h(p))",
+   "ok": true,
+   "detail": "identity holds for h=2..8"
+  },
+  {
+   "check": "Prop 1: fixed-decision rule satisfies CV with prob 1 - A(h) + p(d)^h",
+   "ok": true,
+   "detail": "exact for p=[0.5,0.3,0.2], d in classes, h=1..5"
+  },
+  {
+   "check": "Prop 3: refinement is monotone for A(h), h >= 1",
+   "ok": true,
+   "detail": "A monotone; gap counterexample 0.5-0.3 -> 0.3-0.3"
+  },
+  {
+   "check": "Thm 2: certify(N,f) == intersection over compatible histograms",
+   "ok": true,
+   "detail": "80 (histogram, f) instances, rule == compatible-set intersection"
+  },
+  {
+   "check": "Thm 2: margin>f is exactly N_c > f + runner-up",
+   "ok": true,
+   "detail": "36 instances match the closed form"
+  },
+  {
+   "check": "Thm 2 boundary: f = margin - 1 certifies, f = margin does not",
+   "ok": true,
+   "detail": "tight at f = best - second on 4 instances"
+  },
+  {
+   "check": "Thm 3: e relabellings can move a pairwise difference by at most 2e",
+   "ok": true,
+   "detail": "guard f+2e; 10 vs 3 certifies to e=3, fails at e=4"
+  },
+  {
+   "check": "Thm 3: joint budget 2f + 4e is the robust requirement",
+   "ok": true,
+   "detail": "identity true_margin - (f+2e) >= f+2e for 20 (f,e) pairs"
+  },
+  {
+   "check": "Cor 1: exact three-class coverage matches the certify rule",
+   "ok": true,
+   "detail": "5 cases: |exact - MonteCarlo| < 0.01"
+  },
+  {
+   "check": "Cor 1: fixed-rival MC reproduces the exact three-group coverage",
+   "ok": true,
+   "detail": "24 cells, max |exact - MonteCarlo| = 0.0046"
+  },
+  {
+   "check": "Thm 2 note: the adaptive attacker is at least as strong as a fixed one",
+   "ok": true,
+   "detail": "12 (distribution, f) cells: adaptive coverage <= fixed"
+  },
+  {
+   "check": "Cor 1: pairwise event over-states coverage of the plurality rule",
+   "ok": true,
+   "detail": "pairwise >= plurality on 5 distributions, overstating coverage by up to 0.1847"
+  },
+  {
+   "check": "U-statistic is unbiased and below the plug-in in expectation",
+   "ok": true,
+   "detail": "E[A^U]=0.160000 == A=0.160000; E[plug-in]=0.245313 > true"
+  },
+  {
+   "check": "U-statistic equals 1 when a single class holds everything",
+   "ok": true,
+   "detail": "boundary behaviour at k = h and k = h+1"
+  }
+ ]
+}

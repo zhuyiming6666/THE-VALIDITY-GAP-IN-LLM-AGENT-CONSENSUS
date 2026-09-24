@@ -1,0 +1,158 @@
+{
+ "config": {
+  "model": "claude-opus-5",
+  "tasks": 30,
+  "n": 10,
+  "f": "0,1,2,3,4",
+  "repeats": 2,
+  "workers": 8,
+  "env": null,
+  "out": "/Users/zhuyiming/Desktop/BFT/llmbft/v3/results/x2_verifier.json",
+  "dump": "/Users/zhuyiming/Desktop/BFT/llmbft/v3/results/x2_verifier.samples.jsonl",
+  "resume": false,
+  "plan": false,
+  "smoke": false,
+  "config_hash": "edd2338c2718d09f"
+ },
+ "usage": {
+  "in": 17573582,
+  "out": 223841,
+  "calls": 3000,
+  "errors": 3
+ },
+ "verifier": "subprocess execution of the candidate, then the task's specified call, compared to gold with the paper's own rule",
+ "per_f": {
+  "f=0": {
+   "rounds": 60,
+   "agreement": {
+    "estimate": 0.9166666666666666,
+    "lo": 0.8193105798166558,
+    "hi": 0.9638795433982692,
+    "n": 60
+   },
+   "abstention": {
+    "estimate": 0.08333333333333333,
+    "lo": 0.03612045660173077,
+    "hi": 0.1806894201833441,
+    "n": 60
+   },
+   "mean_alpha_hat": 0.8,
+   "byz_slots": 0,
+   "byz_accepted": 0,
+   "byz_false_accept_rate": null,
+   "byz_compliance": null
+  },
+  "f=1": {
+   "rounds": 60,
+   "agreement": {
+    "estimate": 0.9,
+    "lo": 0.7985053527602123,
+    "hi": 0.9533571655261158,
+    "n": 60
+   },
+   "abstention": {
+    "estimate": 0.1,
+    "lo": 0.04664283447388416,
+    "hi": 0.20149464723978772,
+    "n": 60
+   },
+   "mean_alpha_hat": 0.8333333333333334,
+   "byz_slots": 60,
+   "byz_accepted": 0,
+   "byz_false_accept_rate": 0.0,
+   "byz_compliance": 1.0
+  },
+  "f=2": {
+   "rounds": 60,
+   "agreement": {
+    "estimate": 0.9166666666666666,
+    "lo": 0.8193105798166558,
+    "hi": 0.9638795433982692,
+    "n": 60
+   },
+   "abstention": {
+    "estimate": 0.08333333333333333,
+    "lo": 0.03612045660173077,
+    "hi": 0.1806894201833441,
+    "n": 60
+   },
+   "mean_alpha_hat": 0.8354166666666667,
+   "byz_slots": 120,
+   "byz_accepted": 0,
+   "byz_false_accept_rate": 0.0,
+   "byz_compliance": 1.0
+  },
+  "f=3": {
+   "rounds": 60,
+   "agreement": {
+    "estimate": 0.9166666666666666,
+    "lo": 0.8193105798166558,
+    "hi": 0.9638795433982692,
+    "n": 60
+   },
+   "abstention": {
+    "estimate": 0.08333333333333333,
+    "lo": 0.03612045660173077,
+    "hi": 0.1806894201833441,
+    "n": 60
+   },
+   "mean_alpha_hat": 0.8333333333333334,
+   "byz_slots": 180,
+   "byz_accepted": 0,
+   "byz_false_accept_rate": 0.0,
+   "byz_compliance": 1.0
+  },
+  "f=4": {
+   "rounds": 60,
+   "agreement": {
+    "estimate": 0.9,
+    "lo": 0.7985053527602123,
+    "hi": 0.9533571655261158,
+    "n": 60
+   },
+   "abstention": {
+    "estimate": 0.1,
+    "lo": 0.04664283447388416,
+    "hi": 0.20149464723978772,
+    "n": 60
+   },
+   "mean_alpha_hat": 0.8222222222222223,
+   "byz_slots": 240,
+   "byz_accepted": 0,
+   "byz_false_accept_rate": 0.0,
+   "byz_compliance": 1.0
+  }
+ },
+ "theorem4_terms": {
+  "f=0": {
+   "n_honest": 10,
+   "per_task_term": 0.0,
+   "pooled_term": 1.0239999999999978e-07,
+   "observed_abstention": 0.08333333333333333
+  },
+  "f=1": {
+   "n_honest": 9,
+   "per_task_term": 0.0,
+   "pooled_term": 9.9229030127521e-08,
+   "observed_abstention": 0.1
+  },
+  "f=2": {
+   "n_honest": 8,
+   "per_task_term": 0.0,
+   "pooled_term": 5.383774130521265e-07,
+   "observed_abstention": 0.08333333333333333
+  },
+  "f=3": {
+   "n_honest": 7,
+   "per_task_term": 0.0,
+   "pooled_term": 3.572245084590758e-06,
+   "observed_abstention": 0.08333333333333333
+  },
+  "f=4": {
+   "n_honest": 6,
+   "per_task_term": 0.0,
+   "pooled_term": 3.156929179344453e-05,
+   "observed_abstention": 0.1
+  }
+ }
+}

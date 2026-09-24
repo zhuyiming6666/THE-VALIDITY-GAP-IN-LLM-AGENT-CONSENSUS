@@ -1,0 +1,140 @@
+{
+ "n_rounds": 300,
+ "by_f": {
+  "0": {
+   "rounds": 60,
+   "agreement": 0.9166666666666666,
+   "abstention": 0.08333333333333333,
+   "alpha_hat_mean": 0.8,
+   "honest_slots": 600,
+   "honest_accepted": 480,
+   "byz_slots": 0,
+   "byz_accepted": 0,
+   "byz_mutated": 0,
+   "soundness_violations": 0,
+   "byz_compliance": null
+  },
+  "1": {
+   "rounds": 60,
+   "agreement": 0.9,
+   "abstention": 0.1,
+   "alpha_hat_mean": 0.8333333333333334,
+   "honest_slots": 540,
+   "honest_accepted": 450,
+   "byz_slots": 60,
+   "byz_accepted": 0,
+   "byz_mutated": 60,
+   "soundness_violations": 0,
+   "byz_compliance": 1.0
+  },
+  "2": {
+   "rounds": 60,
+   "agreement": 0.9166666666666666,
+   "abstention": 0.08333333333333333,
+   "alpha_hat_mean": 0.8354166666666667,
+   "honest_slots": 480,
+   "honest_accepted": 401,
+   "byz_slots": 120,
+   "byz_accepted": 0,
+   "byz_mutated": 120,
+   "soundness_violations": 0,
+   "byz_compliance": 1.0
+  },
+  "3": {
+   "rounds": 60,
+   "agreement": 0.9166666666666666,
+   "abstention": 0.08333333333333333,
+   "alpha_hat_mean": 0.8333333333333334,
+   "honest_slots": 420,
+   "honest_accepted": 350,
+   "byz_slots": 180,
+   "byz_accepted": 0,
+   "byz_mutated": 180,
+   "soundness_violations": 0,
+   "byz_compliance": 1.0
+  },
+  "4": {
+   "rounds": 60,
+   "agreement": 0.9,
+   "abstention": 0.1,
+   "alpha_hat_mean": 0.8222222222222223,
+   "honest_slots": 360,
+   "honest_accepted": 296,
+   "byz_slots": 240,
+   "byz_accepted": 0,
+   "byz_mutated": 240,
+   "soundness_violations": 0,
+   "byz_compliance": 1.0
+  }
+ },
+ "soundness_holds": true,
+ "per_task_alpha": {
+  "mbpp_100": 1.0,
+  "mbpp_103": 1.0,
+  "mbpp_105": 1.0,
+  "mbpp_108": 0.0,
+  "mbpp_111": 0.65,
+  "mbpp_115": 1.0,
+  "mbpp_116": 1.0,
+  "mbpp_117": 1.0,
+  "mbpp_118": 1.0,
+  "mbpp_119": 1.0,
+  "mbpp_120": 1.0,
+  "mbpp_121": 0.45,
+  "mbpp_122": 1.0,
+  "mbpp_123": 0.8,
+  "mbpp_124": 1.0,
+  "mbpp_125": 0.85,
+  "mbpp_126": 1.0,
+  "mbpp_127": 0.05,
+  "mbpp_128": 1.0,
+  "mbpp_131": 0.2,
+  "mbpp_132": 1.0,
+  "mbpp_135": 0.0,
+  "mbpp_136": 1.0,
+  "mbpp_138": 1.0,
+  "mbpp_140": 0.5,
+  "mbpp_142": 0.8,
+  "mbpp_144": 0.95,
+  "mbpp_145": 1.0,
+  "mbpp_146": 0.75,
+  "mbpp_149": 1.0
+ },
+ "pooled_alpha": 0.8,
+ "n_tasks_never_solved": 2,
+ "n_tasks_always_solved": 18,
+ "n_tasks": 30,
+ "theorem4_terms": {
+  "6": {
+   "observed_abstention": 0.1,
+   "per_task_term": 0.10142544479166667,
+   "pooled_term": 6.399999999999992e-05,
+   "rounds": 60
+  },
+  "7": {
+   "observed_abstention": 0.08333333333333333,
+   "per_task_term": 0.09772736953125,
+   "pooled_term": 1.279999999999998e-05,
+   "rounds": 60
+  },
+  "8": {
+   "observed_abstention": 0.08333333333333333,
+   "per_task_term": 0.09479060192447916,
+   "pooled_term": 2.5599999999999954e-06,
+   "rounds": 60
+  },
+  "9": {
+   "observed_abstention": 0.1,
+   "per_task_term": 0.09237031073632812,
+   "pooled_term": 5.11999999999999e-07,
+   "rounds": 60
+  },
+  "10": {
+   "observed_abstention": 0.08333333333333333,
+   "per_task_term": 0.09032164618246744,
+   "pooled_term": 1.0239999999999978e-07,
+   "rounds": 60
+  }
+ },
+ "task_heterogeneity_note": "The first term of Theorem 4 must be evaluated per task. On this run the pooled form under-states the observed abstention by orders of magnitude because acceptance is bimodal across tasks."
+}

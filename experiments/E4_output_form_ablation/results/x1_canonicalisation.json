@@ -1,0 +1,84 @@
+{
+ "per_condition": {
+  "A_free_reasoning": {
+   "n_tasks": 50,
+   "accuracy": 0.95,
+   "accuracy_ci": {
+    "estimate": 0.95,
+    "lo": 0.88975,
+    "hi": 1.0,
+    "n": 50,
+    "B": 2000
+   },
+   "p_max": 0.99,
+   "support": 1.02,
+   "A_3": 0.9828571428571429
+  },
+  "B_free_reasoning_schema": {
+   "n_tasks": 50,
+   "accuracy": 0.93,
+   "accuracy_ci": {
+    "estimate": 0.93,
+    "lo": 0.8575,
+    "hi": 0.985,
+    "n": 50,
+    "B": 2000
+   },
+   "p_max": 0.98,
+   "support": 1.1,
+   "A_3": 0.957857142857143
+  },
+  "C_schema_only": {
+   "n_tasks": 50,
+   "accuracy": 0.9325,
+   "accuracy_ci": {
+    "estimate": 0.9325,
+    "lo": 0.8575,
+    "hi": 0.9875,
+    "n": 50,
+    "B": 2000
+   },
+   "p_max": 0.975,
+   "support": 1.1,
+   "A_3": 0.9514285714285714
+  }
+ },
+ "paired": {
+  "A_free_reasoning_minus_B_free_reasoning_schema": {
+   "n_tasks": 50,
+   "accuracy": {
+    "estimate": 0.02,
+    "lo": 0.0,
+    "hi": 0.05256249999999966,
+    "n": 50,
+    "B": 2000
+   },
+   "A_3": {
+    "estimate": 0.025,
+    "lo": -0.002142857142857143,
+    "hi": 0.07071428571428572,
+    "n": 50,
+    "B": 2000
+   }
+  },
+  "B_free_reasoning_schema_minus_C_schema_only": {
+   "n_tasks": 50,
+   "accuracy": {
+    "estimate": -0.0025,
+    "lo": -0.0225,
+    "hi": 0.015,
+    "n": 50,
+    "B": 2000
+   },
+   "A_3": {
+    "estimate": 0.006428571428571429,
+    "lo": -0.021455357142857144,
+    "hi": 0.046071428571428576,
+    "n": 50,
+    "B": 2000
+   }
+  }
+ },
+ "n_records": 1200,
+ "interpretation": "A - B isolates the output-form constraint with the reasoning budget held fixed. B - C reproduces the v1 contrast, which changed the reasoning budget as well."
+}

@@ -1,0 +1,36 @@
+{
+ "task_ids": [
+  "gsm_43",
+  "gsm_3",
+  "gsm_0",
+  "gsm_34",
+  "gsm_13",
+  "gsm_47",
+  "gsm_19",
+  "gsm_38",
+  "mbpp_126",
+  "mbpp_120",
+  "mbpp_131",
+  "mbpp_116",
+  "mbpp_108",
+  "mbpp_136",
+  "mbpp_117",
+  "mbpp_132",
+  "mmlu_55",
+  "mmlu_77",
+  "mmlu_74",
+  "mmlu_57",
+  "mmlu_87",
+  "mmlu_84",
+  "mmlu_91",
+  "mmlu_82"
+ ],
+ "n_per_bench": 8,
+ "benches": [
+  "gsm8k",
+  "mmlu",
+  "mbpp"
+ ],
+ "seed": 20260911,
+ "note": "pinned so --resume can match completed work; changing this invalidates the dump"
+}

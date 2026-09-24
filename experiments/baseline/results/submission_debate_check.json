@@ -1,0 +1,3467 @@
+{
+  "source": "results/v3/e3_benign.json",
+  "source_config": {
+    "model": "gpt-4.1-nano",
+    "ns": "3,5,7,10",
+    "rounds": 3,
+    "tasks": 50,
+    "repeats": 5,
+    "fs": "0",
+    "taskfile": "data/tasks.jsonl",
+    "workers": 14,
+    "out": "results/v3/e3_benign.json"
+  },
+  "method": {
+    "rounds": [
+      0,
+      2
+    ],
+    "f": 0,
+    "unit": "probability; multiply by 100 for percentage points",
+    "aggregation": "Average all repeats within each task and round, subtract round 0 from round 2 within task, then average over tasks.",
+    "interval": "95% percentile paired task bootstrap",
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 20260911,
+    "task_order": "lexicographically sorted task IDs",
+    "scoring": "Same parser and plurality tie-break as recompute_debate.py",
+    "missingness": "Unanimity requires every slot to be parseable. All retained debates have a non-missing plurality correctness indicator."
+  },
+  "by_n": {
+    "3": {
+      "n_tasks": 50,
+      "repeats_per_task_per_round": 5,
+      "round_0": {
+        "agreement": {
+          "estimate": 0.868,
+          "lo": 0.792,
+          "hi": 0.9359999999999999,
+          "n": 50,
+          "B": 2000
+        },
+        "majority_accuracy": {
+          "estimate": 0.9079999999999999,
+          "lo": 0.828,
+          "hi": 0.976,
+          "n": 50,
+          "B": 2000
+        }
+      },
+      "round_2": {
+        "agreement": {
+          "estimate": 0.892,
+          "lo": 0.82,
+          "hi": 0.948,
+          "n": 50,
+          "B": 2000
+        },
+        "majority_accuracy": {
+          "estimate": 0.9080000000000001,
+          "lo": 0.8280000000000001,
+          "hi": 0.972,
+          "n": 50,
+          "B": 2000
+        }
+      },
+      "agreement_gain": {
+        "estimate": 0.024000000000000004,
+        "lo": -0.019999999999999993,
+        "hi": 0.07200000000000001,
+        "n": 50,
+        "B": 2000
+      },
+      "accuracy_gain": {
+        "estimate": 0.0,
+        "lo": -0.036000000000000004,
+        "hi": 0.044000000000000004,
+        "n": 50,
+        "B": 2000
+      },
+      "agreement_minus_accuracy_gain": {
+        "estimate": 0.024000000000000004,
+        "lo": -0.036000000000000004,
+        "hi": 0.084,
+        "n": 50,
+        "B": 2000
+      },
+      "per_task": [
+        {
+          "task_id": "gsm_0",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.2,
+            "majority_accuracy": 0.8
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 0.8
+          },
+          "agreement_gain": 0.6000000000000001,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.6000000000000001
+        },
+        {
+          "task_id": "gsm_1",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.0,
+            "majority_accuracy": 0.2
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.2,
+            "majority_accuracy": 0.4
+          },
+          "agreement_gain": 0.2,
+          "accuracy_gain": 0.2,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_10",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_11",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.4,
+            "majority_accuracy": 0.4
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.6,
+            "majority_accuracy": 0.0
+          },
+          "agreement_gain": 0.19999999999999996,
+          "accuracy_gain": -0.4,
+          "agreement_minus_accuracy_gain": 0.6
+        },
+        {
+          "task_id": "gsm_12",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_13",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.0,
+            "majority_accuracy": 0.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.0,
+            "majority_accuracy": 0.8
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.8,
+          "agreement_minus_accuracy_gain": -0.8
+        },
+        {
+          "task_id": "gsm_14",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_15",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.19999999999999996
+        },
+        {
+          "task_id": "gsm_16",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": -0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": -0.19999999999999996
+        },
+        {
+          "task_id": "gsm_17",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_18",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.6,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.4,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.4
+        },
+        {
+          "task_id": "gsm_19",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": -0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": -0.19999999999999996
+        },
+        {
+          "task_id": "gsm_2",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.19999999999999996
+        },
+        {
+          "task_id": "gsm_20",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.4,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.4,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.4
+        },
+        {
+          "task_id": "gsm_21",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_22",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.19999999999999996
+        },
+        {
+          "task_id": "gsm_23",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_24",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 0.8
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": -0.19999999999999996,
+          "agreement_minus_accuracy_gain": 0.19999999999999996
+        },
+        {
+          "task_id": "gsm_25",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.6,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": -0.4,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": -0.4
+        },
+        {
+          "task_id": "gsm_26",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_27",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_28",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_29",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 0.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 0.0
+          },
+          "agreement_gain": -0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": -0.19999999999999996
+        },
+        {
+          "task_id": "gsm_3",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.19999999999999996
+        },
+        {
+          "task_id": "gsm_30",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_31",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_32",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.6,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.20000000000000007,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.20000000000000007
+        },
+        {
+          "task_id": "gsm_33",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_34",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_35",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_36",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_37",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_38",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": -0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": -0.19999999999999996
+        },
+        {
+          "task_id": "gsm_39",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_4",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_40",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_41",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_42",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_43",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_44",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_45",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_46",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_47",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_48",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.2,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.2,
+            "majority_accuracy": 0.6
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": -0.4,
+          "agreement_minus_accuracy_gain": 0.4
+        },
+        {
+          "task_id": "gsm_49",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_5",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_6",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_7",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_8",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 0.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.4,
+            "majority_accuracy": 0.0
+          },
+          "agreement_gain": -0.4,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": -0.4
+        },
+        {
+          "task_id": "gsm_9",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        }
+      ]
+    },
+    "5": {
+      "n_tasks": 50,
+      "repeats_per_task_per_round": 5,
+      "round_0": {
+        "agreement": {
+          "estimate": 0.8119999999999998,
+          "lo": 0.72,
+          "hi": 0.8880999999999996,
+          "n": 50,
+          "B": 2000
+        },
+        "majority_accuracy": {
+          "estimate": 0.9079999999999999,
+          "lo": 0.8320000000000001,
+          "hi": 0.9719999999999999,
+          "n": 50,
+          "B": 2000
+        }
+      },
+      "round_2": {
+        "agreement": {
+          "estimate": 0.86,
+          "lo": 0.7919999999999999,
+          "hi": 0.92,
+          "n": 50,
+          "B": 2000
+        },
+        "majority_accuracy": {
+          "estimate": 0.916,
+          "lo": 0.84,
+          "hi": 0.976,
+          "n": 50,
+          "B": 2000
+        }
+      },
+      "agreement_gain": {
+        "estimate": 0.04800000000000001,
+        "lo": -0.012000000000000002,
+        "hi": 0.10800000000000001,
+        "n": 50,
+        "B": 2000
+      },
+      "accuracy_gain": {
+        "estimate": 0.007999999999999998,
+        "lo": -0.028000000000000008,
+        "hi": 0.044000000000000004,
+        "n": 50,
+        "B": 2000
+      },
+      "agreement_minus_accuracy_gain": {
+        "estimate": 0.04,
+        "lo": -0.027999999999999997,
+        "hi": 0.10800000000000001,
+        "n": 50,
+        "B": 2000
+      },
+      "per_task": [
+        {
+          "task_id": "gsm_0",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.4,
+            "majority_accuracy": 0.8
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.4,
+          "accuracy_gain": 0.19999999999999996,
+          "agreement_minus_accuracy_gain": 0.20000000000000007
+        },
+        {
+          "task_id": "gsm_1",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.0,
+            "majority_accuracy": 0.4
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.6,
+            "majority_accuracy": 0.8
+          },
+          "agreement_gain": 0.6,
+          "accuracy_gain": 0.4,
+          "agreement_minus_accuracy_gain": 0.19999999999999996
+        },
+        {
+          "task_id": "gsm_10",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": -0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": -0.19999999999999996
+        },
+        {
+          "task_id": "gsm_11",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.0,
+            "majority_accuracy": 0.4
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.4,
+            "majority_accuracy": 0.2
+          },
+          "agreement_gain": 0.4,
+          "accuracy_gain": -0.2,
+          "agreement_minus_accuracy_gain": 0.6000000000000001
+        },
+        {
+          "task_id": "gsm_12",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_13",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.2,
+            "majority_accuracy": 0.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.2,
+            "majority_accuracy": 0.6
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.6,
+          "agreement_minus_accuracy_gain": -0.6
+        },
+        {
+          "task_id": "gsm_14",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.19999999999999996
+        },
+        {
+          "task_id": "gsm_15",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.19999999999999996
+        },
+        {
+          "task_id": "gsm_16",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_17",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_18",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.6,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.20000000000000007,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.20000000000000007
+        },
+        {
+          "task_id": "gsm_19",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_2",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_20",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.2,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.2,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.2
+        },
+        {
+          "task_id": "gsm_21",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": -0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": -0.19999999999999996
+        },
+        {
+          "task_id": "gsm_22",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_23",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_24",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.4,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": -0.6,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": -0.6
+        },
+        {
+          "task_id": "gsm_25",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_26",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_27",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_28",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_29",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 0.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 0.0
+          },
+          "agreement_gain": 0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.19999999999999996
+        },
+        {
+          "task_id": "gsm_3",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.2,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.8,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.8
+        },
+        {
+          "task_id": "gsm_30",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_31",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_32",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.6,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.6,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_33",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_34",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.6,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": -0.4,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": -0.4
+        },
+        {
+          "task_id": "gsm_35",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_36",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_37",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.6,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": -0.20000000000000007,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": -0.20000000000000007
+        },
+        {
+          "task_id": "gsm_38",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_39",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_4",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_40",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_41",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.6,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.4,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.4
+        },
+        {
+          "task_id": "gsm_42",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.19999999999999996
+        },
+        {
+          "task_id": "gsm_43",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_44",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_45",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_46",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_47",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_48",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.0,
+            "majority_accuracy": 0.8
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.2,
+            "majority_accuracy": 0.2
+          },
+          "agreement_gain": 0.2,
+          "accuracy_gain": -0.6000000000000001,
+          "agreement_minus_accuracy_gain": 0.8
+        },
+        {
+          "task_id": "gsm_49",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_5",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_6",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_7",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_8",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 0.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 0.0
+          },
+          "agreement_gain": 0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.19999999999999996
+        },
+        {
+          "task_id": "gsm_9",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": -0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": -0.19999999999999996
+        }
+      ]
+    },
+    "7": {
+      "n_tasks": 50,
+      "repeats_per_task_per_round": 5,
+      "round_0": {
+        "agreement": {
+          "estimate": 0.792,
+          "lo": 0.7,
+          "hi": 0.8759999999999999,
+          "n": 50,
+          "B": 2000
+        },
+        "majority_accuracy": {
+          "estimate": 0.904,
+          "lo": 0.82,
+          "hi": 0.98,
+          "n": 50,
+          "B": 2000
+        }
+      },
+      "round_2": {
+        "agreement": {
+          "estimate": 0.828,
+          "lo": 0.74,
+          "hi": 0.9079999999999998,
+          "n": 50,
+          "B": 2000
+        },
+        "majority_accuracy": {
+          "estimate": 0.9279999999999999,
+          "lo": 0.86,
+          "hi": 0.98,
+          "n": 50,
+          "B": 2000
+        }
+      },
+      "agreement_gain": {
+        "estimate": 0.036000000000000004,
+        "lo": -0.028000000000000008,
+        "hi": 0.10799999999999998,
+        "n": 50,
+        "B": 2000
+      },
+      "accuracy_gain": {
+        "estimate": 0.024000000000000004,
+        "lo": -0.008,
+        "hi": 0.064,
+        "n": 50,
+        "B": 2000
+      },
+      "agreement_minus_accuracy_gain": {
+        "estimate": 0.011999999999999988,
+        "lo": -0.06399999999999999,
+        "hi": 0.08800000000000001,
+        "n": 50,
+        "B": 2000
+      },
+      "per_task": [
+        {
+          "task_id": "gsm_0",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.2,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.6,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.39999999999999997,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.39999999999999997
+        },
+        {
+          "task_id": "gsm_1",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.0,
+            "majority_accuracy": 0.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.2,
+            "majority_accuracy": 0.6
+          },
+          "agreement_gain": 0.2,
+          "accuracy_gain": 0.6,
+          "agreement_minus_accuracy_gain": -0.39999999999999997
+        },
+        {
+          "task_id": "gsm_10",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": -0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": -0.19999999999999996
+        },
+        {
+          "task_id": "gsm_11",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.2,
+            "majority_accuracy": 0.2
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.0,
+            "majority_accuracy": 0.8
+          },
+          "agreement_gain": -0.2,
+          "accuracy_gain": 0.6000000000000001,
+          "agreement_minus_accuracy_gain": -0.8
+        },
+        {
+          "task_id": "gsm_12",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": -0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": -0.19999999999999996
+        },
+        {
+          "task_id": "gsm_13",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.0,
+            "majority_accuracy": 0.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.2,
+            "majority_accuracy": 0.4
+          },
+          "agreement_gain": 0.2,
+          "accuracy_gain": 0.4,
+          "agreement_minus_accuracy_gain": -0.2
+        },
+        {
+          "task_id": "gsm_14",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": -0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": -0.19999999999999996
+        },
+        {
+          "task_id": "gsm_15",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_16",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_17",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_18",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.6,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.20000000000000007,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.20000000000000007
+        },
+        {
+          "task_id": "gsm_19",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.6,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": -0.4,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": -0.4
+        },
+        {
+          "task_id": "gsm_2",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_20",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.4,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": -0.4,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": -0.4
+        },
+        {
+          "task_id": "gsm_21",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.19999999999999996
+        },
+        {
+          "task_id": "gsm_22",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_23",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_24",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.6,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": -0.20000000000000007,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": -0.20000000000000007
+        },
+        {
+          "task_id": "gsm_25",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.6,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": -0.4,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": -0.4
+        },
+        {
+          "task_id": "gsm_26",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_27",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_28",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_29",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 0.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 0.0
+          },
+          "agreement_gain": 0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.19999999999999996
+        },
+        {
+          "task_id": "gsm_3",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 1.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 1.0
+        },
+        {
+          "task_id": "gsm_30",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_31",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_32",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.4,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.2,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": -0.2,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": -0.2
+        },
+        {
+          "task_id": "gsm_33",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_34",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_35",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_36",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_37",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.4,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.4,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.4
+        },
+        {
+          "task_id": "gsm_38",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_39",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_4",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_40",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_41",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.2,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.8,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.8
+        },
+        {
+          "task_id": "gsm_42",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.19999999999999996
+        },
+        {
+          "task_id": "gsm_43",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_44",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_45",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.19999999999999996
+        },
+        {
+          "task_id": "gsm_46",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.19999999999999996
+        },
+        {
+          "task_id": "gsm_47",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_48",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.2,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.0,
+            "majority_accuracy": 0.6
+          },
+          "agreement_gain": -0.2,
+          "accuracy_gain": -0.4,
+          "agreement_minus_accuracy_gain": 0.2
+        },
+        {
+          "task_id": "gsm_49",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_5",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_6",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_7",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_8",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.2,
+            "majority_accuracy": 0.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.6,
+            "majority_accuracy": 0.0
+          },
+          "agreement_gain": 0.39999999999999997,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.39999999999999997
+        },
+        {
+          "task_id": "gsm_9",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": -0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": -0.19999999999999996
+        }
+      ]
+    },
+    "10": {
+      "n_tasks": 50,
+      "repeats_per_task_per_round": 5,
+      "round_0": {
+        "agreement": {
+          "estimate": 0.7559999999999999,
+          "lo": 0.652,
+          "hi": 0.8479999999999999,
+          "n": 50,
+          "B": 2000
+        },
+        "majority_accuracy": {
+          "estimate": 0.9159999999999999,
+          "lo": 0.8360000000000001,
+          "hi": 0.98,
+          "n": 50,
+          "B": 2000
+        }
+      },
+      "round_2": {
+        "agreement": {
+          "estimate": 0.8319999999999999,
+          "lo": 0.74,
+          "hi": 0.9079999999999999,
+          "n": 50,
+          "B": 2000
+        },
+        "majority_accuracy": {
+          "estimate": 0.9319999999999999,
+          "lo": 0.86,
+          "hi": 0.9840000000000001,
+          "n": 50,
+          "B": 2000
+        }
+      },
+      "agreement_gain": {
+        "estimate": 0.076,
+        "lo": 0.008000000000000002,
+        "hi": 0.144,
+        "n": 50,
+        "B": 2000
+      },
+      "accuracy_gain": {
+        "estimate": 0.016,
+        "lo": 0.0,
+        "hi": 0.044000000000000004,
+        "n": 50,
+        "B": 2000
+      },
+      "agreement_minus_accuracy_gain": {
+        "estimate": 0.06,
+        "lo": -0.012000000000000004,
+        "hi": 0.12809999999999946,
+        "n": 50,
+        "B": 2000
+      },
+      "per_task": [
+        {
+          "task_id": "gsm_0",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.2,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.6000000000000001,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.6000000000000001
+        },
+        {
+          "task_id": "gsm_1",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.0,
+            "majority_accuracy": 0.4
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.0,
+            "majority_accuracy": 0.4
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_10",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.19999999999999996
+        },
+        {
+          "task_id": "gsm_11",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.0,
+            "majority_accuracy": 0.4
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.6,
+          "agreement_minus_accuracy_gain": -0.6
+        },
+        {
+          "task_id": "gsm_12",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.4,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": -0.4,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": -0.4
+        },
+        {
+          "task_id": "gsm_13",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.0,
+            "majority_accuracy": 0.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.2,
+            "majority_accuracy": 0.2
+          },
+          "agreement_gain": 0.2,
+          "accuracy_gain": 0.2,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_14",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_15",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_16",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_17",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_18",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.6,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.20000000000000007,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.20000000000000007
+        },
+        {
+          "task_id": "gsm_19",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.6,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.4,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.4
+        },
+        {
+          "task_id": "gsm_2",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_20",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.2,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.2,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.2
+        },
+        {
+          "task_id": "gsm_21",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.19999999999999996
+        },
+        {
+          "task_id": "gsm_22",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_23",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_24",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.6,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.4,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.4
+        },
+        {
+          "task_id": "gsm_25",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_26",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_27",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_28",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_29",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 0.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 0.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_3",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.4,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.6,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.6
+        },
+        {
+          "task_id": "gsm_30",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_31",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_32",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.2,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.4,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.2,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.2
+        },
+        {
+          "task_id": "gsm_33",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_34",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.2,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": -0.8,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": -0.8
+        },
+        {
+          "task_id": "gsm_35",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_36",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_37",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.4,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.6,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.6
+        },
+        {
+          "task_id": "gsm_38",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_39",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": -0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": -0.19999999999999996
+        },
+        {
+          "task_id": "gsm_4",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_40",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_41",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.4,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.4,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.4
+        },
+        {
+          "task_id": "gsm_42",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.19999999999999996
+        },
+        {
+          "task_id": "gsm_43",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_44",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_45",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_46",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.19999999999999996
+        },
+        {
+          "task_id": "gsm_47",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_48",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_49",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_5",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_6",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.19999999999999996
+        },
+        {
+          "task_id": "gsm_7",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": 0.0,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.0
+        },
+        {
+          "task_id": "gsm_8",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 0.0,
+            "majority_accuracy": 0.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.6,
+            "majority_accuracy": 0.0
+          },
+          "agreement_gain": 0.6,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": 0.6
+        },
+        {
+          "task_id": "gsm_9",
+          "round_0": {
+            "repeats": 5,
+            "agreement": 1.0,
+            "majority_accuracy": 1.0
+          },
+          "round_2": {
+            "repeats": 5,
+            "agreement": 0.8,
+            "majority_accuracy": 1.0
+          },
+          "agreement_gain": -0.19999999999999996,
+          "accuracy_gain": 0.0,
+          "agreement_minus_accuracy_gain": -0.19999999999999996
+        }
+      ]
+    }
+  }
+}

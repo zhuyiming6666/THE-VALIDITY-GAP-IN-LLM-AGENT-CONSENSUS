@@ -1,0 +1,3501 @@
+{
+  "config": {
+    "models": "gpt-4.1-nano",
+    "taskfile": "data/tasks_123.jsonl",
+    "tasks": 123,
+    "k": 16,
+    "temp": 0.7,
+    "cot": true,
+    "workers": 16,
+    "out": "results/v11/temp_T0.7.json",
+    "dump": "results/v11/temp_T0.7.samples.jsonl",
+    "env": ".env",
+    "key_var": "OPENAI_API_KEY",
+    "url_var": "OPENAI_BASE_URL",
+    "no_think": false
+  },
+  "usage": {
+    "in": 260032,
+    "out": 339848
+  },
+  "summary": {
+    "gpt-4.1-nano": {
+      "p_max_answer": 0.9326,
+      "p_max_semantic": 0.2413,
+      "support_answer": 1.4715,
+      "support_semantic": 11.4797,
+      "acc": 0.8592,
+      "n_tasks": 123
+    }
+  },
+  "per_bench": {
+    "gpt-4.1-nano": {
+      "gsm8k": {
+        "p_max_answer": 0.9507,
+        "p_max_semantic": 0.248,
+        "support_answer": 1.3,
+        "support_semantic": 11.14,
+        "acc": 0.902,
+        "n": 50
+      },
+      "mmlu": {
+        "p_max_answer": 0.846,
+        "p_max_semantic": 0.2604,
+        "support_answer": 1.9615,
+        "support_semantic": 11.1538,
+        "acc": 0.7487,
+        "n": 26
+      },
+      "mbpp": {
+        "p_max_answer": 0.9612,
+        "p_max_semantic": 0.2236,
+        "support_answer": 1.383,
+        "support_semantic": 12.0213,
+        "acc": 0.8747,
+        "n": 47
+      }
+    }
+  },
+  "rows": {
+    "gpt-4.1-nano": [
+      {
+        "id": "gsm_0",
+        "bench": "gsm8k",
+        "gold": "160.0",
+        "counts_answer": [
+          11,
+          4
+        ],
+        "counts_semantic": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 15,
+        "p_max_answer": 0.7333333333333333,
+        "support_answer": 2,
+        "p_max_semantic": 0.06666666666666667,
+        "support_semantic": 15,
+        "acc": 0.7333333333333333
+      },
+      {
+        "id": "gsm_1",
+        "bench": "gsm8k",
+        "gold": "59.0",
+        "counts_answer": [
+          12,
+          4
+        ],
+        "counts_semantic": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 0.75,
+        "support_answer": 2,
+        "p_max_semantic": 0.125,
+        "support_semantic": 14,
+        "acc": 0.25
+      },
+      {
+        "id": "gsm_2",
+        "bench": "gsm8k",
+        "gold": "168.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          8,
+          3,
+          2,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.5,
+        "support_semantic": 6,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_3",
+        "bench": "gsm8k",
+        "gold": "21.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.125,
+        "support_semantic": 14,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_4",
+        "bench": "gsm8k",
+        "gold": "7.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          6,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.375,
+        "support_semantic": 7,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_5",
+        "bench": "gsm8k",
+        "gold": "2400.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.1875,
+        "support_semantic": 13,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_6",
+        "bench": "gsm8k",
+        "gold": "31.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          4,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.25,
+        "support_semantic": 13,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_7",
+        "bench": "gsm8k",
+        "gold": "142.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          3,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.1875,
+        "support_semantic": 12,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_8",
+        "bench": "gsm8k",
+        "gold": "25.0",
+        "counts_answer": [
+          11,
+          3,
+          1,
+          1
+        ],
+        "counts_semantic": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 0.6875,
+        "support_answer": 4,
+        "p_max_semantic": 0.125,
+        "support_semantic": 15,
+        "acc": 0.1875
+      },
+      {
+        "id": "gsm_9",
+        "bench": "gsm8k",
+        "gold": "16.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.125,
+        "support_semantic": 15,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_10",
+        "bench": "gsm8k",
+        "gold": "420.0",
+        "counts_answer": [
+          15,
+          1
+        ],
+        "counts_semantic": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 0.9375,
+        "support_answer": 2,
+        "p_max_semantic": 0.125,
+        "support_semantic": 15,
+        "acc": 0.9375
+      },
+      {
+        "id": "gsm_11",
+        "bench": "gsm8k",
+        "gold": "104.0",
+        "counts_answer": [
+          8,
+          8
+        ],
+        "counts_semantic": [
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 0.5,
+        "support_answer": 2,
+        "p_max_semantic": 0.1875,
+        "support_semantic": 10,
+        "acc": 0.5
+      },
+      {
+        "id": "gsm_12",
+        "bench": "gsm8k",
+        "gold": "27.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          3,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.1875,
+        "support_semantic": 12,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_13",
+        "bench": "gsm8k",
+        "gold": "10.0",
+        "counts_answer": [
+          9,
+          5,
+          2
+        ],
+        "counts_semantic": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 0.5625,
+        "support_answer": 3,
+        "p_max_semantic": 0.125,
+        "support_semantic": 14,
+        "acc": 0.125
+      },
+      {
+        "id": "gsm_14",
+        "bench": "gsm8k",
+        "gold": "144.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          4,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.25,
+        "support_semantic": 12,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_15",
+        "bench": "gsm8k",
+        "gold": "3360.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          4,
+          4,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.25,
+        "support_semantic": 8,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_16",
+        "bench": "gsm8k",
+        "gold": "5.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          3,
+          3,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.1875,
+        "support_semantic": 12,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_17",
+        "bench": "gsm8k",
+        "gold": "276.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.125,
+        "support_semantic": 12,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_18",
+        "bench": "gsm8k",
+        "gold": "2.0",
+        "counts_answer": [
+          15,
+          1
+        ],
+        "counts_semantic": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 0.9375,
+        "support_answer": 2,
+        "p_max_semantic": 0.125,
+        "support_semantic": 15,
+        "acc": 0.9375
+      },
+      {
+        "id": "gsm_19",
+        "bench": "gsm8k",
+        "gold": "42.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          6,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.375,
+        "support_semantic": 9,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_20",
+        "bench": "gsm8k",
+        "gold": "14.0",
+        "counts_answer": [
+          10,
+          4,
+          2
+        ],
+        "counts_semantic": [
+          3,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 0.625,
+        "support_answer": 3,
+        "p_max_semantic": 0.1875,
+        "support_semantic": 14,
+        "acc": 0.625
+      },
+      {
+        "id": "gsm_21",
+        "bench": "gsm8k",
+        "gold": "16.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          3,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.1875,
+        "support_semantic": 11,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_22",
+        "bench": "gsm8k",
+        "gold": "330000.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.125,
+        "support_semantic": 14,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_23",
+        "bench": "gsm8k",
+        "gold": "1.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          4,
+          3,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.25,
+        "support_semantic": 11,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_24",
+        "bench": "gsm8k",
+        "gold": "20.0",
+        "counts_answer": [
+          15
+        ],
+        "counts_semantic": [
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 15,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.13333333333333333,
+        "support_semantic": 11,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_25",
+        "bench": "gsm8k",
+        "gold": "3.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          5,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.3125,
+        "support_semantic": 9,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_26",
+        "bench": "gsm8k",
+        "gold": "10.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.125,
+        "support_semantic": 15,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_27",
+        "bench": "gsm8k",
+        "gold": "11.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          8,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.5,
+        "support_semantic": 8,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_28",
+        "bench": "gsm8k",
+        "gold": "6277.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.1875,
+        "support_semantic": 9,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_29",
+        "bench": "gsm8k",
+        "gold": "3.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.125,
+        "support_semantic": 14,
+        "acc": 0.0
+      },
+      {
+        "id": "gsm_30",
+        "bench": "gsm8k",
+        "gold": "220.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          4,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.25,
+        "support_semantic": 12,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_31",
+        "bench": "gsm8k",
+        "gold": "16.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          5,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.3125,
+        "support_semantic": 9,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_32",
+        "bench": "gsm8k",
+        "gold": "40.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          6,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.375,
+        "support_semantic": 8,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_33",
+        "bench": "gsm8k",
+        "gold": "8000.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          10,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.625,
+        "support_semantic": 7,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_34",
+        "bench": "gsm8k",
+        "gold": "38.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          5,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.3125,
+        "support_semantic": 8,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_35",
+        "bench": "gsm8k",
+        "gold": "34.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          13,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.8125,
+        "support_semantic": 4,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_36",
+        "bench": "gsm8k",
+        "gold": "21.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.125,
+        "support_semantic": 13,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_37",
+        "bench": "gsm8k",
+        "gold": "40.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.125,
+        "support_semantic": 15,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_38",
+        "bench": "gsm8k",
+        "gold": "54.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          6,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.375,
+        "support_semantic": 10,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_39",
+        "bench": "gsm8k",
+        "gold": "255.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.1875,
+        "support_semantic": 10,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_40",
+        "bench": "gsm8k",
+        "gold": "16.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          4,
+          3,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.25,
+        "support_semantic": 11,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_41",
+        "bench": "gsm8k",
+        "gold": "5.0",
+        "counts_answer": [
+          15,
+          1
+        ],
+        "counts_semantic": [
+          3,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 0.9375,
+        "support_answer": 2,
+        "p_max_semantic": 0.1875,
+        "support_semantic": 14,
+        "acc": 0.9375
+      },
+      {
+        "id": "gsm_42",
+        "bench": "gsm8k",
+        "gold": "1400.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          7,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.4375,
+        "support_semantic": 9,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_43",
+        "bench": "gsm8k",
+        "gold": "60.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          4,
+          3,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.25,
+        "support_semantic": 11,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_44",
+        "bench": "gsm8k",
+        "gold": "15.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          5,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.3125,
+        "support_semantic": 11,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_45",
+        "bench": "gsm8k",
+        "gold": "12.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          5,
+          4,
+          4,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.3125,
+        "support_semantic": 6,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_46",
+        "bench": "gsm8k",
+        "gold": "200.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          3,
+          3,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.1875,
+        "support_semantic": 12,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_47",
+        "bench": "gsm8k",
+        "gold": "4.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          6,
+          3,
+          3,
+          2,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.375,
+        "support_semantic": 6,
+        "acc": 1.0
+      },
+      {
+        "id": "gsm_48",
+        "bench": "gsm8k",
+        "gold": "6.0",
+        "counts_answer": [
+          13,
+          1,
+          1
+        ],
+        "counts_semantic": [
+          3,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 15,
+        "p_max_answer": 0.8666666666666667,
+        "support_answer": 3,
+        "p_max_semantic": 0.2,
+        "support_semantic": 13,
+        "acc": 0.8666666666666667
+      },
+      {
+        "id": "gsm_49",
+        "bench": "gsm8k",
+        "gold": "13.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          4,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.25,
+        "support_semantic": 9,
+        "acc": 1.0
+      },
+      {
+        "id": "mmlu_52",
+        "bench": "mmlu",
+        "gold": "a",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          4,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.25,
+        "support_semantic": 12,
+        "acc": 1.0
+      },
+      {
+        "id": "mmlu_53",
+        "bench": "mmlu",
+        "gold": "c",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.125,
+        "support_semantic": 14,
+        "acc": 1.0
+      },
+      {
+        "id": "mmlu_54",
+        "bench": "mmlu",
+        "gold": "c",
+        "counts_answer": [
+          12,
+          4
+        ],
+        "counts_semantic": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 0.75,
+        "support_answer": 2,
+        "p_max_semantic": 0.125,
+        "support_semantic": 15,
+        "acc": 0.75
+      },
+      {
+        "id": "mmlu_55",
+        "bench": "mmlu",
+        "gold": "d",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          5,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.3125,
+        "support_semantic": 11,
+        "acc": 1.0
+      },
+      {
+        "id": "mmlu_56",
+        "bench": "mmlu",
+        "gold": "c",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          5,
+          5,
+          2,
+          2,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.3125,
+        "support_semantic": 6,
+        "acc": 1.0
+      },
+      {
+        "id": "mmlu_60",
+        "bench": "mmlu",
+        "gold": "b",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.1875,
+        "support_semantic": 13,
+        "acc": 1.0
+      },
+      {
+        "id": "mmlu_61",
+        "bench": "mmlu",
+        "gold": "d",
+        "counts_answer": [
+          14,
+          2
+        ],
+        "counts_semantic": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 0.875,
+        "support_answer": 2,
+        "p_max_semantic": 0.125,
+        "support_semantic": 14,
+        "acc": 0.0
+      },
+      {
+        "id": "mmlu_62",
+        "bench": "mmlu",
+        "gold": "c",
+        "counts_answer": [
+          14
+        ],
+        "counts_semantic": [
+          8,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 14,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.5714285714285714,
+        "support_semantic": 6,
+        "acc": 1.0
+      },
+      {
+        "id": "mmlu_67",
+        "bench": "mmlu",
+        "gold": "d",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          7,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.4375,
+        "support_semantic": 7,
+        "acc": 1.0
+      },
+      {
+        "id": "mmlu_68",
+        "bench": "mmlu",
+        "gold": "c",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.125,
+        "support_semantic": 14,
+        "acc": 1.0
+      },
+      {
+        "id": "mmlu_70",
+        "bench": "mmlu",
+        "gold": "b",
+        "counts_answer": [
+          7,
+          7,
+          1
+        ],
+        "counts_semantic": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 15,
+        "p_max_answer": 0.4666666666666667,
+        "support_answer": 3,
+        "p_max_semantic": 0.06666666666666667,
+        "support_semantic": 15,
+        "acc": 0.0
+      },
+      {
+        "id": "mmlu_71",
+        "bench": "mmlu",
+        "gold": "d",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          5,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.3125,
+        "support_semantic": 12,
+        "acc": 1.0
+      },
+      {
+        "id": "mmlu_74",
+        "bench": "mmlu",
+        "gold": "c",
+        "counts_answer": [
+          9,
+          6,
+          1
+        ],
+        "counts_semantic": [
+          3,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 0.5625,
+        "support_answer": 3,
+        "p_max_semantic": 0.1875,
+        "support_semantic": 12,
+        "acc": 0.375
+      },
+      {
+        "id": "mmlu_76",
+        "bench": "mmlu",
+        "gold": "b",
+        "counts_answer": [
+          15,
+          1
+        ],
+        "counts_semantic": [
+          5,
+          4,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 0.9375,
+        "support_answer": 2,
+        "p_max_semantic": 0.3125,
+        "support_semantic": 9,
+        "acc": 0.9375
+      },
+      {
+        "id": "mmlu_78",
+        "bench": "mmlu",
+        "gold": "c",
+        "counts_answer": [
+          15,
+          1
+        ],
+        "counts_semantic": [
+          8,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 0.9375,
+        "support_answer": 2,
+        "p_max_semantic": 0.5,
+        "support_semantic": 8,
+        "acc": 0.9375
+      },
+      {
+        "id": "mmlu_79",
+        "bench": "mmlu",
+        "gold": "d",
+        "counts_answer": [
+          12,
+          2,
+          2
+        ],
+        "counts_semantic": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 0.75,
+        "support_answer": 3,
+        "p_max_semantic": 0.125,
+        "support_semantic": 15,
+        "acc": 0.75
+      },
+      {
+        "id": "mmlu_81",
+        "bench": "mmlu",
+        "gold": "c",
+        "counts_answer": [
+          8,
+          4,
+          3,
+          1
+        ],
+        "counts_semantic": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 0.5,
+        "support_answer": 4,
+        "p_max_semantic": 0.0625,
+        "support_semantic": 16,
+        "acc": 0.5
+      },
+      {
+        "id": "mmlu_82",
+        "bench": "mmlu",
+        "gold": "b",
+        "counts_answer": [
+          7,
+          4,
+          3,
+          1
+        ],
+        "counts_semantic": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 15,
+        "p_max_answer": 0.4666666666666667,
+        "support_answer": 4,
+        "p_max_semantic": 0.13333333333333333,
+        "support_semantic": 14,
+        "acc": 0.4666666666666667
+      },
+      {
+        "id": "mmlu_83",
+        "bench": "mmlu",
+        "gold": "d",
+        "counts_answer": [
+          5,
+          4,
+          3,
+          3,
+          1
+        ],
+        "counts_semantic": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 0.3125,
+        "support_answer": 5,
+        "p_max_semantic": 0.125,
+        "support_semantic": 13,
+        "acc": 0.3125
+      },
+      {
+        "id": "mmlu_84",
+        "bench": "mmlu",
+        "gold": "c",
+        "counts_answer": [
+          13,
+          2,
+          1
+        ],
+        "counts_semantic": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 0.8125,
+        "support_answer": 3,
+        "p_max_semantic": 0.125,
+        "support_semantic": 15,
+        "acc": 0.8125
+      },
+      {
+        "id": "mmlu_85",
+        "bench": "mmlu",
+        "gold": "d",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          4,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.25,
+        "support_semantic": 8,
+        "acc": 1.0
+      },
+      {
+        "id": "mmlu_87",
+        "bench": "mmlu",
+        "gold": "b",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          9,
+          4,
+          2,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.5625,
+        "support_semantic": 4,
+        "acc": 1.0
+      },
+      {
+        "id": "mmlu_88",
+        "bench": "mmlu",
+        "gold": "a",
+        "counts_answer": [
+          11,
+          4,
+          1
+        ],
+        "counts_semantic": [
+          4,
+          4,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 0.6875,
+        "support_answer": 3,
+        "p_max_semantic": 0.25,
+        "support_semantic": 10,
+        "acc": 0.6875
+      },
+      {
+        "id": "mmlu_92",
+        "bench": "mmlu",
+        "gold": "d",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          4,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.25,
+        "support_semantic": 10,
+        "acc": 1.0
+      },
+      {
+        "id": "mmlu_94",
+        "bench": "mmlu",
+        "gold": "c",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          13,
+          2,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.8125,
+        "support_semantic": 3,
+        "acc": 0.0
+      },
+      {
+        "id": "mmlu_99",
+        "bench": "mmlu",
+        "gold": "a",
+        "counts_answer": [
+          15,
+          1
+        ],
+        "counts_semantic": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 0.9375,
+        "support_answer": 2,
+        "p_max_semantic": 0.125,
+        "support_semantic": 14,
+        "acc": 0.9375
+      },
+      {
+        "id": "mbpp_100",
+        "bench": "mbpp",
+        "gold": "not matched!",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.125,
+        "support_semantic": 14,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_101",
+        "bench": "mbpp",
+        "gold": "[1 2 1]",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.125,
+        "support_semantic": 15,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_102",
+        "bench": "mbpp",
+        "gold": "8.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          4,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.25,
+        "support_semantic": 8,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_103",
+        "bench": "mbpp",
+        "gold": "3.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          4,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.25,
+        "support_semantic": 12,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_104",
+        "bench": "mbpp",
+        "gold": "47.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.125,
+        "support_semantic": 10,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_105",
+        "bench": "mbpp",
+        "gold": "3.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.1875,
+        "support_semantic": 11,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_106",
+        "bench": "mbpp",
+        "gold": "('not matched!')",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          4,
+          4,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.25,
+        "support_semantic": 9,
+        "acc": 0.0
+      },
+      {
+        "id": "mbpp_107",
+        "bench": "mbpp",
+        "gold": "(0 7 'clearly')",
+        "counts_answer": [
+          15,
+          1
+        ],
+        "counts_semantic": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 0.9375,
+        "support_answer": 2,
+        "p_max_semantic": 0.0625,
+        "support_semantic": 16,
+        "acc": 0.9375
+      },
+      {
+        "id": "mbpp_108",
+        "bench": "mbpp",
+        "gold": "30.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.125,
+        "support_semantic": 13,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_109",
+        "bench": "mbpp",
+        "gold": "[85 75 65]",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          3,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.1875,
+        "support_semantic": 11,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_110",
+        "bench": "mbpp",
+        "gold": "6.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          3,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.1875,
+        "support_semantic": 12,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_111",
+        "bench": "mbpp",
+        "gold": "2.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          13,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.8125,
+        "support_semantic": 4,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_113",
+        "bench": "mbpp",
+        "gold": "30.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.0625,
+        "support_semantic": 16,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_114",
+        "bench": "mbpp",
+        "gold": "('juan whelan' 212)",
+        "counts_answer": [
+          14,
+          2
+        ],
+        "counts_semantic": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 0.875,
+        "support_answer": 2,
+        "p_max_semantic": 0.125,
+        "support_semantic": 15,
+        "acc": 0.125
+      },
+      {
+        "id": "mbpp_115",
+        "bench": "mbpp",
+        "gold": "(6 12 15 18)",
+        "counts_answer": [
+          14,
+          1,
+          1
+        ],
+        "counts_semantic": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 0.875,
+        "support_answer": 3,
+        "p_max_semantic": 0.125,
+        "support_semantic": 14,
+        "acc": 0.875
+      },
+      {
+        "id": "mbpp_116",
+        "bench": "mbpp",
+        "gold": "3.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          8,
+          3,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.5,
+        "support_semantic": 7,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_117",
+        "bench": "mbpp",
+        "gold": "15.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.1875,
+        "support_semantic": 13,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_118",
+        "bench": "mbpp",
+        "gold": "(-8 -9 -10 -2 -11 -8)",
+        "counts_answer": [
+          13,
+          3
+        ],
+        "counts_semantic": [
+          4,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 0.8125,
+        "support_answer": 2,
+        "p_max_semantic": 0.25,
+        "support_semantic": 13,
+        "acc": 0.8125
+      },
+      {
+        "id": "mbpp_119",
+        "bench": "mbpp",
+        "gold": "15.588457268119894",
+        "counts_answer": [
+          6,
+          4,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "counts_semantic": [
+          3,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 0.375,
+        "support_answer": 7,
+        "p_max_semantic": 0.1875,
+        "support_semantic": 14,
+        "acc": 0.0625
+      },
+      {
+        "id": "mbpp_120",
+        "bench": "mbpp",
+        "gold": "60.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          6,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.375,
+        "support_semantic": 10,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_121",
+        "bench": "mbpp",
+        "gold": "1.5707963267948966",
+        "counts_answer": [
+          12,
+          2,
+          1
+        ],
+        "counts_semantic": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 15,
+        "p_max_answer": 0.8,
+        "support_answer": 3,
+        "p_max_semantic": 0.13333333333333333,
+        "support_semantic": 13,
+        "acc": 0.8
+      },
+      {
+        "id": "mbpp_122",
+        "bench": "mbpp",
+        "gold": "33.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          4,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.25,
+        "support_semantic": 12,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_123",
+        "bench": "mbpp",
+        "gold": "not matched!",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          5,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.3125,
+        "support_semantic": 12,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_124",
+        "bench": "mbpp",
+        "gold": "3.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.125,
+        "support_semantic": 14,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_125",
+        "bench": "mbpp",
+        "gold": "(8 -1 -13)",
+        "counts_answer": [
+          14,
+          2
+        ],
+        "counts_semantic": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 0.875,
+        "support_answer": 2,
+        "p_max_semantic": 0.125,
+        "support_semantic": 15,
+        "acc": 0.875
+      },
+      {
+        "id": "mbpp_126",
+        "bench": "mbpp",
+        "gold": "[3 5 9]",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          8,
+          4,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.5,
+        "support_semantic": 6,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_128",
+        "bench": "mbpp",
+        "gold": "12.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          4,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.25,
+        "support_semantic": 11,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_129",
+        "bench": "mbpp",
+        "gold": "('pythonprogram123')",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.125,
+        "support_semantic": 13,
+        "acc": 0.0
+      },
+      {
+        "id": "mbpp_130",
+        "bench": "mbpp",
+        "gold": "7.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.0625,
+        "support_semantic": 16,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_131",
+        "bench": "mbpp",
+        "gold": "(06)",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          3,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.1875,
+        "support_semantic": 12,
+        "acc": 0.0
+      },
+      {
+        "id": "mbpp_132",
+        "bench": "mbpp",
+        "gold": "252.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.0625,
+        "support_semantic": 16,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_133",
+        "bench": "mbpp",
+        "gold": "3.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          8,
+          3,
+          2,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.5,
+        "support_semantic": 6,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_134",
+        "bench": "mbpp",
+        "gold": "8.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.125,
+        "support_semantic": 14,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_135",
+        "bench": "mbpp",
+        "gold": "o",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          4,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.25,
+        "support_semantic": 12,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_136",
+        "bench": "mbpp",
+        "gold": "true",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.125,
+        "support_semantic": 15,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_137",
+        "bench": "mbpp",
+        "gold": "[[12] [7 11] [1 5 8]]",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.0625,
+        "support_semantic": 16,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_139",
+        "bench": "mbpp",
+        "gold": "61.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.0625,
+        "support_semantic": 16,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_140",
+        "bench": "mbpp",
+        "gold": "112.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          11,
+          2,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.6875,
+        "support_semantic": 5,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_141",
+        "bench": "mbpp",
+        "gold": "true",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.1875,
+        "support_semantic": 13,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_142",
+        "bench": "mbpp",
+        "gold": "6.0",
+        "counts_answer": [
+          11,
+          3,
+          1,
+          1
+        ],
+        "counts_semantic": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 0.6875,
+        "support_answer": 4,
+        "p_max_semantic": 0.0625,
+        "support_semantic": 16,
+        "acc": 0.6875
+      },
+      {
+        "id": "mbpp_143",
+        "bench": "mbpp",
+        "gold": "2.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          3,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.1875,
+        "support_semantic": 12,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_144",
+        "bench": "mbpp",
+        "gold": "6.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.125,
+        "support_semantic": 15,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_145",
+        "bench": "mbpp",
+        "gold": "4.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          9,
+          3,
+          2,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.5625,
+        "support_semantic": 5,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_146",
+        "bench": "mbpp",
+        "gold": "abc",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          4,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.25,
+        "support_semantic": 11,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_147",
+        "bench": "mbpp",
+        "gold": "1.0",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.1875,
+        "support_semantic": 10,
+        "acc": 1.0
+      },
+      {
+        "id": "mbpp_148",
+        "bench": "mbpp",
+        "gold": "[(5 7 8) (6 8 10) (7 12 5)]",
+        "counts_answer": [
+          15,
+          1
+        ],
+        "counts_semantic": [
+          7,
+          5,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 0.9375,
+        "support_answer": 2,
+        "p_max_semantic": 0.4375,
+        "support_semantic": 6,
+        "acc": 0.9375
+      },
+      {
+        "id": "mbpp_149",
+        "bench": "mbpp",
+        "gold": "02-01-2026",
+        "counts_answer": [
+          16
+        ],
+        "counts_semantic": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_valid": 16,
+        "p_max_answer": 1.0,
+        "support_answer": 1,
+        "p_max_semantic": 0.0625,
+        "support_semantic": 16,
+        "acc": 1.0
+      }
+    ]
+  }
+}

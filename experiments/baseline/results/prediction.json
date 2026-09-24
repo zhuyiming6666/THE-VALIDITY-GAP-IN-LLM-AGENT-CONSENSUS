@@ -1,0 +1,49 @@
+{
+ "model": "gpt-4.1-nano",
+ "n_tasks": 50,
+ "aggregation": "per-task rate, then mean over tasks; nothing fitted",
+ "rows": {
+  "3": {
+   "predicted": 0.873043,
+   "observed": 0.868,
+   "residual": -0.005043,
+   "observed_semantic": 0.012,
+   "n_tasks": 50,
+   "bench": [
+    "gsm8k"
+   ]
+  },
+  "5": {
+   "predicted": 0.821877,
+   "observed": 0.812,
+   "residual": -0.009877,
+   "observed_semantic": 0.0,
+   "n_tasks": 50,
+   "bench": [
+    "gsm8k"
+   ]
+  },
+  "7": {
+   "predicted": 0.786331,
+   "observed": 0.792,
+   "residual": 0.005669,
+   "observed_semantic": 0.0,
+   "n_tasks": 50,
+   "bench": [
+    "gsm8k"
+   ]
+  },
+  "10": {
+   "predicted": 0.74792,
+   "observed": 0.756,
+   "residual": 0.00808,
+   "observed_semantic": 0.0,
+   "n_tasks": 50,
+   "bench": [
+    "gsm8k"
+   ]
+  }
+ },
+ "max_abs_gap": 0.009877,
+ "mean_abs_gap": 0.00716725
+}

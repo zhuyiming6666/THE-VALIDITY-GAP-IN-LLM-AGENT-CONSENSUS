@@ -1,0 +1,162 @@
+{
+ "config": {
+  "models": [
+   "gpt-4.1-nano",
+   "gpt-4o-mini",
+   "gpt-4.1-mini"
+  ],
+  "h_values": [
+   3,
+   6,
+   9
+  ],
+  "pair_cap_per_model": 4000,
+  "seed": 20260911,
+  "estimator": "falling-factorial U-statistic throughout"
+ },
+ "instruments": {
+  "n_pairs_total": 174906,
+  "per_model_pair_cap": 4000,
+  "seed": 20260911,
+  "instruments": {
+   "answer_only": {
+    "n_pairs": 174906,
+    "same_rate": 0.9189621854024448,
+    "same_given_same_answer": 1.0,
+    "same_given_diff_answer": 0.0,
+    "n_same_answer": 160732,
+    "n_diff_answer": 14174,
+    "is_partition": true,
+    "source": "recomputed from stored CoT replies"
+   },
+   "key_exact": {
+    "n_pairs": 174906,
+    "same_rate": 0.04748836517901044,
+    "same_given_same_answer": 0.05061219918871165,
+    "same_given_diff_answer": 0.012064343163538873,
+    "n_same_answer": 160732,
+    "n_diff_answer": 14174,
+    "is_partition": true,
+    "source": "recomputed from stored CoT replies"
+   },
+   "lexical": {
+    "n_pairs": 174906,
+    "same_rate": 0.046996672498370556,
+    "same_given_same_answer": 0.051141029788716624,
+    "same_given_diff_answer": 0.0,
+    "n_same_answer": 160732,
+    "n_diff_answer": 14174,
+    "is_partition": true,
+    "source": "recomputed from stored CoT replies"
+   },
+   "lexical_archived": {
+    "n_pairs": 800,
+    "same_rate": 0.04125,
+    "same_given_same_answer": 0.04680851063829787,
+    "same_given_diff_answer": 0.0,
+    "n_same_answer": 705,
+    "n_diff_answer": 95,
+    "is_partition": false,
+    "source": "archived results/instrument2.json"
+   },
+   "embedding": {
+    "n_pairs": 800,
+    "same_rate": 0.22,
+    "same_given_same_answer": 0.24397163120567375,
+    "same_given_diff_answer": 0.042105263157894736,
+    "n_same_answer": 705,
+    "n_diff_answer": 95,
+    "is_partition": false,
+    "source": "archived results/instrument2.json"
+   },
+   "judge": {
+    "n_pairs": 800,
+    "same_rate": 0.90875,
+    "same_given_same_answer": 0.9900709219858156,
+    "same_given_diff_answer": 0.30526315789473685,
+    "n_same_answer": 705,
+    "n_diff_answer": 95,
+    "is_partition": false,
+    "source": "archived results/instrument2.json"
+   },
+   "adjudicator": {
+    "n_pairs": 800,
+    "same_rate": 0.89,
+    "same_given_same_answer": 0.9843971631205674,
+    "same_given_diff_answer": 0.18947368421052632,
+    "n_same_answer": 705,
+    "n_diff_answer": 95,
+    "is_partition": false,
+    "source": "archived results/instrument2.json"
+   }
+  }
+ },
+ "heterogeneity": {
+  "verdict": {
+   "n_tasks": 123,
+   "min_samples_per_model_per_task": 9,
+   "cells": {
+    "h=3": {
+     "mixed": 0.823586,
+     "best_single": 0.982076,
+     "worst_single": 0.788031,
+     "averaged_amgm": 0.840859,
+     "relative_loss_vs_best_single": 0.171699,
+     "n_for_relative_loss": 122,
+     "relative_loss_is_stable": true
+    },
+    "h=6": {
+     "mixed": 0.790735,
+     "best_single": 0.969964,
+     "worst_single": 0.720141,
+     "averaged_amgm": 0.795181,
+     "relative_loss_vs_best_single": 0.204105,
+     "n_for_relative_loss": 119,
+     "relative_loss_is_stable": true
+    },
+    "h=9": {
+     "mixed": 0.760204,
+     "best_single": 0.96146,
+     "worst_single": 0.684065,
+     "averaged_amgm": 0.761484,
+     "relative_loss_vs_best_single": 0.233428,
+     "n_for_relative_loss": 119,
+     "relative_loss_is_stable": true
+    }
+   }
+  },
+  "semantic": {
+   "n_tasks": 123,
+   "min_samples_per_model_per_task": 9,
+   "cells": {
+    "h=3": {
+     "mixed": 0.00446,
+     "best_single": 0.205982,
+     "worst_single": 0.001161,
+     "averaged_amgm": 0.015383,
+     "relative_loss_vs_best_single": 0.872658,
+     "n_for_relative_loss": 7,
+     "relative_loss_is_stable": false
+    },
+    "h=6": {
+     "mixed": 2.8e-05,
+     "best_single": 0.216391,
+     "worst_single": 0.0,
+     "averaged_amgm": 0.000625,
+     "relative_loss_vs_best_single": 0.834024,
+     "n_for_relative_loss": 4,
+     "relative_loss_is_stable": false
+    },
+    "h=9": {
+     "mixed": 0.0,
+     "best_single": 0.0,
+     "worst_single": 0.0,
+     "averaged_amgm": 0.0,
+     "relative_loss_vs_best_single": -0.508459,
+     "n_for_relative_loss": 2,
+     "relative_loss_is_stable": false
+    }
+   }
+  }
+ }
+}

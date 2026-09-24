@@ -1,0 +1,17 @@
+{
+ "prediction": 0.7665135986568217,
+ "observed": 0.7773279352226721,
+ "N": 247,
+ "residual": 0.010814336565850402,
+ "majority_acc": 0.9311740890688259,
+ "slots": {
+  "gpt-4.1-nano": 3,
+  "gpt-4o-mini": 3,
+  "gpt-4.1-mini": 4
+ },
+ "homogeneous_predictions": {
+  "gpt-4.1-nano": 0.7479200193443072,
+  "gpt-4o-mini": 0.7841703037924926,
+  "gpt-4.1-mini": 0.937927365987336
+ }
+}
