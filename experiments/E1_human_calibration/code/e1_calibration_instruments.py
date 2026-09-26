@@ -1,7 +1,7 @@
 """E1: score the LLM judges and the embedding rule on the 300 human-calibrated pairs.
 
 Inputs
-  v4/annotation/pairs_blind.tsv                 pair texts (question, A/B answer+KEY)
+  experiments/E1_human_calibration/annotation/pairs_blind.tsv                 pair texts (question, A/B answer+KEY)
   v7/audit/annotation_scoring.rechecked.json    human joint reference, weights, strata
 Instruments (identical prompt / threshold to exp/instrument_error.py)
   judge_nano, judge_mini            : JUDGE system prompt, temperature 0, "SAME" in reply
@@ -30,9 +30,9 @@ FEWSHOT = JUDGE + ("\n\nExamples:\n"
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--blind", default="v4/annotation/pairs_blind.tsv")
-    ap.add_argument("--ref", default="v7/audit/annotation_scoring.rechecked.json")
-    ap.add_argument("--out", default="results/v11/e1_calibration_instruments.json")
+    ap.add_argument("--blind", default="experiments/E1_human_calibration/annotation/pairs_blind.tsv")
+    ap.add_argument("--ref", default="experiments/E1_human_calibration/results/annotation_scoring.json")
+    ap.add_argument("--out", default="experiments/E1_human_calibration/results/e1_calibration_instruments.json")
     ap.add_argument("--workers", type=int, default=8)
     ap.add_argument("--boot", type=int, default=2000)
     ap.add_argument("--seed", type=int, default=20260916)

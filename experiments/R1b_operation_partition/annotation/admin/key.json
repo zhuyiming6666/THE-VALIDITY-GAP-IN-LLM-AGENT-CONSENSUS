@@ -1,0 +1,2238 @@
+{
+ "seed": 20260925,
+ "K": 12,
+ "cells": {
+  "T01": {
+   "model": "gpt-4.1-nano",
+   "task_id": "gsm_11",
+   "bench": "gsm8k",
+   "answer_pmax_full": 0.7,
+   "n_pool": 30,
+   "items": [
+    {
+     "item": "T01-R01",
+     "file": "samples.jsonl",
+     "line": 330,
+     "answer_class": "('number', '44')",
+     "key_norm": "calculate articles per day and multiply total by 4 hours"
+    },
+    {
+     "item": "T01-R02",
+     "file": "samples.jsonl",
+     "line": 352,
+     "answer_class": "('number', '44')",
+     "key_norm": "calculate total articles and multiply by hours per article"
+    },
+    {
+     "item": "T01-R03",
+     "file": "samples.jsonl",
+     "line": 348,
+     "answer_class": "('number', '44')",
+     "key_norm": "sum articles over three days, multiply by 4 hours"
+    },
+    {
+     "item": "T01-R04",
+     "file": "samples.jsonl",
+     "line": 357,
+     "answer_class": "('number', '104')",
+     "key_norm": "sum articles and multiply by 4 hours per article"
+    },
+    {
+     "item": "T01-R05",
+     "file": "samples.jsonl",
+     "line": 342,
+     "answer_class": "('number', '104')",
+     "key_norm": "sum of articles over three days times hours per article"
+    },
+    {
+     "item": "T01-R06",
+     "file": "samples.jsonl",
+     "line": 340,
+     "answer_class": "('number', '44')",
+     "key_norm": "sum articles and multiply by 4 hours per article"
+    },
+    {
+     "item": "T01-R07",
+     "file": "samples.jsonl",
+     "line": 353,
+     "answer_class": "('number', '44')",
+     "key_norm": "sum articles over three days and multiply by 4 hours"
+    },
+    {
+     "item": "T01-R08",
+     "file": "samples.jsonl",
+     "line": 337,
+     "answer_class": "('number', '104')",
+     "key_norm": "sum articles for three days, multiply by 4 hours per article"
+    },
+    {
+     "item": "T01-R09",
+     "file": "samples.jsonl",
+     "line": 333,
+     "answer_class": "('number', '44')",
+     "key_norm": "total articles * hours per article"
+    },
+    {
+     "item": "T01-R10",
+     "file": "samples.jsonl",
+     "line": 343,
+     "answer_class": "('number', '44')",
+     "key_norm": "sum of articles multiplied by hours per article"
+    },
+    {
+     "item": "T01-R11",
+     "file": "samples.jsonl",
+     "line": 344,
+     "answer_class": "('number', '44')",
+     "key_norm": "sum articles and multiply by hours per article"
+    },
+    {
+     "item": "T01-R12",
+     "file": "samples.jsonl",
+     "line": 334,
+     "answer_class": "('number', '104')",
+     "key_norm": "sum of articles times hours per article"
+    }
+   ]
+  },
+  "T02": {
+   "model": "gpt-4o-mini",
+   "task_id": "gsm_13",
+   "bench": "gsm8k",
+   "answer_pmax_full": 0.9,
+   "n_pool": 30,
+   "items": [
+    {
+     "item": "T02-R01",
+     "file": "samples2.jsonl",
+     "line": 394,
+     "answer_class": "('number', '10')",
+     "key_norm": "calculate selling price and cost of new rope."
+    },
+    {
+     "item": "T02-R02",
+     "file": "samples2.jsonl",
+     "line": 420,
+     "answer_class": "('number', '10')",
+     "key_norm": "revenue minus cost of new rope"
+    },
+    {
+     "item": "T02-R03",
+     "file": "samples2.jsonl",
+     "line": 416,
+     "answer_class": "('number', '10')",
+     "key_norm": "calculate profit from rope sale."
+    },
+    {
+     "item": "T02-R04",
+     "file": "samples2.jsonl",
+     "line": 401,
+     "answer_class": "('number', '10')",
+     "key_norm": "profit minus cost of new rope"
+    },
+    {
+     "item": "T02-R05",
+     "file": "samples2.jsonl",
+     "line": 403,
+     "answer_class": "('number', '10')",
+     "key_norm": "subtract new rope cost from sale price."
+    },
+    {
+     "item": "T02-R06",
+     "file": "samples2.jsonl",
+     "line": 393,
+     "answer_class": "('number', '10')",
+     "key_norm": "profit after selling rope"
+    },
+    {
+     "item": "T02-R07",
+     "file": "samples2.jsonl",
+     "line": 409,
+     "answer_class": "('number', '10')",
+     "key_norm": "subtract cost of new rope from earnings"
+    },
+    {
+     "item": "T02-R08",
+     "file": "samples2.jsonl",
+     "line": 419,
+     "answer_class": "('number', '1')",
+     "key_norm": "profit from sale minus new rope cost"
+    },
+    {
+     "item": "T02-R09",
+     "file": "samples2.jsonl",
+     "line": 404,
+     "answer_class": "('number', '10')",
+     "key_norm": "total earnings minus total cost"
+    },
+    {
+     "item": "T02-R10",
+     "file": "samples2.jsonl",
+     "line": 418,
+     "answer_class": "('number', '10')",
+     "key_norm": "subtract new rope cost from earnings"
+    },
+    {
+     "item": "T02-R11",
+     "file": "samples2.jsonl",
+     "line": 402,
+     "answer_class": "('number', '10')",
+     "key_norm": "subtract cost of new rope from selling price"
+    },
+    {
+     "item": "T02-R12",
+     "file": "samples2.jsonl",
+     "line": 408,
+     "answer_class": "('number', '10')",
+     "key_norm": "profit after selling rope minus new cost"
+    }
+   ]
+  },
+  "T03": {
+   "model": "gpt-4.1-mini",
+   "task_id": "gsm_40",
+   "bench": "gsm8k",
+   "answer_pmax_full": 1.0,
+   "n_pool": 30,
+   "items": [
+    {
+     "item": "T03-R01",
+     "file": "samples2.jsonl",
+     "line": 4897,
+     "answer_class": "('number', '16')",
+     "key_norm": "compare total eggs to total tray capacity"
+    },
+    {
+     "item": "T03-R02",
+     "file": "samples2.jsonl",
+     "line": 4873,
+     "answer_class": "('number', '16')",
+     "key_norm": "calculate eggs over tray capacity"
+    },
+    {
+     "item": "T03-R03",
+     "file": "samples2.jsonl",
+     "line": 4898,
+     "answer_class": "('number', '16')",
+     "key_norm": "subtract total tray capacity from total eggs"
+    },
+    {
+     "item": "T03-R04",
+     "file": "samples2.jsonl",
+     "line": 4889,
+     "answer_class": "('number', '16')",
+     "key_norm": "calculate total capacity then subtract from total eggs"
+    },
+    {
+     "item": "T03-R05",
+     "file": "samples2.jsonl",
+     "line": 4884,
+     "answer_class": "('number', '16')",
+     "key_norm": "calculate eggs exceeding tray capacity"
+    },
+    {
+     "item": "T03-R06",
+     "file": "samples2.jsonl",
+     "line": 4886,
+     "answer_class": "('number', '16')",
+     "key_norm": "total capacity minus eggs gives leftover eggs"
+    },
+    {
+     "item": "T03-R07",
+     "file": "samples2.jsonl",
+     "line": 4871,
+     "answer_class": "('number', '16')",
+     "key_norm": "subtract total tray capacity from total eggs"
+    },
+    {
+     "item": "T03-R08",
+     "file": "samples2.jsonl",
+     "line": 4879,
+     "answer_class": "('number', '16')",
+     "key_norm": "calculate total tray capacity and subtract from eggs."
+    },
+    {
+     "item": "T03-R09",
+     "file": "samples2.jsonl",
+     "line": 4880,
+     "answer_class": "('number', '16')",
+     "key_norm": "subtract total tray capacity from total eggs"
+    },
+    {
+     "item": "T03-R10",
+     "file": "samples2.jsonl",
+     "line": 4876,
+     "answer_class": "('number', '16')",
+     "key_norm": "subtract total tray capacity from total eggs"
+    },
+    {
+     "item": "T03-R11",
+     "file": "samples2.jsonl",
+     "line": 4894,
+     "answer_class": "('number', '16')",
+     "key_norm": "subtract total capacity from total eggs"
+    },
+    {
+     "item": "T03-R12",
+     "file": "samples2.jsonl",
+     "line": 4900,
+     "answer_class": "('number', '16')",
+     "key_norm": "subtract total tray capacity from total eggs"
+    }
+   ]
+  },
+  "T04": {
+   "model": "gpt-4.1-nano",
+   "task_id": "gsm_12",
+   "bench": "gsm8k",
+   "answer_pmax_full": 1.0,
+   "n_pool": 30,
+   "items": [
+    {
+     "item": "T04-R01",
+     "file": "samples.jsonl",
+     "line": 367,
+     "answer_class": "('number', '27')",
+     "key_norm": "total marbles minus dallas's initial marbles"
+    },
+    {
+     "item": "T04-R02",
+     "file": "samples.jsonl",
+     "line": 360,
+     "answer_class": "('number', '27')",
+     "key_norm": "solved for darla's marbles using total minus dallas's initial amount"
+    },
+    {
+     "item": "T04-R03",
+     "file": "samples.jsonl",
+     "line": 378,
+     "answer_class": "('number', '27')",
+     "key_norm": "total marbles minus dallas's initial amount"
+    },
+    {
+     "item": "T04-R04",
+     "file": "samples.jsonl",
+     "line": 364,
+     "answer_class": "('number', '27')",
+     "key_norm": "mazie gave darla 27 marbles"
+    },
+    {
+     "item": "T04-R05",
+     "file": "samples.jsonl",
+     "line": 375,
+     "answer_class": "('number', '27')",
+     "key_norm": "total distributed marbles equal initial total minus dallas's remaining after dropping"
+    },
+    {
+     "item": "T04-R06",
+     "file": "samples.jsonl",
+     "line": 370,
+     "answer_class": "('number', '27')",
+     "key_norm": "darlac received 27 marbles"
+    },
+    {
+     "item": "T04-R07",
+     "file": "samples.jsonl",
+     "line": 371,
+     "answer_class": "('number', '27')",
+     "key_norm": "subtract dallas's marbles from total to find darla's marbles"
+    },
+    {
+     "item": "T04-R08",
+     "file": "samples.jsonl",
+     "line": 381,
+     "answer_class": "('number', '27')",
+     "key_norm": "marbles given to dallas before dropping 4"
+    },
+    {
+     "item": "T04-R09",
+     "file": "samples.jsonl",
+     "line": 372,
+     "answer_class": "('number', '27')",
+     "key_norm": "total marbles minus dallas's initial marbles"
+    },
+    {
+     "item": "T04-R10",
+     "file": "samples.jsonl",
+     "line": 369,
+     "answer_class": "('number', '27')",
+     "key_norm": "subtract dallas's marbles (before dropping) from total marbles given out"
+    },
+    {
+     "item": "T04-R11",
+     "file": "samples.jsonl",
+     "line": 373,
+     "answer_class": "('number', '27')",
+     "key_norm": "remainder after distributing marbles to dallas"
+    },
+    {
+     "item": "T04-R12",
+     "file": "samples.jsonl",
+     "line": 387,
+     "answer_class": "('number', '27')",
+     "key_norm": "sum distributed equals total minus dallas's initial."
+    }
+   ]
+  },
+  "T05": {
+   "model": "gpt-4o-mini",
+   "task_id": "gsm_29",
+   "bench": "gsm8k",
+   "answer_pmax_full": 1.0,
+   "n_pool": 30,
+   "items": [
+    {
+     "item": "T05-R01",
+     "file": "samples2.jsonl",
+     "line": 888,
+     "answer_class": "('number', '6')",
+     "key_norm": "12 groups need more students."
+    },
+    {
+     "item": "T05-R02",
+     "file": "samples2.jsonl",
+     "line": 900,
+     "answer_class": "('number', '6')",
+     "key_norm": "12 groups needed minus 6 groups formed"
+    },
+    {
+     "item": "T05-R03",
+     "file": "samples2.jsonl",
+     "line": 877,
+     "answer_class": "('number', '6')",
+     "key_norm": "required groups minus current groups"
+    },
+    {
+     "item": "T05-R04",
+     "file": "samples2.jsonl",
+     "line": 875,
+     "answer_class": "('number', '6')",
+     "key_norm": "12 required minus 6 formed equals 6 more groups."
+    },
+    {
+     "item": "T05-R05",
+     "file": "samples2.jsonl",
+     "line": 893,
+     "answer_class": "('number', '6')",
+     "key_norm": "additional groups required are 6"
+    },
+    {
+     "item": "T05-R06",
+     "file": "samples2.jsonl",
+     "line": 874,
+     "answer_class": "('number', '6')",
+     "key_norm": "6 groups needed to meet requirements"
+    },
+    {
+     "item": "T05-R07",
+     "file": "samples2.jsonl",
+     "line": 886,
+     "answer_class": "('number', '6')",
+     "key_norm": "12 required, but 6 possible"
+    },
+    {
+     "item": "T05-R08",
+     "file": "samples2.jsonl",
+     "line": 890,
+     "answer_class": "('number', '6')",
+     "key_norm": "calculate additional groups needed."
+    },
+    {
+     "item": "T05-R09",
+     "file": "samples2.jsonl",
+     "line": 883,
+     "answer_class": "('number', '6')",
+     "key_norm": "need 12 groups total, have 6 groups now."
+    },
+    {
+     "item": "T05-R10",
+     "file": "samples2.jsonl",
+     "line": 873,
+     "answer_class": "('number', '6')",
+     "key_norm": "calculate deficit of groups required."
+    },
+    {
+     "item": "T05-R11",
+     "file": "samples2.jsonl",
+     "line": 898,
+     "answer_class": "('number', '6')",
+     "key_norm": "12 required groups minus 6 existing groups"
+    },
+    {
+     "item": "T05-R12",
+     "file": "samples2.jsonl",
+     "line": 884,
+     "answer_class": "('number', '6')",
+     "key_norm": "12 required, only 6 can be formed."
+    }
+   ]
+  },
+  "T06": {
+   "model": "gpt-4.1-mini",
+   "task_id": "gsm_35",
+   "bench": "gsm8k",
+   "answer_pmax_full": 1.0,
+   "n_pool": 30,
+   "items": [
+    {
+     "item": "T06-R01",
+     "file": "samples2.jsonl",
+     "line": 4748,
+     "answer_class": "('number', '34')",
+     "key_norm": "sum red + blue + yellow sticks"
+    },
+    {
+     "item": "T06-R02",
+     "file": "samples2.jsonl",
+     "line": 4747,
+     "answer_class": "('number', '34')",
+     "key_norm": "calculate each color then sum total sticks"
+    },
+    {
+     "item": "T06-R03",
+     "file": "samples2.jsonl",
+     "line": 4741,
+     "answer_class": "('number', '34')",
+     "key_norm": "calculate total by summing red, blue, yellow sticks"
+    },
+    {
+     "item": "T06-R04",
+     "file": "samples2.jsonl",
+     "line": 4736,
+     "answer_class": "('number', '34')",
+     "key_norm": "summed red, blue, and yellow sticks calculated from given relations"
+    },
+    {
+     "item": "T06-R05",
+     "file": "samples2.jsonl",
+     "line": 4743,
+     "answer_class": "('number', '34')",
+     "key_norm": "calculate and sum all stick counts"
+    },
+    {
+     "item": "T06-R06",
+     "file": "samples2.jsonl",
+     "line": 4739,
+     "answer_class": "('number', '34')",
+     "key_norm": "calculate each color then sum all sticks"
+    },
+    {
+     "item": "T06-R07",
+     "file": "samples2.jsonl",
+     "line": 4723,
+     "answer_class": "('number', '34')",
+     "key_norm": "calculate blue sticks from red sticks first"
+    },
+    {
+     "item": "T06-R08",
+     "file": "samples2.jsonl",
+     "line": 4749,
+     "answer_class": "('number', '34')",
+     "key_norm": "calculate each color then sum all sticks"
+    },
+    {
+     "item": "T06-R09",
+     "file": "samples2.jsonl",
+     "line": 4744,
+     "answer_class": "('number', '34')",
+     "key_norm": "calculate each color and sum total sticks"
+    },
+    {
+     "item": "T06-R10",
+     "file": "samples2.jsonl",
+     "line": 4731,
+     "answer_class": "('number', '34')",
+     "key_norm": "add red, blue, and yellow sticks totals"
+    },
+    {
+     "item": "T06-R11",
+     "file": "samples2.jsonl",
+     "line": 4725,
+     "answer_class": "('number', '34')",
+     "key_norm": "calculate sticks color-by-color and sum"
+    },
+    {
+     "item": "T06-R12",
+     "file": "samples2.jsonl",
+     "line": 4733,
+     "answer_class": "('number', '34')",
+     "key_norm": "calculate each color based on given relationships"
+    }
+   ]
+  },
+  "T07": {
+   "model": "gpt-4.1-nano",
+   "task_id": "gsm_47",
+   "bench": "gsm8k",
+   "answer_pmax_full": 1.0,
+   "n_pool": 30,
+   "items": [
+    {
+     "item": "T07-R01",
+     "file": "samples.jsonl",
+     "line": 1429,
+     "answer_class": "('number', '4')",
+     "key_norm": "total candy divided equally among three people"
+    },
+    {
+     "item": "T07-R02",
+     "file": "samples.jsonl",
+     "line": 1422,
+     "answer_class": "('number', '4')",
+     "key_norm": "total candy divided by three people"
+    },
+    {
+     "item": "T07-R03",
+     "file": "samples.jsonl",
+     "line": 1410,
+     "answer_class": "('number', '4')",
+     "key_norm": "total candy divided by 3 people"
+    },
+    {
+     "item": "T07-R04",
+     "file": "samples.jsonl",
+     "line": 1433,
+     "answer_class": "('number', '4')",
+     "key_norm": "total candy divided by number of people"
+    },
+    {
+     "item": "T07-R05",
+     "file": "samples.jsonl",
+     "line": 1417,
+     "answer_class": "('number', '4')",
+     "key_norm": "total divided equally among three friends"
+    },
+    {
+     "item": "T07-R06",
+     "file": "samples.jsonl",
+     "line": 1419,
+     "answer_class": "('number', '4')",
+     "key_norm": "total candy divided equally among three persons"
+    },
+    {
+     "item": "T07-R07",
+     "file": "samples.jsonl",
+     "line": 1423,
+     "answer_class": "('number', '4')",
+     "key_norm": "total candy divided by number of people"
+    },
+    {
+     "item": "T07-R08",
+     "file": "samples.jsonl",
+     "line": 1420,
+     "answer_class": "('number', '4')",
+     "key_norm": "total candy divided by three people"
+    },
+    {
+     "item": "T07-R09",
+     "file": "samples.jsonl",
+     "line": 1408,
+     "answer_class": "('number', '4')",
+     "key_norm": "total candy divided by number of people"
+    },
+    {
+     "item": "T07-R10",
+     "file": "samples.jsonl",
+     "line": 1435,
+     "answer_class": "('number', '4')",
+     "key_norm": "total candy divided equally among three people"
+    },
+    {
+     "item": "T07-R11",
+     "file": "samples.jsonl",
+     "line": 1416,
+     "answer_class": "('number', '4')",
+     "key_norm": "total candy divided equally among three people"
+    },
+    {
+     "item": "T07-R12",
+     "file": "samples.jsonl",
+     "line": 1414,
+     "answer_class": "('number', '4')",
+     "key_norm": "total divided equally among three people"
+    }
+   ]
+  },
+  "T08": {
+   "model": "gpt-4o-mini",
+   "task_id": "gsm_41",
+   "bench": "gsm8k",
+   "answer_pmax_full": 1.0,
+   "n_pool": 30,
+   "items": [
+    {
+     "item": "T08-R01",
+     "file": "samples2.jsonl",
+     "line": 1232,
+     "answer_class": "('number', '5')",
+     "key_norm": "calculate time using speed formula"
+    },
+    {
+     "item": "T08-R02",
+     "file": "samples2.jsonl",
+     "line": 1239,
+     "answer_class": "('number', '5')",
+     "key_norm": "time = distance / speed"
+    },
+    {
+     "item": "T08-R03",
+     "file": "samples2.jsonl",
+     "line": 1241,
+     "answer_class": "('number', '5')",
+     "key_norm": "calculate speed first, then time."
+    },
+    {
+     "item": "T08-R04",
+     "file": "samples2.jsonl",
+     "line": 1257,
+     "answer_class": "('number', '5')",
+     "key_norm": "calculate time using speed formula."
+    },
+    {
+     "item": "T08-R05",
+     "file": "samples2.jsonl",
+     "line": 1252,
+     "answer_class": "('number', '5')",
+     "key_norm": "2000 miles at 400 mph takes 5 hours"
+    },
+    {
+     "item": "T08-R06",
+     "file": "samples2.jsonl",
+     "line": 1260,
+     "answer_class": "('number', '5')",
+     "key_norm": "time = distance / speed"
+    },
+    {
+     "item": "T08-R07",
+     "file": "samples2.jsonl",
+     "line": 1258,
+     "answer_class": "('number', '5')",
+     "key_norm": "speed is 400 mph, then time calculation."
+    },
+    {
+     "item": "T08-R08",
+     "file": "samples2.jsonl",
+     "line": 1248,
+     "answer_class": "('number', '5')",
+     "key_norm": "using speed = distance/time formula"
+    },
+    {
+     "item": "T08-R09",
+     "file": "samples2.jsonl",
+     "line": 1236,
+     "answer_class": "('number', '5')",
+     "key_norm": "calculate time using speed and distance."
+    },
+    {
+     "item": "T08-R10",
+     "file": "samples2.jsonl",
+     "line": 1235,
+     "answer_class": "('number', '5')",
+     "key_norm": "calculate time using speed formula"
+    },
+    {
+     "item": "T08-R11",
+     "file": "samples2.jsonl",
+     "line": 1246,
+     "answer_class": "('number', '5')",
+     "key_norm": "calculate time using speed formula"
+    },
+    {
+     "item": "T08-R12",
+     "file": "samples2.jsonl",
+     "line": 1254,
+     "answer_class": "('number', '5')",
+     "key_norm": "calculate time using speed and distance"
+    }
+   ]
+  },
+  "T09": {
+   "model": "gpt-4.1-mini",
+   "task_id": "mmlu_61",
+   "bench": "mmlu",
+   "answer_pmax_full": 0.8666666666666667,
+   "n_pool": 30,
+   "items": [
+    {
+     "item": "T09-R01",
+     "file": "samples2.jsonl",
+     "line": 5511,
+     "answer_class": "('option', 'C')",
+     "key_norm": "blood loss >20% causes vital sign changes"
+    },
+    {
+     "item": "T09-R02",
+     "file": "samples2.jsonl",
+     "line": 5513,
+     "answer_class": "('option', 'C')",
+     "key_norm": "significant vital sign changes start at ~20% blood loss"
+    },
+    {
+     "item": "T09-R03",
+     "file": "samples2.jsonl",
+     "line": 5518,
+     "answer_class": "('option', 'C')",
+     "key_norm": "20% blood loss triggers changes in heart rate and blood pressure"
+    },
+    {
+     "item": "T09-R04",
+     "file": "samples2.jsonl",
+     "line": 5499,
+     "answer_class": "('option', 'C')",
+     "key_norm": "changes occur after approximately 20% blood loss"
+    },
+    {
+     "item": "T09-R05",
+     "file": "samples2.jsonl",
+     "line": 5520,
+     "answer_class": "('option', 'C')",
+     "key_norm": "compensation masks signs until ~20% blood loss."
+    },
+    {
+     "item": "T09-R06",
+     "file": "samples2.jsonl",
+     "line": 5506,
+     "answer_class": "('option', 'C')",
+     "key_norm": "changes evident after about 20% blood loss"
+    },
+    {
+     "item": "T09-R07",
+     "file": "samples2.jsonl",
+     "line": 5498,
+     "answer_class": "('option', 'C')",
+     "key_norm": "changes occur after approximately 20% blood loss"
+    },
+    {
+     "item": "T09-R08",
+     "file": "samples2.jsonl",
+     "line": 5515,
+     "answer_class": "('option', 'C')",
+     "key_norm": "changes appear after ~20% blood volume loss"
+    },
+    {
+     "item": "T09-R09",
+     "file": "samples2.jsonl",
+     "line": 5509,
+     "answer_class": "('option', 'C')",
+     "key_norm": "blood loss ~20% before vital sign changes appear"
+    },
+    {
+     "item": "T09-R10",
+     "file": "samples2.jsonl",
+     "line": 5523,
+     "answer_class": "('option', 'C')",
+     "key_norm": "changes appear after approx. 20% blood volume loss"
+    },
+    {
+     "item": "T09-R11",
+     "file": "samples2.jsonl",
+     "line": 5502,
+     "answer_class": "('option', 'B')",
+     "key_norm": "changes appear only after ~10% blood loss or more"
+    },
+    {
+     "item": "T09-R12",
+     "file": "samples2.jsonl",
+     "line": 5512,
+     "answer_class": "('option', 'C')",
+     "key_norm": "20% blood loss causes vital sign changes"
+    }
+   ]
+  },
+  "T10": {
+   "model": "gpt-4.1-nano",
+   "task_id": "mmlu_82",
+   "bench": "mmlu",
+   "answer_pmax_full": 0.34615384615384615,
+   "n_pool": 26,
+   "items": [
+    {
+     "item": "T10-R01",
+     "file": "samples.jsonl",
+     "line": 2454,
+     "answer_class": "('option', 'D')",
+     "key_norm": "both actions are socially acceptable and not morally wrong"
+    },
+    {
+     "item": "T10-R02",
+     "file": "samples.jsonl",
+     "line": 2440,
+     "answer_class": "('option', 'C')",
+     "key_norm": "sprinkler use during game deemed morally wrong"
+    },
+    {
+     "item": "T10-R03",
+     "file": "samples.jsonl",
+     "line": 2438,
+     "answer_class": "('option', 'B')",
+     "key_norm": "turning on sprinklers during game is morally wrong"
+    },
+    {
+     "item": "T10-R04",
+     "file": "samples.jsonl",
+     "line": 2442,
+     "answer_class": "('option', 'C')",
+     "key_norm": "turning on sprinklers during a game is morally wrong"
+    },
+    {
+     "item": "T10-R05",
+     "file": "samples.jsonl",
+     "line": 2451,
+     "answer_class": "('option', 'A')",
+     "key_norm": "the moral evaluation of \"turning on sprinklers\" versus \"throwing dirt\""
+    },
+    {
+     "item": "T10-R06",
+     "file": "samples.jsonl",
+     "line": 2435,
+     "answer_class": "('option', 'C')",
+     "key_norm": "turning on sprinklers during a game is morally questionable"
+    },
+    {
+     "item": "T10-R07",
+     "file": "samples.jsonl",
+     "line": 2439,
+     "answer_class": "('option', 'B')",
+     "key_norm": "turning on sprinklers during a game is morally wrong."
+    },
+    {
+     "item": "T10-R08",
+     "file": "samples.jsonl",
+     "line": 2448,
+     "answer_class": "('option', 'C')",
+     "key_norm": "sprinkler tampering is a clear moral wrong; dirt into wheelbarrow is not"
+    },
+    {
+     "item": "T10-R09",
+     "file": "samples.jsonl",
+     "line": 2452,
+     "answer_class": "('option', 'B')",
+     "key_norm": "second scenario is harmless or neutral"
+    },
+    {
+     "item": "T10-R10",
+     "file": "samples.jsonl",
+     "line": 2437,
+     "answer_class": "('option', 'C')",
+     "key_norm": "sprinkling water during the game is clearly disruptive"
+    },
+    {
+     "item": "T10-R11",
+     "file": "samples.jsonl",
+     "line": 2443,
+     "answer_class": "('option', 'A')",
+     "key_norm": "sprinkling during a game is likely morally wrong."
+    },
+    {
+     "item": "T10-R12",
+     "file": "samples.jsonl",
+     "line": 2453,
+     "answer_class": "('option', 'B')",
+     "key_norm": "first scenario involves property/property disruption morals"
+    }
+   ]
+  },
+  "T11": {
+   "model": "gpt-4o-mini",
+   "task_id": "mmlu_76",
+   "bench": "mmlu",
+   "answer_pmax_full": 0.9333333333333333,
+   "n_pool": 30,
+   "items": [
+    {
+     "item": "T11-R01",
+     "file": "samples2.jsonl",
+     "line": 1927,
+     "answer_class": "('option', 'B')",
+     "key_norm": "both statements are false."
+    },
+    {
+     "item": "T11-R02",
+     "file": "samples2.jsonl",
+     "line": 1939,
+     "answer_class": "('option', 'C')",
+     "key_norm": "statement 1 true, statement 2 false"
+    },
+    {
+     "item": "T11-R03",
+     "file": "samples2.jsonl",
+     "line": 1918,
+     "answer_class": "('option', 'C')",
+     "key_norm": "verify truth of homomorphism statements"
+    },
+    {
+     "item": "T11-R04",
+     "file": "samples2.jsonl",
+     "line": 1935,
+     "answer_class": "('option', 'C')",
+     "key_norm": "analyze kernel and map existence"
+    },
+    {
+     "item": "T11-R05",
+     "file": "samples2.jsonl",
+     "line": 1922,
+     "answer_class": "('option', 'C')",
+     "key_norm": "homomorphisms can map groups in various ways."
+    },
+    {
+     "item": "T11-R06",
+     "file": "samples2.jsonl",
+     "line": 1928,
+     "answer_class": "('option', 'C')",
+     "key_norm": "first statement true, second false"
+    },
+    {
+     "item": "T11-R07",
+     "file": "samples2.jsonl",
+     "line": 1930,
+     "answer_class": "('option', 'C')",
+     "key_norm": "statement 1 true, statement 2 false"
+    },
+    {
+     "item": "T11-R08",
+     "file": "samples2.jsonl",
+     "line": 1926,
+     "answer_class": "('option', 'C')",
+     "key_norm": "true, false analysis"
+    },
+    {
+     "item": "T11-R09",
+     "file": "samples2.jsonl",
+     "line": 1944,
+     "answer_class": "('option', 'C')",
+     "key_norm": "analyzing statements about homomorphisms."
+    },
+    {
+     "item": "T11-R10",
+     "file": "samples2.jsonl",
+     "line": 1936,
+     "answer_class": "('option', 'C')",
+     "key_norm": "first statement is true, second is false."
+    },
+    {
+     "item": "T11-R11",
+     "file": "samples2.jsonl",
+     "line": 1924,
+     "answer_class": "('option', 'C')",
+     "key_norm": "first statement is true, second is false."
+    },
+    {
+     "item": "T11-R12",
+     "file": "samples2.jsonl",
+     "line": 1919,
+     "answer_class": "('option', 'C')",
+     "key_norm": "analyze each statement's validity."
+    }
+   ]
+  },
+  "T12": {
+   "model": "gpt-4.1-mini",
+   "task_id": "mmlu_74",
+   "bench": "mmlu",
+   "answer_pmax_full": 1.0,
+   "n_pool": 30,
+   "items": [
+    {
+     "item": "T12-R01",
+     "file": "samples2.jsonl",
+     "line": 5844,
+     "answer_class": "('option', 'C')",
+     "key_norm": "image size divides domain size under homomorphism"
+    },
+    {
+     "item": "T12-R02",
+     "file": "samples2.jsonl",
+     "line": 5839,
+     "answer_class": "('option', 'C')",
+     "key_norm": "image order divides group order"
+    },
+    {
+     "item": "T12-R03",
+     "file": "samples2.jsonl",
+     "line": 5835,
+     "answer_class": "('option', 'C')",
+     "key_norm": "image order divides domain order (lagrange's theorem)"
+    },
+    {
+     "item": "T12-R04",
+     "file": "samples2.jsonl",
+     "line": 5862,
+     "answer_class": "('option', 'C')",
+     "key_norm": "image order divides domain order under homomorphism"
+    },
+    {
+     "item": "T12-R05",
+     "file": "samples2.jsonl",
+     "line": 5860,
+     "answer_class": "('option', 'C')",
+     "key_norm": "image size divides domain order via kernel size"
+    },
+    {
+     "item": "T12-R06",
+     "file": "samples2.jsonl",
+     "line": 5838,
+     "answer_class": "('option', 'C')",
+     "key_norm": "image order divides domain order (lagrange's theorem)"
+    },
+    {
+     "item": "T12-R07",
+     "file": "samples2.jsonl",
+     "line": 5847,
+     "answer_class": "('option', 'C')",
+     "key_norm": "image size divides group order (6 not divisible by 4)"
+    },
+    {
+     "item": "T12-R08",
+     "file": "samples2.jsonl",
+     "line": 5857,
+     "answer_class": "('option', 'C')",
+     "key_norm": "image order divides group order"
+    },
+    {
+     "item": "T12-R09",
+     "file": "samples2.jsonl",
+     "line": 5843,
+     "answer_class": "('option', 'C')",
+     "key_norm": "image size divides group order under homomorphism"
+    },
+    {
+     "item": "T12-R10",
+     "file": "samples2.jsonl",
+     "line": 5853,
+     "answer_class": "('option', 'C')",
+     "key_norm": "image order divides group order"
+    },
+    {
+     "item": "T12-R11",
+     "file": "samples2.jsonl",
+     "line": 5845,
+     "answer_class": "('option', 'C')",
+     "key_norm": "kernel is trivial iff homomorphism is injective"
+    },
+    {
+     "item": "T12-R12",
+     "file": "samples2.jsonl",
+     "line": 5837,
+     "answer_class": "('option', 'C')",
+     "key_norm": "image size divides group order by lagrange's theorem"
+    }
+   ]
+  },
+  "T13": {
+   "model": "gpt-4.1-nano",
+   "task_id": "mmlu_62",
+   "bench": "mmlu",
+   "answer_pmax_full": 1.0,
+   "n_pool": 29,
+   "items": [
+    {
+     "item": "T13-R01",
+     "file": "samples.jsonl",
+     "line": 1855,
+     "answer_class": "('option', 'C')",
+     "key_norm": "effluent leakage causes skin irritation and excoriation"
+    },
+    {
+     "item": "T13-R02",
+     "file": "samples.jsonl",
+     "line": 1851,
+     "answer_class": "('option', 'C')",
+     "key_norm": "leakage of effluent onto peristomal skin"
+    },
+    {
+     "item": "T13-R03",
+     "file": "samples.jsonl",
+     "line": 1864,
+     "answer_class": "('option', 'C')",
+     "key_norm": "leakage of effluent onto peristomal skin"
+    },
+    {
+     "item": "T13-R04",
+     "file": "samples.jsonl",
+     "line": 1863,
+     "answer_class": "('option', 'C')",
+     "key_norm": "leakage of effluent causes skin excoriation."
+    },
+    {
+     "item": "T13-R05",
+     "file": "samples.jsonl",
+     "line": 1867,
+     "answer_class": "('option', 'C')",
+     "key_norm": "leakage of effluent onto peristomal skin"
+    },
+    {
+     "item": "T13-R06",
+     "file": "samples.jsonl",
+     "line": 1861,
+     "answer_class": "('option', 'C')",
+     "key_norm": "leakage of effluent causes skin damage."
+    },
+    {
+     "item": "T13-R07",
+     "file": "samples.jsonl",
+     "line": 1868,
+     "answer_class": "('option', 'C')",
+     "key_norm": "leakage of effluent onto peristomal skin"
+    },
+    {
+     "item": "T13-R08",
+     "file": "samples.jsonl",
+     "line": 1877,
+     "answer_class": "('option', 'C')",
+     "key_norm": "leakage of effluent causes skin irritation and excoriation."
+    },
+    {
+     "item": "T13-R09",
+     "file": "samples.jsonl",
+     "line": 1870,
+     "answer_class": "('option', 'C')",
+     "key_norm": "leakage causes skin excoriation around stoma"
+    },
+    {
+     "item": "T13-R10",
+     "file": "samples.jsonl",
+     "line": 1876,
+     "answer_class": "('option', 'C')",
+     "key_norm": "leakage of effluent onto peristomal skin"
+    },
+    {
+     "item": "T13-R11",
+     "file": "samples.jsonl",
+     "line": 1852,
+     "answer_class": "('option', 'C')",
+     "key_norm": "leakage of effluent onto skin causes excoriation"
+    },
+    {
+     "item": "T13-R12",
+     "file": "samples.jsonl",
+     "line": 1858,
+     "answer_class": "('option', 'C')",
+     "key_norm": "leakage of effluent onto peristomal skin"
+    }
+   ]
+  },
+  "T14": {
+   "model": "gpt-4o-mini",
+   "task_id": "mmlu_60",
+   "bench": "mmlu",
+   "answer_pmax_full": 1.0,
+   "n_pool": 30,
+   "items": [
+    {
+     "item": "T14-R01",
+     "file": "samples2.jsonl",
+     "line": 1656,
+     "answer_class": "('option', 'B')",
+     "key_norm": "recognize, call for help first"
+    },
+    {
+     "item": "T14-R02",
+     "file": "samples2.jsonl",
+     "line": 1665,
+     "answer_class": "('option', 'B')",
+     "key_norm": "recognize, call, cpr, defibrillation, care"
+    },
+    {
+     "item": "T14-R03",
+     "file": "samples2.jsonl",
+     "line": 1675,
+     "answer_class": "('option', 'B')",
+     "key_norm": "order of the chain of survival links."
+    },
+    {
+     "item": "T14-R04",
+     "file": "samples2.jsonl",
+     "line": 1653,
+     "answer_class": "('option', 'B')",
+     "key_norm": "sequence of emergency response steps."
+    },
+    {
+     "item": "T14-R05",
+     "file": "samples2.jsonl",
+     "line": 1674,
+     "answer_class": "('option', 'B')",
+     "key_norm": "recognizing and calling for help first"
+    },
+    {
+     "item": "T14-R06",
+     "file": "samples2.jsonl",
+     "line": 1651,
+     "answer_class": "('option', 'B')",
+     "key_norm": "correct order of survival steps."
+    },
+    {
+     "item": "T14-R07",
+     "file": "samples2.jsonl",
+     "line": 1660,
+     "answer_class": "('option', 'B')",
+     "key_norm": "recognizing, then cpr, then defibrillation, then care."
+    },
+    {
+     "item": "T14-R08",
+     "file": "samples2.jsonl",
+     "line": 1668,
+     "answer_class": "('option', 'B')",
+     "key_norm": "recognize, call for help, then cpr."
+    },
+    {
+     "item": "T14-R09",
+     "file": "samples2.jsonl",
+     "line": 1673,
+     "answer_class": "('option', 'B')",
+     "key_norm": "correct sequence of survival steps."
+    },
+    {
+     "item": "T14-R10",
+     "file": "samples2.jsonl",
+     "line": 1677,
+     "answer_class": "('option', 'B')",
+     "key_norm": "recognize, then cpr, then defibrillation."
+    },
+    {
+     "item": "T14-R11",
+     "file": "samples2.jsonl",
+     "line": 1654,
+     "answer_class": "('option', 'B')",
+     "key_norm": "order of survival steps in emergencies."
+    },
+    {
+     "item": "T14-R12",
+     "file": "samples2.jsonl",
+     "line": 1676,
+     "answer_class": "('option', 'B')",
+     "key_norm": "sequence based on chain of survival"
+    }
+   ]
+  },
+  "T15": {
+   "model": "gpt-4.1-mini",
+   "task_id": "mmlu_53",
+   "bench": "mmlu",
+   "answer_pmax_full": 1.0,
+   "n_pool": 30,
+   "items": [
+    {
+     "item": "T15-R01",
+     "file": "samples2.jsonl",
+     "line": 5286,
+     "answer_class": "('option', 'C')",
+     "key_norm": "minimal polynomial of sqrt(6) has degree 2"
+    },
+    {
+     "item": "T15-R02",
+     "file": "samples2.jsonl",
+     "line": 5271,
+     "answer_class": "('option', 'C')",
+     "key_norm": "minimal polynomial of \\(\\sqrt{6}\\) has degree 2"
+    },
+    {
+     "item": "T15-R03",
+     "file": "samples2.jsonl",
+     "line": 5261,
+     "answer_class": "('option', 'C')",
+     "key_norm": "\\(\\sqrt{2}\\sqrt{3} = \\sqrt{6}\\), minimal polynomial degree 2"
+    },
+    {
+     "item": "T15-R04",
+     "file": "samples2.jsonl",
+     "line": 5283,
+     "answer_class": "('option', 'C')",
+     "key_norm": "degree of q(sqrt(6)) over q is 2."
+    },
+    {
+     "item": "T15-R05",
+     "file": "samples2.jsonl",
+     "line": 5273,
+     "answer_class": "('option', 'C')",
+     "key_norm": "\\(\\sqrt{2}\\sqrt{3} = \\sqrt{6}\\) gives quadratic extension"
+    },
+    {
+     "item": "T15-R06",
+     "file": "samples2.jsonl",
+     "line": 5287,
+     "answer_class": "('option', 'C')",
+     "key_norm": "minimal polynomial of \\(\\sqrt{6}\\) has degree 2"
+    },
+    {
+     "item": "T15-R07",
+     "file": "samples2.jsonl",
+     "line": 5263,
+     "answer_class": "('option', 'C')",
+     "key_norm": "degree determined by minimal polynomial of \\(\\sqrt{6}\\)"
+    },
+    {
+     "item": "T15-R08",
+     "file": "samples2.jsonl",
+     "line": 5276,
+     "answer_class": "('option', 'C')",
+     "key_norm": "simplify to q(sqrt(6)), degree 2 extension"
+    },
+    {
+     "item": "T15-R09",
+     "file": "samples2.jsonl",
+     "line": 5281,
+     "answer_class": "('option', 'C')",
+     "key_norm": "minimal polynomial of \\(\\sqrt{6}\\) is quadratic over \\(\\mathbb{q}\\)"
+    },
+    {
+     "item": "T15-R10",
+     "file": "samples2.jsonl",
+     "line": 5265,
+     "answer_class": "('option', 'C')",
+     "key_norm": "minimal polynomial of \\(\\sqrt{6}\\) has degree 2"
+    },
+    {
+     "item": "T15-R11",
+     "file": "samples2.jsonl",
+     "line": 5279,
+     "answer_class": "('option', 'C')",
+     "key_norm": "minimal polynomial of \\(\\sqrt{6}\\) is quadratic"
+    },
+    {
+     "item": "T15-R12",
+     "file": "samples2.jsonl",
+     "line": 5288,
+     "answer_class": "('option', 'C')",
+     "key_norm": "simplify \\(\\sqrt{2} \\cdot \\sqrt{3} = \\sqrt{6}\\)"
+    }
+   ]
+  },
+  "T16": {
+   "model": "gpt-4.1-nano",
+   "task_id": "mmlu_55",
+   "bench": "mmlu",
+   "answer_pmax_full": 1.0,
+   "n_pool": 30,
+   "items": [
+    {
+     "item": "T16-R01",
+     "file": "samples.jsonl",
+     "line": 1644,
+     "answer_class": "('option', 'D')",
+     "key_norm": "use raoult’s law with given mole fractions"
+    },
+    {
+     "item": "T16-R02",
+     "file": "samples.jsonl",
+     "line": 1648,
+     "answer_class": "('option', 'D')",
+     "key_norm": "apply raoult's law with given mole fractions"
+    },
+    {
+     "item": "T16-R03",
+     "file": "samples.jsonl",
+     "line": 1657,
+     "answer_class": "('option', 'D')",
+     "key_norm": "use raoult's law with given mole fractions"
+    },
+    {
+     "item": "T16-R04",
+     "file": "samples.jsonl",
+     "line": 1646,
+     "answer_class": "('option', 'D')",
+     "key_norm": "use raoult's law and calculate weighted sum"
+    },
+    {
+     "item": "T16-R05",
+     "file": "samples.jsonl",
+     "line": 1670,
+     "answer_class": "('option', 'D')",
+     "key_norm": "use raoult's law with mole fractions and vapor pressures"
+    },
+    {
+     "item": "T16-R06",
+     "file": "samples.jsonl",
+     "line": 1659,
+     "answer_class": "('option', 'D')",
+     "key_norm": "mixture vapor pressure = x_a*p_a + x_b*p_b"
+    },
+    {
+     "item": "T16-R07",
+     "file": "samples.jsonl",
+     "line": 1655,
+     "answer_class": "('option', 'D')",
+     "key_norm": "calculate using raoult's law and mole fractions"
+    },
+    {
+     "item": "T16-R08",
+     "file": "samples.jsonl",
+     "line": 1643,
+     "answer_class": "('option', 'D')",
+     "key_norm": "use raoult's law with mole fractions and vapor pressures"
+    },
+    {
+     "item": "T16-R09",
+     "file": "samples.jsonl",
+     "line": 1672,
+     "answer_class": "('option', 'D')",
+     "key_norm": "calculation of weighted vapor pressures using raoult's law"
+    },
+    {
+     "item": "T16-R10",
+     "file": "samples.jsonl",
+     "line": 1651,
+     "answer_class": "('option', 'D')",
+     "key_norm": "use raoult's law with mole fractions and vapor pressures"
+    },
+    {
+     "item": "T16-R11",
+     "file": "samples.jsonl",
+     "line": 1664,
+     "answer_class": "('option', 'D')",
+     "key_norm": "use raoult's law with given mole fractions"
+    },
+    {
+     "item": "T16-R12",
+     "file": "samples.jsonl",
+     "line": 1669,
+     "answer_class": "('option', 'D')",
+     "key_norm": "use raoult's law with mole fractions and vapor pressures"
+    }
+   ]
+  },
+  "T17": {
+   "model": "gpt-4o-mini",
+   "task_id": "mbpp_107",
+   "bench": "mbpp",
+   "answer_pmax_full": 0.8666666666666667,
+   "n_pool": 30,
+   "items": [
+    {
+     "item": "T17-R01",
+     "file": "samples2.jsonl",
+     "line": 2496,
+     "answer_class": "('tuple', (('number', '0'), ('number', '7'), ('text', 'clearly')))",
+     "key_norm": "regex matches \"ly\" ending words"
+    },
+    {
+     "item": "T17-R02",
+     "file": "samples2.jsonl",
+     "line": 2493,
+     "answer_class": "('tuple', (('number', '0'), ('number', '7'), ('text', 'clearly')))",
+     "key_norm": "found \"clearly\"; it's an adverb"
+    },
+    {
+     "item": "T17-R03",
+     "file": "samples2.jsonl",
+     "line": 2477,
+     "answer_class": "('tuple', (('number', '0'), ('number', '7'), ('text', 'clearly')))",
+     "key_norm": "identifying adverb \"clearly\" in sentence"
+    },
+    {
+     "item": "T17-R04",
+     "file": "samples2.jsonl",
+     "line": 2503,
+     "answer_class": "('tuple', (('number', '0'), ('number', '8'), ('text', 'clearly')))",
+     "key_norm": "regular expression to identify adverb position"
+    },
+    {
+     "item": "T17-R05",
+     "file": "samples2.jsonl",
+     "line": 2497,
+     "answer_class": "('tuple', (('number', '0'), ('number', '7'), ('text', 'clearly')))",
+     "key_norm": "match \"clearly\" in the sentence"
+    },
+    {
+     "item": "T17-R06",
+     "file": "samples2.jsonl",
+     "line": 2478,
+     "answer_class": "('tuple', (('number', '0'), ('number', '7'), ('text', 'clearly')))",
+     "key_norm": "match \"clearly\" in the input string"
+    },
+    {
+     "item": "T17-R07",
+     "file": "samples2.jsonl",
+     "line": 2489,
+     "answer_class": "('tuple', (('number', '0'), ('number', '7'), ('text', 'clearly')))",
+     "key_norm": "find starting and ending positions in text"
+    },
+    {
+     "item": "T17-R08",
+     "file": "samples2.jsonl",
+     "line": 2504,
+     "answer_class": "('tuple', (('number', '0'), ('number', '7'), ('text', 'clearly')))",
+     "key_norm": "find first adverb in string"
+    },
+    {
+     "item": "T17-R09",
+     "file": "samples2.jsonl",
+     "line": 2480,
+     "answer_class": "('tuple', (('number', '0'), ('number', '7'), ('text', 'clearly')))",
+     "key_norm": "first match of \"ly\" in text"
+    },
+    {
+     "item": "T17-R10",
+     "file": "samples2.jsonl",
+     "line": 2499,
+     "answer_class": "('tuple', (('number', '0'), ('number', '7'), ('text', 'clearly')))",
+     "key_norm": "regex match for words ending with 'ly'"
+    },
+    {
+     "item": "T17-R11",
+     "file": "samples2.jsonl",
+     "line": 2490,
+     "answer_class": "('tuple', (('number', '0'), ('number', '7'), ('text', 'clearly')))",
+     "key_norm": "returned positions of the matched adverb."
+    },
+    {
+     "item": "T17-R12",
+     "file": "samples2.jsonl",
+     "line": 2498,
+     "answer_class": "('tuple', (('number', '0'), ('number', '7'), ('text', 'clearly')))",
+     "key_norm": "word match and position calculation"
+    }
+   ]
+  },
+  "T18": {
+   "model": "gpt-4.1-mini",
+   "task_id": "mbpp_100",
+   "bench": "mbpp",
+   "answer_pmax_full": 1.0,
+   "n_pool": 30,
+   "items": [
+    {
+     "item": "T18-R01",
+     "file": "samples2.jsonl",
+     "line": 6567,
+     "answer_class": "('text', 'Not matched!')",
+     "key_norm": "string \"msb\" does not contain 'a'"
+    },
+    {
+     "item": "T18-R02",
+     "file": "samples2.jsonl",
+     "line": 6585,
+     "answer_class": "('text', 'Not matched!')",
+     "key_norm": "no 'a' found in \"msb\", so regex doesn't match"
+    },
+    {
+     "item": "T18-R03",
+     "file": "samples2.jsonl",
+     "line": 6565,
+     "answer_class": "('text', 'Not matched!')",
+     "key_norm": "no 'a' in string to match pattern"
+    },
+    {
+     "item": "T18-R04",
+     "file": "samples2.jsonl",
+     "line": 6563,
+     "answer_class": "('text', 'Not matched!')",
+     "key_norm": "no 'a' in input string means no match"
+    },
+    {
+     "item": "T18-R05",
+     "file": "samples2.jsonl",
+     "line": 6564,
+     "answer_class": "('text', 'Not matched!')",
+     "key_norm": "no 'a' in \"msb\", so pattern doesn't match"
+    },
+    {
+     "item": "T18-R06",
+     "file": "samples2.jsonl",
+     "line": 6559,
+     "answer_class": "('text', 'Not matched!')",
+     "key_norm": "check if 'a' present before 'b*?' in string"
+    },
+    {
+     "item": "T18-R07",
+     "file": "samples2.jsonl",
+     "line": 6582,
+     "answer_class": "('text', 'Not matched!')",
+     "key_norm": "pattern requires 'a' which is absent in \"msb\""
+    },
+    {
+     "item": "T18-R08",
+     "file": "samples2.jsonl",
+     "line": 6558,
+     "answer_class": "('text', 'Not matched!')",
+     "key_norm": "no 'a' present in 'msb' to match pattern"
+    },
+    {
+     "item": "T18-R09",
+     "file": "samples2.jsonl",
+     "line": 6577,
+     "answer_class": "('text', 'Not matched!')",
+     "key_norm": "no 'a' in input string \"msb\" so no match."
+    },
+    {
+     "item": "T18-R10",
+     "file": "samples2.jsonl",
+     "line": 6561,
+     "answer_class": "('text', 'Not matched!')",
+     "key_norm": "no 'a' in input, so regex finds no match"
+    },
+    {
+     "item": "T18-R11",
+     "file": "samples2.jsonl",
+     "line": 6574,
+     "answer_class": "('text', 'Not matched!')",
+     "key_norm": "no 'a' in \"msb\", so no match found"
+    },
+    {
+     "item": "T18-R12",
+     "file": "samples2.jsonl",
+     "line": 6570,
+     "answer_class": "('text', 'Not matched!')",
+     "key_norm": "no 'a' in \"msb\" string for pattern \"ab*?\""
+    }
+   ]
+  },
+  "T19": {
+   "model": "gpt-4.1-nano",
+   "task_id": "mbpp_147",
+   "bench": "mbpp",
+   "answer_pmax_full": 1.0,
+   "n_pool": 30,
+   "items": [
+    {
+     "item": "T19-R01",
+     "file": "samples.jsonl",
+     "line": 4302,
+     "answer_class": "('number', '1')",
+     "key_norm": "calculated the digit sum of the absolute difference."
+    },
+    {
+     "item": "T19-R02",
+     "file": "samples.jsonl",
+     "line": 4283,
+     "answer_class": "('number', '1')",
+     "key_norm": "sum of digits of absolute difference = 1"
+    },
+    {
+     "item": "T19-R03",
+     "file": "samples.jsonl",
+     "line": 4298,
+     "answer_class": "('number', '1')",
+     "key_norm": "difference between the two numbers (abs(n1 - n2)) in digits"
+    },
+    {
+     "item": "T19-R04",
+     "file": "samples.jsonl",
+     "line": 4295,
+     "answer_class": "('number', '1')",
+     "key_norm": "difference between the two numbers is 1."
+    },
+    {
+     "item": "T19-R05",
+     "file": "samples.jsonl",
+     "line": 4308,
+     "answer_class": "('number', '1')",
+     "key_norm": "calculate absolute difference and sum its digits"
+    },
+    {
+     "item": "T19-R06",
+     "file": "samples.jsonl",
+     "line": 4286,
+     "answer_class": "('number', '1')",
+     "key_norm": "absolute difference between the two integers"
+    },
+    {
+     "item": "T19-R07",
+     "file": "samples.jsonl",
+     "line": 4293,
+     "answer_class": "('number', '1')",
+     "key_norm": "difference between the two numbers is 1"
+    },
+    {
+     "item": "T19-R08",
+     "file": "samples.jsonl",
+     "line": 4300,
+     "answer_class": "('number', '1')",
+     "key_norm": "difference of input numbers and summing its digits"
+    },
+    {
+     "item": "T19-R09",
+     "file": "samples.jsonl",
+     "line": 4296,
+     "answer_class": "('number', '1')",
+     "key_norm": "difference of the two numbers (abs(n1 - n2))"
+    },
+    {
+     "item": "T19-R10",
+     "file": "samples.jsonl",
+     "line": 4291,
+     "answer_class": "('number', '1')",
+     "key_norm": "compute absolute difference, convert to string, sum digits"
+    },
+    {
+     "item": "T19-R11",
+     "file": "samples.jsonl",
+     "line": 4306,
+     "answer_class": "('number', '1')",
+     "key_norm": "difference between the two numbers in absolute value"
+    },
+    {
+     "item": "T19-R12",
+     "file": "samples.jsonl",
+     "line": 4305,
+     "answer_class": "('number', '1')",
+     "key_norm": "sum of digits of absolute difference between 1 and 2"
+    }
+   ]
+  },
+  "T20": {
+   "model": "gpt-4o-mini",
+   "task_id": "mbpp_146",
+   "bench": "mbpp",
+   "answer_pmax_full": 1.0,
+   "n_pool": 30,
+   "items": [
+    {
+     "item": "T20-R01",
+     "file": "samples2.jsonl",
+     "line": 3554,
+     "answer_class": "('text', 'abc')",
+     "key_norm": "sorted characters of the string"
+    },
+    {
+     "item": "T20-R02",
+     "file": "samples2.jsonl",
+     "line": 3552,
+     "answer_class": "('text', 'abc')",
+     "key_norm": "sorted characters in ascending order"
+    },
+    {
+     "item": "T20-R03",
+     "file": "samples2.jsonl",
+     "line": 3574,
+     "answer_class": "('text', 'abc')",
+     "key_norm": "return sorted string from input"
+    },
+    {
+     "item": "T20-R04",
+     "file": "samples2.jsonl",
+     "line": 3572,
+     "answer_class": "('text', 'abc')",
+     "key_norm": "sort string by alphabetical order"
+    },
+    {
+     "item": "T20-R05",
+     "file": "samples2.jsonl",
+     "line": 3559,
+     "answer_class": "('text', 'abc')",
+     "key_norm": "sorted the characters of the string"
+    },
+    {
+     "item": "T20-R06",
+     "file": "samples2.jsonl",
+     "line": 3556,
+     "answer_class": "('text', 'abc')",
+     "key_norm": "sorted characters in ascending order"
+    },
+    {
+     "item": "T20-R07",
+     "file": "samples2.jsonl",
+     "line": 3576,
+     "answer_class": "('text', 'abc')",
+     "key_norm": "sorting characters in ascending order"
+    },
+    {
+     "item": "T20-R08",
+     "file": "samples2.jsonl",
+     "line": 3557,
+     "answer_class": "('text', 'abc')",
+     "key_norm": "sorted characters in ascending order"
+    },
+    {
+     "item": "T20-R09",
+     "file": "samples2.jsonl",
+     "line": 3577,
+     "answer_class": "('text', 'abc')",
+     "key_norm": "sort characters of the string."
+    },
+    {
+     "item": "T20-R10",
+     "file": "samples2.jsonl",
+     "line": 3555,
+     "answer_class": "('text', 'abc')",
+     "key_norm": "sorted characters of the input string"
+    },
+    {
+     "item": "T20-R11",
+     "file": "samples2.jsonl",
+     "line": 3578,
+     "answer_class": "('text', 'abc')",
+     "key_norm": "sorted output of input string"
+    },
+    {
+     "item": "T20-R12",
+     "file": "samples2.jsonl",
+     "line": 3569,
+     "answer_class": "('text', 'abc')",
+     "key_norm": "sorted characters in ascending order"
+    }
+   ]
+  },
+  "T21": {
+   "model": "gpt-4.1-mini",
+   "task_id": "mbpp_106",
+   "bench": "mbpp",
+   "answer_pmax_full": 1.0,
+   "n_pool": 30,
+   "items": [
+    {
+     "item": "T21-R01",
+     "file": "samples2.jsonl",
+     "line": 6736,
+     "answer_class": "('text', 'Not matched!')",
+     "key_norm": "'ac' does not have 'a' followed by 2-3 'b's"
+    },
+    {
+     "item": "T21-R02",
+     "file": "samples2.jsonl",
+     "line": 6747,
+     "answer_class": "('text', 'Not matched!')",
+     "key_norm": "pattern requires two to three 'b's after 'a'"
+    },
+    {
+     "item": "T21-R03",
+     "file": "samples2.jsonl",
+     "line": 6761,
+     "answer_class": "('text', 'Not matched!')",
+     "key_norm": "'ab{2,3}' not found in \"ac\""
+    },
+    {
+     "item": "T21-R04",
+     "file": "samples2.jsonl",
+     "line": 6737,
+     "answer_class": "('text', 'Not matched!')",
+     "key_norm": "regex searches for 'ab{2,3}', but string is \"ac\""
+    },
+    {
+     "item": "T21-R05",
+     "file": "samples2.jsonl",
+     "line": 6762,
+     "answer_class": "('text', 'Not matched!')",
+     "key_norm": "'ac' lacks two to three 'b's after 'a'"
+    },
+    {
+     "item": "T21-R06",
+     "file": "samples2.jsonl",
+     "line": 6748,
+     "answer_class": "('text', 'Not matched!')",
+     "key_norm": "input \"ac\" lacks required two or three 'b's after 'a'"
+    },
+    {
+     "item": "T21-R07",
+     "file": "samples2.jsonl",
+     "line": 6749,
+     "answer_class": "('text', 'Not matched!')",
+     "key_norm": "no match for 'a' followed by 2-3 'b's in \"ac\""
+    },
+    {
+     "item": "T21-R08",
+     "file": "samples2.jsonl",
+     "line": 6740,
+     "answer_class": "('text', 'Not matched!')",
+     "key_norm": "pattern 'ab{2,3}' not found in \"ac\""
+    },
+    {
+     "item": "T21-R09",
+     "file": "samples2.jsonl",
+     "line": 6741,
+     "answer_class": "('text', 'Not matched!')",
+     "key_norm": "no 'a' followed by two or three 'b's in \"ac\""
+    },
+    {
+     "item": "T21-R10",
+     "file": "samples2.jsonl",
+     "line": 6764,
+     "answer_class": "('text', 'Not matched!')",
+     "key_norm": "\"ac\" does not contain 'a' followed by 'bb' or 'bbb'"
+    },
+    {
+     "item": "T21-R11",
+     "file": "samples2.jsonl",
+     "line": 6765,
+     "answer_class": "('text', 'Not matched!')",
+     "key_norm": "input \"ac\" lacks 'ab{2,3}' pattern"
+    },
+    {
+     "item": "T21-R12",
+     "file": "samples2.jsonl",
+     "line": 6745,
+     "answer_class": "('text', 'Not matched!')",
+     "key_norm": "pattern 'ab{2,3}' not found in \"ac\""
+    }
+   ]
+  },
+  "T22": {
+   "model": "gpt-4.1-nano",
+   "task_id": "mbpp_148",
+   "bench": "mbpp",
+   "answer_pmax_full": 1.0,
+   "n_pool": 30,
+   "items": [
+    {
+     "item": "T22-R01",
+     "file": "samples.jsonl",
+     "line": 4330,
+     "answer_class": "('list', (('tuple', (('number', '5'), ('number', '7'), ('number', '8'))), ('tuple', (('number', '6'), ('number', '8'), ('number', '10'))), ('tuple', (('number', '7'), ('number', '12'), ('number', '5')))))",
+     "key_norm": "sum each element with k for all tuples."
+    },
+    {
+     "item": "T22-R02",
+     "file": "samples.jsonl",
+     "line": 4328,
+     "answer_class": "('list', (('tuple', (('number', '5'), ('number', '7'), ('number', '8'))), ('tuple', (('number', '6'), ('number', '8'), ('number', '10'))), ('tuple', (('number', '7'), ('number', '12'), ('number', '5')))))",
+     "key_norm": "add k to each element in all tuples."
+    },
+    {
+     "item": "T22-R03",
+     "file": "samples.jsonl",
+     "line": 4312,
+     "answer_class": "('list', (('tuple', (('number', '5'), ('number', '7'), ('number', '8'))), ('tuple', (('number', '6'), ('number', '8'), ('number', '10'))), ('tuple', (('number', '7'), ('number', '12'), ('number', '5')))))",
+     "key_norm": "add k to each element in each tuple"
+    },
+    {
+     "item": "T22-R04",
+     "file": "samples.jsonl",
+     "line": 4315,
+     "answer_class": "('list', (('tuple', (('number', '5'), ('number', '7'), ('number', '8'))), ('tuple', (('number', '6'), ('number', '8'), ('number', '10'))), ('tuple', (('number', '7'), ('number', '12'), ('number', '5')))))",
+     "key_norm": "add k to each element in each tuple"
+    },
+    {
+     "item": "T22-R05",
+     "file": "samples.jsonl",
+     "line": 4320,
+     "answer_class": "('list', (('tuple', (('number', '5'), ('number', '7'), ('number', '8'))), ('tuple', (('number', '6'), ('number', '8'), ('number', '10'))), ('tuple', (('number', '7'), ('number', '12'), ('number', '5')))))",
+     "key_norm": "add k to each element in each tuple"
+    },
+    {
+     "item": "T22-R06",
+     "file": "samples.jsonl",
+     "line": 4332,
+     "answer_class": "('list', (('tuple', (('number', '5'), ('number', '7'), ('number', '8'))), ('tuple', (('number', '6'), ('number', '8'), ('number', '10'))), ('tuple', (('number', '7'), ('number', '12'), ('number', '5')))))",
+     "key_norm": "add k to each element in each tuple"
+    },
+    {
+     "item": "T22-R07",
+     "file": "samples.jsonl",
+     "line": 4326,
+     "answer_class": "('list', (('tuple', (('number', '5'), ('number', '7'), ('number', '8'))), ('tuple', (('number', '6'), ('number', '8'), ('number', '10'))), ('tuple', (('number', '7'), ('number', '12'), ('number', '5')))))",
+     "key_norm": "add 4 to each element in each tuple"
+    },
+    {
+     "item": "T22-R08",
+     "file": "samples.jsonl",
+     "line": 4338,
+     "answer_class": "('list', (('tuple', (('number', '5'), ('number', '7'), ('number', '8'))), ('tuple', (('number', '6'), ('number', '8'), ('number', '10'))), ('tuple', (('number', '7'), ('number', '12'), ('number', '5')))))",
+     "key_norm": "add k to each element in each tuple of the list"
+    },
+    {
+     "item": "T22-R09",
+     "file": "samples.jsonl",
+     "line": 4322,
+     "answer_class": "('list', (('tuple', (('number', '5'), ('number', '7'), ('number', '8'))), ('tuple', (('number', '6'), ('number', '8'), ('number', '10'))), ('tuple', (('number', '7'), ('number', '12'), ('number', '5')))))",
+     "key_norm": "add k to each element in each tuple"
+    },
+    {
+     "item": "T22-R10",
+     "file": "samples.jsonl",
+     "line": 4319,
+     "answer_class": "('list', (('tuple', (('number', '5'), ('number', '7'), ('number', '8'))), ('tuple', (('number', '6'), ('number', '8'), ('number', '10'))), ('tuple', (('number', '7'), ('number', '12'), ('number', '5')))))",
+     "key_norm": "add k to each element in the tuples."
+    },
+    {
+     "item": "T22-R11",
+     "file": "samples.jsonl",
+     "line": 4317,
+     "answer_class": "('list', (('tuple', (('number', '5'), ('number', '7'), ('number', '8'))), ('tuple', (('number', '6'), ('number', '8'), ('number', '10'))), ('tuple', (('number', '7'), ('number', '12'), ('number', '5')))))",
+     "key_norm": "add k to each element in each tuple"
+    },
+    {
+     "item": "T22-R12",
+     "file": "samples.jsonl",
+     "line": 4310,
+     "answer_class": "('list', (('tuple', (('number', '5'), ('number', '7'), ('number', '8'))), ('tuple', (('number', '6'), ('number', '8'), ('number', '10'))), ('tuple', (('number', '7'), ('number', '12'), ('number', '5')))))",
+     "key_norm": "add k to each element in each tuple"
+    }
+   ]
+  },
+  "T23": {
+   "model": "gpt-4o-mini",
+   "task_id": "mbpp_115",
+   "bench": "mbpp",
+   "answer_pmax_full": 1.0,
+   "n_pool": 30,
+   "items": [
+    {
+     "item": "T23-R01",
+     "file": "samples2.jsonl",
+     "line": 2712,
+     "answer_class": "('tuple', (('number', '6'), ('number', '12'), ('number', '15'), ('number', '18')))",
+     "key_norm": "adding adjacent elements in tuple"
+    },
+    {
+     "item": "T23-R02",
+     "file": "samples2.jsonl",
+     "line": 2702,
+     "answer_class": "('tuple', (('number', '6'), ('number', '12'), ('number', '15'), ('number', '18')))",
+     "key_norm": "calculate sums of adjacent pairs"
+    },
+    {
+     "item": "T23-R03",
+     "file": "samples2.jsonl",
+     "line": 2699,
+     "answer_class": "('tuple', (('number', '6'), ('number', '12'), ('number', '15'), ('number', '18')))",
+     "key_norm": "summed adjacent tuple elements"
+    },
+    {
+     "item": "T23-R04",
+     "file": "samples2.jsonl",
+     "line": 2706,
+     "answer_class": "('tuple', (('number', '6'), ('number', '12'), ('number', '15'), ('number', '18')))",
+     "key_norm": "calculated pairwise sums from the input tuple."
+    },
+    {
+     "item": "T23-R05",
+     "file": "samples2.jsonl",
+     "line": 2714,
+     "answer_class": "('tuple', (('number', '6'), ('number', '12'), ('number', '15'), ('number', '18')))",
+     "key_norm": "sum adjacent elements in tuple"
+    },
+    {
+     "item": "T23-R06",
+     "file": "samples2.jsonl",
+     "line": 2718,
+     "answer_class": "('tuple', (('number', '6'), ('number', '12'), ('number', '15'), ('number', '18')))",
+     "key_norm": "perform pairwise summation of tuple elements."
+    },
+    {
+     "item": "T23-R07",
+     "file": "samples2.jsonl",
+     "line": 2703,
+     "answer_class": "('tuple', (('number', '6'), ('number', '12'), ('number', '15'), ('number', '18')))",
+     "key_norm": "calculate pairwise sums using zip."
+    },
+    {
+     "item": "T23-R08",
+     "file": "samples2.jsonl",
+     "line": 2704,
+     "answer_class": "('tuple', (('number', '6'), ('number', '12'), ('number', '15'), ('number', '18')))",
+     "key_norm": "calculated pairwise sums"
+    },
+    {
+     "item": "T23-R09",
+     "file": "samples2.jsonl",
+     "line": 2705,
+     "answer_class": "('tuple', (('number', '6'), ('number', '12'), ('number', '15'), ('number', '18')))",
+     "key_norm": "summed consecutive tuple elements"
+    },
+    {
+     "item": "T23-R10",
+     "file": "samples2.jsonl",
+     "line": 2711,
+     "answer_class": "('tuple', (('number', '6'), ('number', '12'), ('number', '15'), ('number', '18')))",
+     "key_norm": "summing tuples element-wise using zip."
+    },
+    {
+     "item": "T23-R11",
+     "file": "samples2.jsonl",
+     "line": 2715,
+     "answer_class": "('tuple', (('number', '6'), ('number', '12'), ('number', '15'), ('number', '18')))",
+     "key_norm": "calculate sums of consecutive elements."
+    },
+    {
+     "item": "T23-R12",
+     "file": "samples2.jsonl",
+     "line": 2697,
+     "answer_class": "('tuple', (('number', '6'), ('number', '12'), ('number', '15'), ('number', '18')))",
+     "key_norm": "sum pairs of adjacent elements"
+    }
+   ]
+  },
+  "T24": {
+   "model": "gpt-4.1-mini",
+   "task_id": "mbpp_113",
+   "bench": "mbpp",
+   "answer_pmax_full": 1.0,
+   "n_pool": 30,
+   "items": [
+    {
+     "item": "T24-R01",
+     "file": "samples2.jsonl",
+     "line": 6943,
+     "answer_class": "('number', '30')",
+     "key_norm": "use s = n(n+1)/2, difference = s(s-1)"
+    },
+    {
+     "item": "T24-R02",
+     "file": "samples2.jsonl",
+     "line": 6945,
+     "answer_class": "('number', '30')",
+     "key_norm": "calculate s = n(n+1)/2 and return s*(s-1)"
+    },
+    {
+     "item": "T24-R03",
+     "file": "samples2.jsonl",
+     "line": 6916,
+     "answer_class": "('number', '30')",
+     "key_norm": "calculate s = n(n+1)/2 and compute s*(s-1)"
+    },
+    {
+     "item": "T24-R04",
+     "file": "samples2.jsonl",
+     "line": 6936,
+     "answer_class": "('number', '30')",
+     "key_norm": "calculate s = sum first n, then s*(s -1)"
+    },
+    {
+     "item": "T24-R05",
+     "file": "samples2.jsonl",
+     "line": 6937,
+     "answer_class": "('number', '30')",
+     "key_norm": "compute sum then multiply by (sum - 1)"
+    },
+    {
+     "item": "T24-R06",
+     "file": "samples2.jsonl",
+     "line": 6932,
+     "answer_class": "('number', '30')",
+     "key_norm": "compute s=n(n+1)/2 and return s*(s-1)"
+    },
+    {
+     "item": "T24-R07",
+     "file": "samples2.jsonl",
+     "line": 6927,
+     "answer_class": "('number', '30')",
+     "key_norm": "calculate s and compute s * (s - 1)"
+    },
+    {
+     "item": "T24-R08",
+     "file": "samples2.jsonl",
+     "line": 6922,
+     "answer_class": "('number', '30')",
+     "key_norm": "calculate s and return s*(s-1)"
+    },
+    {
+     "item": "T24-R09",
+     "file": "samples2.jsonl",
+     "line": 6919,
+     "answer_class": "('number', '30')",
+     "key_norm": "calculate sum, then multiply by one less"
+    },
+    {
+     "item": "T24-R10",
+     "file": "samples2.jsonl",
+     "line": 6944,
+     "answer_class": "('number', '30')",
+     "key_norm": "calculate s, then s*(s-1)"
+    },
+    {
+     "item": "T24-R11",
+     "file": "samples2.jsonl",
+     "line": 6925,
+     "answer_class": "('number', '30')",
+     "key_norm": "difference = sum_cubes - sum = s*(s-1)"
+    },
+    {
+     "item": "T24-R12",
+     "file": "samples2.jsonl",
+     "line": 6931,
+     "answer_class": "('number', '30')",
+     "key_norm": "substitute n=3 into given formula: s*(s-1)"
+    }
+   ]
+  }
+ }
+}

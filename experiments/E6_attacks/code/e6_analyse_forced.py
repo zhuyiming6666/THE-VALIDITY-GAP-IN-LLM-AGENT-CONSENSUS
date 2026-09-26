@@ -1,5 +1,5 @@
 """E6: analyse the nano forced-attacker run with the frozen v4 normaliser.
-Usage: python exp/e6_analyse_forced.py results/v11/e6_forced_nano.json [results/v3/e4_byz.json]
+Usage: python experiments/E6_attacks/code/e6_analyse_forced.py experiments/E6_attacks/results/e6_forced_nano.json [experiments/E6_attacks/data/nano_prompted/e4_byz.json]
 Reports per (f, round): all-participant unanimity, honest-only unanimity, honest-majority
 accuracy, target adoption (attacker slots equal to the designated wrong value), and, if the
 archived prompted run is given, the same cells for the prompted attacker on the same tasks.

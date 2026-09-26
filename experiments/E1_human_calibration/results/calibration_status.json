@@ -22,9 +22,9 @@
   },
   "open_issues": {},
   "sources": {
-    "A": "annotation/结果/annotator_A.tsv",
-    "B": "annotation/结果/annotator_B.tsv",
-    "C": "annotation/结果/annotator_C.tsv"
+    "A": "annotation/results/annotator_A.tsv",
+    "B": "annotation/results/annotator_B.tsv",
+    "C": "annotation/results/annotator_C.tsv"
   },
   "input_sha256": {
     "key": "2c3d4e2d29c347cf8acdea518067389e072f60e5f6d70c1f1677e74e9f17dcc3",

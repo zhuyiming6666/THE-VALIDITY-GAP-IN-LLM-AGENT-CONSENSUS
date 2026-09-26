@@ -1,0 +1,49 @@
+% Proposed addition after the earlier pairwise-bounds table (current iclr-15.tex L496).
+% Not applied to the paper. Original 300-pair calibration and full-set results remain separate.
+\paragraph{Direct partition annotation (R1b).}
+Three annotators grouped 12 stored replies in each of 24 selected model--task cells
+(eight per benchmark and eight per model), comparing the decisive operations stated
+in the KEY summaries. The design samples from the 123-task common set using
+answer-modal-mass strata and rotating models. It is a supplementary subset study,
+not a probability-weighted estimate over all 369 model--task cells.
+Two replies are linked when at least two annotators assign them to the same operation
+group, and connected components define an operation partition. Since the guide permits
+identical operations with different final answers, our analysis intersects these
+components with normalised answer classes to obtain the answer+operation refinement
+required by the coverage comparison; this intersection corrects the original scoring
+implementation. Operation-only results are retained separately.
+A VAGUE label is treated as a singleton in that annotator's partition; the 13 replies
+with a VAGUE majority are therefore singletons in the consensus. Dropping those replies
+is a sensitivity analysis that changes the reply population.
+
+For each cell we compute the empirical modal mass $r_{\max}$, the distinct-reply
+U-statistic $\widehat A_U(3)$, and the plug-in probability $r_{\max}^{h}$ of unanimity
+on the designated empirical mode. At $n=3f+1$, $h=2f+1$, this is the designated-mode
+certificate event. Means weight selected cells equally. Intervals are percentile
+bootstrap intervals from 2,000 resamples of the selected cells (seed 20260925),
+conditional on the replies and annotation aggregation; they do not propagate
+within-cell sampling or label uncertainty and are not full-population intervals.
+The mean operation-partition ARI is $0.523$ and pairwise co-assignment agreement is
+$0.823$. Transitive closure adds 27 co-assigned pairs without direct majority support
+in five cells. Intersecting all three annotator partitions with answer classes gives
+coverage $0.387$ at $f=3$; using the two retained annotators' intersection after dropping
+one annotator gives $0.391$--$0.420$.
+The full reply pools of the selected cells give answer coverage $0.830$, while the
+12-reply subset gives $0.843$; agreement of one answer-grain mean with the full common
+set does not establish representativeness at the human grain. Annotator independence
+is required by the guide but is not documented beyond the completed sheets.
+
+\begin{table}[htbp]\centering\small
+\caption{Direct R1b partition estimates on the same 24 selected cells, 12 replies per
+cell. Coverage is the empirical-law designated-mode probability at $n=3f+1$.
+The last column gives descriptive 95\% cell-bootstrap intervals at $f=3$;
+these differ in scope from the earlier pairwise bounds.}
+\label{tab:r1b-partitions}
+\begin{tabular}{lcccccc}\toprule
+partition & $r_{\max}$ & $\widehat A_U(3)$ & $f=1$ & $f=2$ & $f=3$ & interval\\\midrule
+answer & 0.948 & 0.889 & 0.894 & 0.864 & 0.843 & [0.721,0.943]\\
+answer+operation & 0.809 & 0.600 & 0.619 & 0.529 & 0.477 & [0.319,0.644]\\
+answer+operation, drop VAGUE & 0.846 & 0.659 & 0.677 & 0.588 & 0.535 & [0.382,0.692]\\
+lexical answer+KEY & 0.201 & 0.0148 & 0.0234 & 0.00517 & 0.00142 & [0.000071,0.00357]\\
+\bottomrule\end{tabular}
+\end{table}

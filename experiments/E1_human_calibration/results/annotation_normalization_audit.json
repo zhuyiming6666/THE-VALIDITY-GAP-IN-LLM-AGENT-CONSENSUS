@@ -27,7 +27,7 @@
   "files_moved": [],
   "annotators": {
     "A": {
-      "source": "annotation/结果/annotator_A.tsv",
+      "source": "annotation/results/annotator_A.tsv",
       "encoding": "utf-8-sig",
       "decoded_replacement_chars": 0,
       "source_sha256": "9f8a427fcff1aabc14819af68909ce36fc3a5200814be61b53ab7366797f3c36",
@@ -129,7 +129,7 @@
       "staged_sha256": "f67798599c69004b4bb9bdccb33f58bb10ccb2cc46235bf0c5e51d0b52f22ddd"
     },
     "B": {
-      "source": "annotation/结果/annotator_B.tsv",
+      "source": "annotation/results/annotator_B.tsv",
       "encoding": "gb18030",
       "decoded_replacement_chars": 0,
       "source_sha256": "21508ade08c5425e13865291913937c962ed6f80eaa2e33e817beec2b33ab70a",
@@ -204,7 +204,7 @@
       "staged_sha256": "e25d06a2dcbbec13fcfb0598e8689f7d65ae03dc2dd4cefba4eb15f89a540f16"
     },
     "C": {
-      "source": "annotation/结果/annotator_C.tsv",
+      "source": "annotation/results/annotator_C.tsv",
       "encoding": "gb18030+replace",
       "decoded_replacement_chars": 4,
       "source_sha256": "c3d98d125d72276b26914286ae69bd8b9f2510308a727b2f7bbb7052f7162294",

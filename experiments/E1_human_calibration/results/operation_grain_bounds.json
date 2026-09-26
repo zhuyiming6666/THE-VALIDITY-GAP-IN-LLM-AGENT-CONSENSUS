@@ -1,0 +1,83 @@
+{
+ "n_pairs": 102,
+ "n_cells_with_pairs": 86,
+ "n_cells": 369,
+ "assumptions": [
+  "the human operation relation is an equivalence relation (a partition)",
+  "it refines the answer partition (human-equivalent => same normalised answer)",
+  "pairs in a cell are exchangeable draws of that model's replies on that task"
+ ],
+ "refinement_violations": 1,
+ "results": {
+  "human_operation": {
+   "h=3": {
+    "lower": 0.29238907745737563,
+    "lower_ci95_low": 0.16963127401753605,
+    "upper": 0.8325388082544574,
+    "upper_ci95_high": 0.9054972704318144,
+    "mean_A2_used_for_lower": 0.663723276342727
+   },
+   "h=5": {
+    "lower": 0.12880574731001296,
+    "lower_ci95_low": 0.05198088287381594,
+    "upper": 0.8071995965716126,
+    "upper_ci95_high": 0.8828159436453473,
+    "mean_A2_used_for_lower": 0.663723276342727
+   },
+   "h=7": {
+    "lower": 0.05674261393197744,
+    "lower_ci95_low": 0.01592875135242218,
+    "upper": 0.7902683065318895,
+    "upper_ci95_high": 0.8693106809697704,
+    "mean_A2_used_for_lower": 0.663723276342727
+   }
+  },
+  "answer_equality_check": {
+   "h=3": {
+    "lower": 0.8436638251252937,
+    "lower_ci95_low": 0.8285298482569753,
+    "upper": 0.9177002655339314,
+    "upper_ci95_high": 0.9356584178681318,
+    "mean_A2_used_for_lower": 0.9449086163885194
+   },
+   "h=5": {
+    "lower": 0.7532671810586848,
+    "lower_ci95_low": 0.7308814361036103,
+    "upper": 0.881834296985041,
+    "upper_ci95_high": 0.9206364649294029,
+    "mean_A2_used_for_lower": 0.9449086163885194
+   },
+   "h=7": {
+    "lower": 0.6725563300949052,
+    "lower_ci95_low": 0.6447416164485829,
+    "upper": 0.8589648447835441,
+    "upper_ci95_high": 0.9097470409177825,
+    "mean_A2_used_for_lower": 0.9449086163885194
+   }
+  }
+ },
+ "answer_grain_exact": {
+  "h=3": 0.8892201384553099,
+  "h=5": 0.8606307102273938,
+  "h=7": 0.842644788505257,
+  "mean_A2": 0.9241553526550345
+ },
+ "homogeneous_model": {
+  "q_same_answer_same_model": {
+   "lo": 0.6862935501948816,
+   "hi": 0.8849078066032128
+  },
+  "h=3": [
+   0.5055617003603845,
+   0.7402123545011478
+  ],
+  "h=5": [
+   0.3358084596371025,
+   0.6339600707805128
+  ],
+  "h=7": [
+   0.22564683692934429,
+   0.5492722162017133
+  ]
+ }
+}

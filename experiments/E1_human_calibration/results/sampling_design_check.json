@@ -1,0 +1,22 @@
+{
+  "recomputed_population": {
+    "S1": 446150,
+    "S2": 56219,
+    "S4": 6325,
+    "S3": 10143
+  },
+  "recomputed_total": 518837,
+  "recorded_population": {
+    "S1": 446150,
+    "S2": 56219,
+    "S3": 10143,
+    "S4": 6325
+  },
+  "recorded_total": 518837,
+  "allocation_from_recorded": {
+    "S1": 148,
+    "S2": 69,
+    "S3": 43,
+    "S4": 40
+  }
+}

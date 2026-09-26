@@ -57,7 +57,7 @@ from pathlib import Path
 
 V4 = Path(__file__).resolve().parents[1]
 ANNOTATION = V4 / 'annotation'
-RETURNED = ANNOTATION / '结果'
+RETURNED = ANNOTATION / 'results'  # returned annotator sheets (originally annotation/结果)
 WORKING = ANNOTATION / '工作文件'
 CORRECTIONS_PATH = ANNOTATION / 'manual_corrections.json'
 AUDIT_PATH = V4 / 'results' / 'annotation_normalization_audit.json'

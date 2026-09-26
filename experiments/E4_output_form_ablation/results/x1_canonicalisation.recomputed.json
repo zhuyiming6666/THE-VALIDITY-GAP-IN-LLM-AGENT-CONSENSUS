@@ -1,0 +1,99 @@
+{
+ "model": [
+  "claude-opus-5"
+ ],
+ "k": 8,
+ "n_records": 1200,
+ "per_condition": {
+  "A_free_reasoning|claude-opus-5": {
+   "n_tasks": 50,
+   "mean_n": 8.0,
+   "accuracy": 0.95,
+   "p_max": 0.99,
+   "support": 1.02,
+   "A_3": 0.9828571428571429,
+   "A_3_n": 50,
+   "A_10": null,
+   "A_10_n": 0,
+   "accuracy_ci": {
+    "estimate": 0.95,
+    "lo": 0.88975,
+    "hi": 1.0,
+    "n": 50,
+    "B": 2000
+   }
+  },
+  "B_free_reasoning_schema|claude-opus-5": {
+   "n_tasks": 50,
+   "mean_n": 8.0,
+   "accuracy": 0.93,
+   "p_max": 0.98,
+   "support": 1.1,
+   "A_3": 0.957857142857143,
+   "A_3_n": 50,
+   "A_10": null,
+   "A_10_n": 0,
+   "accuracy_ci": {
+    "estimate": 0.93,
+    "lo": 0.8575,
+    "hi": 0.985,
+    "n": 50,
+    "B": 2000
+   }
+  },
+  "C_schema_only|claude-opus-5": {
+   "n_tasks": 50,
+   "mean_n": 8.0,
+   "accuracy": 0.9325,
+   "p_max": 0.975,
+   "support": 1.1,
+   "A_3": 0.9514285714285714,
+   "A_3_n": 50,
+   "A_10": null,
+   "A_10_n": 0,
+   "accuracy_ci": {
+    "estimate": 0.9325,
+    "lo": 0.8575,
+    "hi": 0.9875,
+    "n": 50,
+    "B": 2000
+   }
+  }
+ },
+ "paired": {
+  "A_free_reasoning_minus_B_free_reasoning_schema": {
+   "accuracy": {
+    "estimate": 0.02,
+    "lo": 0.0,
+    "hi": 0.05256249999999966,
+    "n": 50,
+    "B": 2000
+   },
+   "A_3": {
+    "estimate": 0.025,
+    "lo": -0.002142857142857143,
+    "hi": 0.07071428571428572,
+    "n": 50,
+    "B": 2000
+   },
+   "n_tasks": 50
+  },
+  "B_free_reasoning_schema_minus_C_schema_only": {
+   "accuracy": {
+    "estimate": -0.0025,
+    "lo": -0.0225,
+    "hi": 0.015,
+    "n": 50,
+    "B": 2000
+   },
+   "A_3": {
+    "estimate": 0.006428571428571429,
+    "lo": -0.021455357142857144,
+    "hi": 0.046071428571428576,
+    "n": 50,
+    "B": 2000
+   },
+   "n_tasks": 50
+  }
+ }
+}

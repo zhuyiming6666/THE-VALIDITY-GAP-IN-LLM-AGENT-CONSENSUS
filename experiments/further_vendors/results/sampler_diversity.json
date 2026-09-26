@@ -1,0 +1,31 @@
+{
+ "opening_chars": 80,
+ "deepseek-v3.2": {
+  "tasks": 150,
+  "replies_per_task": 16,
+  "mean_distinct_openings": 15.293333333333333,
+  "tasks_single_opening": 0,
+  "mean_distinct_keys": 13.086666666666666
+ },
+ "glm-4.7": {
+  "tasks": 150,
+  "replies_per_task": 16,
+  "mean_distinct_openings": 13.82,
+  "tasks_single_opening": 0,
+  "mean_distinct_keys": 13.34
+ },
+ "qwen3-14b": {
+  "tasks": 150,
+  "replies_per_task": 16,
+  "mean_distinct_openings": 9.2,
+  "tasks_single_opening": 1,
+  "mean_distinct_keys": 9.48
+ },
+ "qwen3-8b": {
+  "tasks": 150,
+  "replies_per_task": 16,
+  "mean_distinct_openings": 1.2533333333333334,
+  "tasks_single_opening": 115,
+  "mean_distinct_keys": 2.3333333333333335
+ }
+}

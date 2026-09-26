@@ -1,0 +1,27 @@
+% Candidate insertion after the pairwise-bounds table (current iclr-15.tex L496).
+% Paper source is unchanged. This replaces the earlier, longer insertion proposal.
+\paragraph{Decisive-operation partitions.}
+Three annotators grouped 12 replies for each of 24 selected model--task cells,
+with eight cells per benchmark and per model. Selection was stratified by
+answer-grain modal mass. Replies assigned to the same operation by at least two
+annotators were linked; connected components were intersected with normalised
+answer classes to define the answer+operation partition. VAGUE ratings were
+represented as singletons in each annotator's partition. We report cell-equal
+means of $r_{\max}$, $\widehat A_U(3)$ and $r_{\max}^{2f+1}$, with 95\% percentile
+intervals from 2,000 cell-bootstrap resamples. These intervals condition on the
+sampled replies and consensus labels; estimates apply to the annotated cells.
+Mean operation-partition ARI was $0.523$. At $f=3$, dropping majority-VAGUE
+replies gave coverage $0.535$, while intersecting all three annotator partitions
+with answer classes gave $0.387$.
+
+\begin{table}[htbp]\centering\small
+\caption{Designated-mode coverage at $n=3f+1$ under three partitions of the
+same annotated replies. Brackets denote 95\% cell-bootstrap intervals at $f=3$.}
+\label{tab:op-partitions}
+\begin{tabular}{lccccc}\toprule
+partition & $r_{\max}$ & $\widehat A_U(3)$ & $f=1$ & $f=2$ & $f=3$\\\midrule
+answer & 0.948 & 0.889 & 0.894 & 0.864 & 0.843 [0.721,0.943]\\
+answer+operation & 0.809 & 0.600 & 0.619 & 0.529 & 0.477 [0.319,0.644]\\
+answer+KEY & 0.201 & 0.0148 & 0.0234 & 0.00517 & 0.00142 [0.000071,0.00357]\\
+\bottomrule\end{tabular}
+\end{table}

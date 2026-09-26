@@ -1,0 +1,18 @@
+{
+ "answer": {
+  "n_cells": 369,
+  "mean_plugin": 0.30603292873867904,
+  "mean_conservative": 0.26673056038230464,
+  "share_conservative_gt_0.2": 0.8726287262872628,
+  "share_conservative_gt_0.3": 0.7371273712737128,
+  "max_conservative": 0.3072689832828227
+ },
+ "lexical": {
+  "n_cells": 369,
+  "mean_plugin": 0.0318040019743391,
+  "mean_conservative": 0.0057442261697042505,
+  "share_conservative_gt_0.2": 0.0027100271002710027,
+  "share_conservative_gt_0.3": 0.0,
+  "max_conservative": 0.27226151737591153
+ }
+}

@@ -1,0 +1,289 @@
+task	item	answer	key	group	vague	note
+T01	T01-R01	44 hours	Calculate articles per day and multiply total by 4 hours	G1		
+T01	T01-R02	44 hours	Calculate total articles and multiply by hours per article	G1		
+T01	T01-R03	44	"Sum articles over three days, multiply by 4 hours"	G1		
+T01	T01-R04	104 hours	Sum articles and multiply by 4 hours per article	G1		
+T01	T01-R05	104	Sum of articles over three days times hours per article	G1		
+T01	T01-R06	44 hours	Sum articles and multiply by 4 hours per article	G1		
+T01	T01-R07	44 hours	Sum articles over three days and multiply by 4 hours	G1		
+T01	T01-R08	104 hours	"Sum articles for three days, multiply by 4 hours per article"	G1		
+T01	T01-R09	44	Total articles * hours per article	G1		
+T01	T01-R10	44 hours	Sum of articles multiplied by hours per article	G1		
+T01	T01-R11	44 hours	Sum articles and multiply by hours per article	G1		
+T01	T01-R12	104 hours	Sum of articles times hours per article	G1		
+T02	T02-R01	10	Calculate selling price and cost of new rope.	G2		
+T02	T02-R02	10	Revenue minus cost of new rope	G1		
+T02	T02-R03	10	Calculate profit from rope sale.	G2		
+T02	T02-R04	10	Profit minus cost of new rope	G1		
+T02	T02-R05	10	Subtract new rope cost from sale price.	G1		
+T02	T02-R06	10	Profit after selling rope	G2		
+T02	T02-R07	$10 	Subtract cost of new rope from earnings	G1		
+T02	T02-R08	1	Profit from sale minus new rope cost	G1		
+T02	T02-R09	10	Total earnings minus total cost	G1		
+T02	T02-R10	10	Subtract new rope cost from earnings	G1		
+T02	T02-R11	10 dollars	Subtract cost of new rope from selling price	G1		
+T02	T02-R12	10	Profit after selling rope minus new cost	G1		
+T03	T03-R01	16	Compare total eggs to total tray capacity	G2		
+T03	T03-R02	16	Calculate eggs over tray capacity	G1		
+T03	T03-R03	16	Subtract total tray capacity from total eggs	G1		
+T03	T03-R04	16	Calculate total capacity then subtract from total eggs	G1		
+T03	T03-R05	16	Calculate eggs exceeding tray capacity	G1		
+T03	T03-R06	16	Total capacity minus eggs gives leftover eggs	G3		
+T03	T03-R07	16	Subtract total tray capacity from total eggs	G1		
+T03	T03-R08	16	Calculate total tray capacity and subtract from eggs.	G1		
+T03	T03-R09	16	Subtract total tray capacity from total eggs	G1		
+T03	T03-R10	16	Subtract total tray capacity from total eggs	G1		
+T03	T03-R11	16	Subtract total capacity from total eggs	G1		
+T03	T03-R12	16	Subtract total tray capacity from total eggs	G1		
+T04	T04-R01	27	Total marbles minus Dallas's initial marbles	G1		
+T04	T04-R02	27	Solved for Darla's marbles using total minus Dallas's initial amount	G1		
+T04	T04-R03	27	Total marbles minus Dallas's initial amount	G1		
+T04	T04-R04	27	Mazie gave Darla 27 marbles		Y	
+T04	T04-R05	27	Total distributed marbles equal initial total minus Dallas's remaining after dropping	G1		
+T04	T04-R06	27	Darlac received 27 marbles		Y	
+T04	T04-R07	27	Subtract Dallas's marbles from total to find Darla's marbles	G1		
+T04	T04-R08	27	Marbles given to Dallas before dropping 4	G2		
+T04	T04-R09	27	Total marbles minus Dallas's initial marbles	G1		
+T04	T04-R10	27	Subtract Dallas's marbles (before dropping) from total marbles given out	G1		
+T04	T04-R11	27	Remainder after distributing marbles to Dallas	G1		
+T04	T04-R12	27	Sum distributed equals total minus Dallas's initial.	G1		
+T05	T05-R01	6	12 groups need more students.		Y	
+T05	T05-R02	6	12 groups needed minus 6 groups formed	G1		
+T05	T05-R03	6	Required groups minus current groups	G1		
+T05	T05-R04	6	12 required minus 6 formed equals 6 more groups.	G1		
+T05	T05-R05	6	Additional groups required are 6		Y	
+T05	T05-R06	6	6 groups needed to meet requirements		Y	
+T05	T05-R07	6	"12 required, but 6 possible"	G1		
+T05	T05-R08	6	Calculate additional groups needed.	G1		
+T05	T05-R09	6	"Need 12 groups total, have 6 groups now."	G1		
+T05	T05-R10	6	Calculate deficit of groups required.	G1		
+T05	T05-R11	6	12 required groups minus 6 existing groups	G1		
+T05	T05-R12	6	"12 required, only 6 can be formed."	G1		
+T06	T06-R01	34	Sum red + blue + yellow sticks	G1		
+T06	T06-R02	34	Calculate each color then sum total sticks	G1		
+T06	T06-R03	34	"Calculate total by summing red, blue, yellow sticks"	G1		
+T06	T06-R04	34	"Summed red, blue, and yellow sticks calculated from given relations"	G1		
+T06	T06-R05	34	Calculate and sum all stick counts	G1		
+T06	T06-R06	34	Calculate each color then sum all sticks	G1		
+T06	T06-R07	34	Calculate blue sticks from red sticks first	G2		
+T06	T06-R08	34	Calculate each color then sum all sticks	G1		
+T06	T06-R09	34	Calculate each color and sum total sticks	G1		
+T06	T06-R10	34	"Add red, blue, and yellow sticks totals"	G1		
+T06	T06-R11	34	Calculate sticks color-by-color and sum	G1		
+T06	T06-R12	34	Calculate each color based on given relationships	G2		
+T07	T07-R01	4 pounds	Total candy divided equally among three people	G1		
+T07	T07-R02	4 pounds	Total candy divided by three people	G1		
+T07	T07-R03	4 pounds	Total candy divided by 3 people	G1		
+T07	T07-R04	4 pounds	Total candy divided by number of people	G1		
+T07	T07-R05	4 pounds	Total divided equally among three friends	G1		
+T07	T07-R06	4 pounds	Total candy divided equally among three persons	G1		
+T07	T07-R07	4 pounds	Total candy divided by number of people	G1		
+T07	T07-R08	4 pounds	Total candy divided by three people	G1		
+T07	T07-R09	4 pounds	Total candy divided by number of people	G1		
+T07	T07-R10	4 pounds	Total candy divided equally among three people	G1		
+T07	T07-R11	4 pounds	Total candy divided equally among three people	G1		
+T07	T07-R12	4 pounds	Total divided equally among three people	G1		
+T08	T08-R01	5 hours	Calculate time using speed formula	G1		
+T08	T08-R02	5 hours	Time = Distance / Speed	G1		
+T08	T08-R03	5	"Calculate speed first, then time."	G1		
+T08	T08-R04	5	Calculate time using speed formula.	G1		
+T08	T08-R05	5 hours	2000 miles at 400 mph takes 5 hours	G1		
+T08	T08-R06	5 hours	Time = Distance / Speed	G1		
+T08	T08-R07	5	"Speed is 400 mph, then time calculation."	G1		
+T08	T08-R08	5 hours	Using speed = distance/time formula	G1		
+T08	T08-R09	5 hours	Calculate time using speed and distance.	G1		
+T08	T08-R10	5	Calculate time using speed formula	G1		
+T08	T08-R11	5	Calculate time using speed formula	G1		
+T08	T08-R12	5 hours	Calculate time using speed and distance	G1		
+T09	T09-R01	C	Blood loss >20% causes vital sign changes	G1		
+T09	T09-R02	C	Significant vital sign changes start at ~20% blood loss	G1		
+T09	T09-R03	C	20% blood loss triggers changes in heart rate and blood pressure	G1		
+T09	T09-R04	C	Changes occur after approximately 20% blood loss	G1		
+T09	T09-R05	C	Compensation masks signs until ~20% blood loss.	G1		
+T09	T09-R06	C	Changes evident after about 20% blood loss	G1		
+T09	T09-R07	C	Changes occur after approximately 20% blood loss	G1		
+T09	T09-R08	C	Changes appear after ~20% blood volume loss	G1		
+T09	T09-R09	C	Blood loss ~20% before vital sign changes appear	G1		
+T09	T09-R10	C	Changes appear after approx. 20% blood volume loss	G1		
+T09	T09-R11	B	Changes appear only after ~10% blood loss or more	G2		
+T09	T09-R12	C	20% blood loss causes vital sign changes	G1		
+T10	T10-R01	D	Both actions are socially acceptable and not morally wrong	G2		
+T10	T10-R02	C	Sprinkler use during game deemed morally wrong	G1		
+T10	T10-R03	B	Turning on sprinklers during game is morally wrong	G1		
+T10	T10-R04	C	Turning on sprinklers during a game is morally wrong	G1		
+T10	T10-R05	A	The moral evaluation of "turning on sprinklers" versus "throwing dirt"		Y	
+T10	T10-R06	C	Turning on sprinklers during a game is morally questionable	G1		
+T10	T10-R07	B	Turning on sprinklers during a game is morally wrong.	G1		
+T10	T10-R08	C	Sprinkler tampering is a clear moral wrong; dirt into wheelbarrow is not	G1		
+T10	T10-R09	B	Second scenario is harmless or neutral	G3		
+T10	T10-R10	C	Sprinkling water during the game is clearly disruptive	G1		
+T10	T10-R11	A	Sprinkling during a game is likely morally wrong.	G1		
+T10	T10-R12	B	First scenario involves property/property disruption morals	G1		
+T11	T11-R01	B	Both statements are false.	G2		
+T11	T11-R02	C	"Statement 1 true, Statement 2 false"	G1		
+T11	T11-R03	C	Verify truth of homomorphism statements	G1		
+T11	T11-R04	C	Analyze kernel and map existence	G1		
+T11	T11-R05	C	Homomorphisms can map groups in various ways.	G3		
+T11	T11-R06	C	"First statement true, second false"	G1		
+T11	T11-R07	C	"Statement 1 True, Statement 2 False"	G1		
+T11	T11-R08	C	"True, False analysis"	G1		
+T11	T11-R09	C	Analyzing statements about homomorphisms.	G1		
+T11	T11-R10	C	"First statement is true, second is false."	G1		
+T11	T11-R11	C	"First statement is true, second is false."	G1		
+T11	T11-R12	C	Analyze each statement's validity.	G1		
+T12	T12-R01	C	Image size divides domain size under homomorphism	G1		
+T12	T12-R02	C	image order divides group order	G1		
+T12	T12-R03	C	Image order divides domain order (Lagrange's theorem)	G1		
+T12	T12-R04	C	Image order divides domain order under homomorphism	G1		
+T12	T12-R05	C	Image size divides domain order via kernel size	G1		
+T12	T12-R06	C	Image order divides domain order (Lagrange's theorem)	G1		
+T12	T12-R07	C	Image size divides group order (6 not divisible by 4)	G1		
+T12	T12-R08	C	image order divides group order	G1		
+T12	T12-R09	C	Image size divides group order under homomorphism	G1		
+T12	T12-R10	C	Image order divides group order	G1		
+T12	T12-R11	C	kernel is trivial iff homomorphism is injective	G2		
+T12	T12-R12	C	Image size divides group order by Lagrange's theorem	G1		
+T13	T13-R01	C	Effluent leakage causes skin irritation and excoriation	G1		
+T13	T13-R02	C	Leakage of effluent onto peristomal skin	G1		
+T13	T13-R03	C	Leakage of effluent onto peristomal skin	G1		
+T13	T13-R04	C	Leakage of effluent causes skin excoriation.	G1		
+T13	T13-R05	C	Leakage of effluent onto peristomal skin	G1		
+T13	T13-R06	C	Leakage of effluent causes skin damage.	G1		
+T13	T13-R07	C	Leakage of effluent onto peristomal skin	G1		
+T13	T13-R08	C	Leakage of effluent causes skin irritation and excoriation.	G1		
+T13	T13-R09	C	Leakage causes skin excoriation around stoma	G1		
+T13	T13-R10	C	Leakage of effluent onto peristomal skin	G1		
+T13	T13-R11	C	Leakage of effluent onto skin causes excoriation	G1		
+T13	T13-R12	C	Leakage of effluent onto peristomal skin	G1		
+T14	T14-R01	B	"Recognize, call for help first"	G1		
+T14	T14-R02	B	"Recognize, call, CPR, defibrillation, care"	G1		
+T14	T14-R03	B	Order of the chain of survival links.		Y	
+T14	T14-R04	B	Sequence of emergency response steps.		Y	
+T14	T14-R05	B	Recognizing and calling for help first	G1		
+T14	T14-R06	B	Correct order of survival steps.		Y	
+T14	T14-R07	B	"Recognizing, then CPR, then defibrillation, then care."	G1		
+T14	T14-R08	B	"Recognize, call for help, then CPR."	G1		
+T14	T14-R09	B	Correct sequence of survival steps.		Y	
+T14	T14-R10	B	"Recognize, then CPR, then defibrillation."	G1		
+T14	T14-R11	B	Order of survival steps in emergencies.		Y	
+T14	T14-R12	B	Sequence based on chain of survival		Y	
+T15	T15-R01	C	Minimal polynomial of sqrt(6) has degree 2	G1		
+T15	T15-R02	C	Minimal polynomial of \(\sqrt{6}\) has degree 2	G1		
+T15	T15-R03	C	"\(\sqrt{2}\sqrt{3} = \sqrt{6}\), minimal polynomial degree 2"	G1		
+T15	T15-R04	C	Degree of Q(sqrt(6)) over Q is 2.	G1		
+T15	T15-R05	C	\(\sqrt{2}\sqrt{3} = \sqrt{6}\) gives quadratic extension	G1		
+T15	T15-R06	C	Minimal polynomial of \(\sqrt{6}\) has degree 2	G1		
+T15	T15-R07	C	Degree determined by minimal polynomial of \(\sqrt{6}\)	G1		
+T15	T15-R08	C	"Simplify to Q(sqrt(6)), degree 2 extension"	G1		
+T15	T15-R09	C	Minimal polynomial of \(\sqrt{6}\) is quadratic over \(\mathbb{Q}\)	G1		
+T15	T15-R10	C	Minimal polynomial of \(\sqrt{6}\) has degree 2	G1		
+T15	T15-R11	C	Minimal polynomial of \(\sqrt{6}\) is quadratic	G1		
+T15	T15-R12	C	Simplify \(\sqrt{2} \cdot \sqrt{3} = \sqrt{6}\)	G2		
+T16	T16-R01	D	Use Raoult’s law with given mole fractions	G1		
+T16	T16-R02	D	Apply Raoult's Law with given mole fractions	G1		
+T16	T16-R03	D	Use Raoult's Law with given mole fractions	G1		
+T16	T16-R04	D	Use Raoult's Law and calculate weighted sum	G1		
+T16	T16-R05	D	Use Raoult's law with mole fractions and vapor pressures	G1		
+T16	T16-R06	D	Mixture vapor pressure = X_A*P_A + X_B*P_B	G1		
+T16	T16-R07	D	Calculate using Raoult's Law and mole fractions	G1		
+T16	T16-R08	D	Use Raoult's law with mole fractions and vapor pressures	G1		
+T16	T16-R09	D	Calculation of weighted vapor pressures using Raoult's Law	G1		
+T16	T16-R10	D	Use Raoult's Law with mole fractions and vapor pressures	G1		
+T16	T16-R11	D	Use Raoult's Law with given mole fractions	G1		
+T16	T16-R12	D	Use Raoult's law with mole fractions and vapor pressures	G1		
+T17	T17-R01	"(0, 7, 'clearly')"	regex matches "ly" ending words	G1		
+T17	T17-R02	"(0, 7, 'clearly')"	found "clearly"; it's an adverb	G1		
+T17	T17-R03	"ANSWER: (0, 7, 'clearly')"	Identifying adverb "clearly" in sentence	G1		
+T17	T17-R04	"(0, 8, 'clearly')"	Regular expression to identify adverb position	G3		
+T17	T17-R05	"(0, 7, ""clearly"")"	match "clearly" in the sentence	G1		
+T17	T17-R06	"(0, 7, 'clearly')"	match "clearly" in the input string	G1		
+T17	T17-R07	"(0, 7, 'clearly')"	Find starting and ending positions in text	G2		
+T17	T17-R08	"(0, 7, 'clearly')"	find first adverb in string	G1		
+T17	T17-R09	"(0, 7, 'clearly')"	First match of "ly" in text	G1		
+T17	T17-R10	"(0, 7, 'clearly')"	Regex match for words ending with 'ly'	G1		
+T17	T17-R11	"(0, 7, 'clearly')"	Returned positions of the matched adverb.	G2		
+T17	T17-R12	"(0, 7, 'clearly')"	word match and position calculation	G2		
+T18	T18-R01	Not matched!	String "msb" does not contain 'a'	G1		
+T18	T18-R02	Not matched!	"No 'a' found in ""msb"", so regex doesn't match"	G1		
+T18	T18-R03	Not matched!	No 'a' in string to match pattern	G1		
+T18	T18-R04	Not matched!	No 'a' in input string means no match	G1		
+T18	T18-R05	Not matched!	"No 'a' in ""msb"", so pattern doesn't match"	G1		
+T18	T18-R06	Not matched!	Check if 'a' present before 'b*?' in string	G1		
+T18	T18-R07	Not matched!	Pattern requires 'a' which is absent in "msb"	G1		
+T18	T18-R08	Not matched!	No 'a' present in 'msb' to match pattern	G1		
+T18	T18-R09	Not matched!	No 'a' in input string "msb" so no match.	G1		
+T18	T18-R10	Not matched!	"No 'a' in input, so regex finds no match"	G1		
+T18	T18-R11	Not matched!	"No 'a' in ""msb"", so no match found"	G1		
+T18	T18-R12	Not matched!	No 'a' in "msb" string for pattern "ab*?"	G1		
+T19	T19-R01	1	Calculated the digit sum of the absolute difference.	G1		
+T19	T19-R02	1	Sum of digits of absolute difference = 1	G1		
+T19	T19-R03	1	difference between the two numbers (abs(n1 - n2)) in digits	G1		
+T19	T19-R04	1	Difference between the two numbers is 1.	G2		
+T19	T19-R05	1	Calculate absolute difference and sum its digits	G1		
+T19	T19-R06	1	absolute difference between the two integers	G2		
+T19	T19-R07	1	difference between the two numbers is 1	G2		
+T19	T19-R08	1	Difference of input numbers and summing its digits	G1		
+T19	T19-R09	1	difference of the two numbers (abs(n1 - n2))	G2		
+T19	T19-R10	1	"Compute absolute difference, convert to string, sum digits"	G1		
+T19	T19-R11	1	Difference between the two numbers in absolute value	G2		
+T19	T19-R12	1	Sum of digits of absolute difference between 1 and 2	G1		
+T20	T20-R01	abc	sorted characters of the string	G1		
+T20	T20-R02	abc	Sorted characters in ascending order	G1		
+T20	T20-R03	abc	Return sorted string from input	G1		
+T20	T20-R04	abc	Sort string by alphabetical order	G1		
+T20	T20-R05	abc	sorted the characters of the string	G1		
+T20	T20-R06	abc	Sorted characters in ascending order	G1		
+T20	T20-R07	abc	Sorting characters in ascending order	G1		
+T20	T20-R08	abc	sorted characters in ascending order	G1		
+T20	T20-R09	abc	Sort characters of the string.	G1		
+T20	T20-R10	abc	Sorted characters of the input string	G1		
+T20	T20-R11	abc	sorted output of input string	G1		
+T20	T20-R12	abc	sorted characters in ascending order	G1		
+T21	T21-R01	Not matched!	'ac' does not have 'a' followed by 2-3 'b's	G1		
+T21	T21-R02	Not matched!	Pattern requires two to three 'b's after 'a'	G1		
+T21	T21-R03	Not matched!	"'ab{2,3}' not found in ""ac"""	G1		
+T21	T21-R04	Not matched!	"Regex searches for 'ab{2,3}', but string is ""ac"""	G1		
+T21	T21-R05	Not matched!	'ac' lacks two to three 'b's after 'a'	G1		
+T21	T21-R06	Not matched!	Input "ac" lacks required two or three 'b's after 'a'	G1		
+T21	T21-R07	Not matched!	No match for 'a' followed by 2-3 'b's in "ac"	G1		
+T21	T21-R08	Not matched!	"Pattern 'ab{2,3}' not found in ""ac"""	G1		
+T21	T21-R09	Not matched!	No 'a' followed by two or three 'b's in "ac"	G1		
+T21	T21-R10	Not matched!	"""ac"" does not contain 'a' followed by 'bb' or 'bbb'"	G1		
+T21	T21-R11	Not matched!	"input ""ac"" lacks 'ab{2,3}' pattern"	G1		
+T21	T21-R12	Not matched!	"pattern 'ab{2,3}' not found in ""ac"""	G1		
+T22	T22-R01	"([(5, 7, 8), (6, 8, 10), (7, 12, 5)])"	Sum each element with K for all tuples.	G1		
+T22	T22-R02	"[(5, 7, 8), (6, 8, 10), (7, 12, 5)]"	Add K to each element in all tuples.	G1		
+T22	T22-R03	"[(5, 7, 8), (6, 8, 10), (7, 12, 5)]"	Add K to each element in each tuple	G1		
+T22	T22-R04	"[(5, 7, 8), (6, 8, 10), (7, 12, 5)]"	Add K to each element in each tuple	G1		
+T22	T22-R05	"[(5, 7, 8), (6, 8, 10), (7, 12, 5)]"	Add K to each element in each tuple	G1		
+T22	T22-R06	"[(5, 7, 8), (6, 8, 10), (7, 12, 5)]"	Add K to each element in each tuple	G1		
+T22	T22-R07	"[(5, 7, 8), (6, 8, 10), (7, 12, 5)]"	Add 4 to each element in each tuple	G1		
+T22	T22-R08	"[(5, 7, 8), (6, 8, 10), (7, 12, 5)]"	Add K to each element in each tuple of the list	G1		
+T22	T22-R09	"[(5, 7, 8), (6, 8, 10), (7, 12, 5)]"	Add K to each element in each tuple	G1		
+T22	T22-R10	"[(5, 7, 8), (6, 8, 10), (7, 12, 5)]"	Add K to each element in the tuples.	G1		
+T22	T22-R11	"[(5, 7, 8), (6, 8, 10), (7, 12, 5)]"	Add K to each element in each tuple	G1		
+T22	T22-R12	"[(5, 7, 8), (6, 8, 10), (7, 12, 5)]"	Add K to each element in each tuple	G1		
+T23	T23-R01	"(6, 12, 15, 18)"	Adding adjacent elements in tuple	G1		
+T23	T23-R02	"(6, 12, 15, 18)"	Calculate sums of adjacent pairs	G1		
+T23	T23-R03	"(6, 12, 15, 18)"	summed adjacent tuple elements	G1		
+T23	T23-R04	"(6, 12, 15, 18)"	Calculated pairwise sums from the input tuple.	G1		
+T23	T23-R05	"(6, 12, 15, 18)"	Sum adjacent elements in tuple	G1		
+T23	T23-R06	"(6, 12, 15, 18)"	Perform pairwise summation of tuple elements.	G1		
+T23	T23-R07	"(6, 12, 15, 18)"	Calculate pairwise sums using zip.	G1		
+T23	T23-R08	"(6, 12, 15, 18)"	calculated pairwise sums	G1		
+T23	T23-R09	"(6, 12, 15, 18)"	summed consecutive tuple elements	G1		
+T23	T23-R10	"(6, 12, 15, 18)"	Summing tuples element-wise using zip.	G1		
+T23	T23-R11	"(6, 12, 15, 18)"	Calculate sums of consecutive elements.	G1		
+T23	T23-R12	"(6, 12, 15, 18)"	Sum pairs of adjacent elements	G1		
+T24	T24-R01	30	"Use S = n(n+1)/2, difference = S(S-1)"	G1		
+T24	T24-R02	30	Calculate S = n(n+1)/2 and return S*(S-1)	G1		
+T24	T24-R03	30	Calculate S = n(n+1)/2 and compute S*(S-1)	G1		
+T24	T24-R04	30	"Calculate S = sum first n, then S*(S -1)"	G1		
+T24	T24-R05	30	Compute sum then multiply by (sum - 1)	G1		
+T24	T24-R06	30	compute S=n(n+1)/2 and return S*(S-1)	G1		
+T24	T24-R07	30	calculate S and compute S * (S - 1)	G1		
+T24	T24-R08	30	calculate S and return S*(S-1)	G1		
+T24	T24-R09	30	"Calculate sum, then multiply by one less"	G1		
+T24	T24-R10	30	"calculate S, then S*(S-1)"	G1		
+T24	T24-R11	30	difference = sum_cubes - sum = S*(S-1)	G2		
+T24	T24-R12	30	Substitute n=3 into given formula: S*(S-1)	G3		

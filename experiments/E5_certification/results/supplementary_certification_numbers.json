@@ -1,0 +1,62 @@
+{
+ "hoeffding_vs_exact": {
+  "answer": {
+   "f=0": {
+    "hoeffding_mean": 0.8901906726848511
+   },
+   "f=1": {
+    "hoeffding_mean": 0.7891843927066732
+   },
+   "f=2": {
+    "hoeffding_mean": 0.4820134092632445
+   },
+   "f=3": {
+    "hoeffding_mean": 0.05231008586144617,
+    "exact_mean": 0.842644788505257
+   }
+  },
+  "lexical": {
+   "f=0": {
+    "hoeffding_mean": 0.0035586282746873457
+   },
+   "f=1": {
+    "hoeffding_mean": 0.0021531717349458305
+   },
+   "f=2": {
+    "hoeffding_mean": 0.00015261792687222474
+   },
+   "f=3": {
+    "hoeffding_mean": 0.0,
+    "exact_mean": 0.003910191837296704
+   }
+  }
+ },
+ "dirichlet_prior_sensitivity_f3": {
+  "answer": {
+   "s=0.1": 0.838635473508681,
+   "s=1.0": 0.7600950426803271,
+   "s=10.0": 0.34316053716886336
+  },
+  "lexical": {
+   "s=0.1": 0.004810195534281317,
+   "s=1.0": 0.004105735194517716,
+   "s=10.0": 0.0011999701020527513
+  }
+ },
+ "dependence_rho": {
+  "estimate": 0.0825,
+  "ci95": [
+   0.0,
+   0.4426249999999999
+  ],
+  "n_tasks": 50,
+  "ns": [
+   3,
+   5,
+   7,
+   10
+  ],
+  "grid_step": 0.0025,
+  "note": "grid least squares of task-mean round-0 unanimity at each n on the task-mean U-statistic prediction plus the plug-in increment A_rho(n)-A_0(n); dA_rho/drho vanishes at rho=0"
+ }
+}

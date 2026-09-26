@@ -1,0 +1,123 @@
+{
+  "paired_differences": {
+    "answer_minus_human": {
+      "mean": 0.3665196134302424,
+      "ci95": [
+        0.21960028718292235,
+        0.517566591689289
+      ]
+    },
+    "human_minus_lexical": {
+      "mean": 0.4752287002002988,
+      "ci95": [
+        0.3156620352683571,
+        0.6396477119458591
+      ]
+    }
+  },
+  "leave_one_out": {
+    "A": 0.3907744261281299,
+    "B": 0.41960382890345177,
+    "C": 0.40298108526926685
+  },
+  "by_benchmark": {
+    "gsm8k": {
+      "n_cells": 8,
+      "answer": 0.8252973552157904,
+      "human": 0.3851605673930827,
+      "lexical": 0.0002887029870220337
+    },
+    "mbpp": {
+      "n_cells": 8,
+      "answer": 0.9429813972825485,
+      "human": 0.589328844360854,
+      "lexical": 0.0029305666071887874
+    },
+    "mmlu": {
+      "n_cells": 8,
+      "answer": 0.7612353352362236,
+      "human": 0.45546583568989873,
+      "lexical": 0.0010498772487282809
+    }
+  },
+  "by_model": {
+    "gpt-4.1-mini": {
+      "n_cells": 8,
+      "answer": 0.9429813972825485,
+      "human": 0.5916960009386074,
+      "lexical": 0.0002891460291370171
+    },
+    "gpt-4.1-nano": {
+      "n_cells": 8,
+      "answer": 0.7575884986043685,
+      "human": 0.5271469311568091,
+      "lexical": 0.003914751524678857
+    },
+    "gpt-4o-mini": {
+      "n_cells": 8,
+      "answer": 0.8289441918476455,
+      "human": 0.31111231534841893,
+      "lexical": 6.524928912322815e-05
+    }
+  },
+  "annotators": {
+    "A": {
+      "rows": 288,
+      "vague": 12,
+      "unsure_notes": 0,
+      "joint_cov_h7": 0.5093086369425363
+    },
+    "B": {
+      "rows": 288,
+      "vague": 29,
+      "unsure_notes": 8,
+      "joint_cov_h7": 0.42874567502519917
+    },
+    "C": {
+      "rows": 288,
+      "vague": 6,
+      "unsure_notes": 16,
+      "joint_cov_h7": 0.5165422611384834
+    }
+  },
+  "pairwise_agreement": {
+    "AB": {
+      "ari": 0.6522611750958077,
+      "pair_agreement": 0.8573232323232324
+    },
+    "AC": {
+      "ari": 0.47718866811097743,
+      "pair_agreement": 0.8005050505050505
+    },
+    "BC": {
+      "ari": 0.44043709653919594,
+      "pair_agreement": 0.8106060606060606
+    }
+  },
+  "all_three_intersection_cov_h7": 0.3873447812997137,
+  "joint_mean_ari": 0.5692652632080895,
+  "audit": {
+    "majority_vague": 13,
+    "closure_added_pairs": 27,
+    "closure_cells": [
+      "T03",
+      "T04",
+      "T17",
+      "T18",
+      "T19"
+    ],
+    "operation_cross_answer_pairs": 73,
+    "cross_answer_cells": [
+      "T01",
+      "T02",
+      "T10",
+      "T17"
+    ],
+    "full_pool_answer_cov_h7_selected_cells": 0.8296963387134305
+  },
+  "benchmark_stratified_cov_h7_ci95": [
+    0.3174204110190775,
+    0.6367372374148689
+  ],
+  "interval_scope": "Descriptive resampling of the selected cells, conditional on 12 replies and consensus labels; not a probability-sampling CI for all 369 cells."
+}

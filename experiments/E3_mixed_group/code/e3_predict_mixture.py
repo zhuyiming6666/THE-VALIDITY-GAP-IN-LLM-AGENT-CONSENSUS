@@ -1,6 +1,6 @@
 """E3: parameter-free prediction of round-0 unanimity for a mixed group, and scoring of the
 observed debate run. Usage:
-  python exp/e3_predict_mixture.py results/v11/e3_mixed.json
+  python experiments/E3_mixed_group/code/e3_predict_mixture.py experiments/E3_mixed_group/results/e3_mixed.json
 Prediction: A = sum_c prod_m [n_{m,c}]_{k_m} / [N_m]_{k_m} (unbiased under independence),
 where k_m is the number of slots held by model m, from the stored single-agent replies of
 the same 50 GSM8K tasks. Homogeneous nano predictions are printed as a consistency check

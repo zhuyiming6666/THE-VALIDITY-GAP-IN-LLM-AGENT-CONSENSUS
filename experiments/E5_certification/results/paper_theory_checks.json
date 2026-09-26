@@ -1,0 +1,13 @@
+{
+ "Prop 1: Pr[U_h] = sum_c p(c)^h <= p_max^(h-1), equality iff uniform on support": "pass",
+ "Prop 2(i): constant rule satisfies CV with probability 1 - A(h) + p(d)^h": "pass",
+ "Prop 3: refinement cannot raise A(h); margin examples; product law <= averaged law": "pass",
+ "Theorem 1: guard N_c > f + max_d N_d returns the unique element of K_f(N)": "pass",
+ "Theorem 1 (relabelling): guard N_c > f + 2e + max_d N_d is exact": "pass",
+ "Proposition 4: c* certified for every append of <= f labels iff honest lead > 2f": "pass",
+ "Corollary: Hoeffding lower bound never exceeds the exact coverage": "pass",
+ "Remark (degeneracy): 3f+1<=n<=3f+2 needs honest unanimity; n<=3f gives zero; n>=3f+3 admits dissent": "pass",
+ "Remark (n-f quorum): omitting f honest votes and appending f requires honest lead > 3f": "pass",
+ "Theorem 7 (dispersion-limited resilience): both exponential bounds hold against exact coverage; beta* <= 1/3, = iff Delta = 1": "pass",
+ "Proposition (shared context): A(h) = E_Z sum_c p_Z(c)^h >= sum_c p(c)^h; P_n -> Pr_Z[beta*(Delta_Z) > beta]": "pass"
+}

@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """One-command entry point for the v4 human-calibration experiment.
 
-    python3 v4/code/run_calibration.py                # normalise, validate, score if ready
-    python3 v4/code/run_calibration.py --validate-only  # stop after validation
+    python3 experiments/E1_human_calibration/code/run_calibration.py                # normalise, validate, score if ready
+    python3 experiments/E1_human_calibration/code/run_calibration.py --validate-only  # stop after validation
 
 It performs, in order:
 
   1. ``normalize_annotations.prepare``  -- conform the returned sheets in
-     ``annotation/结果/`` to the frozen template and write a change audit;
+     ``annotation/results/`` to the frozen template and write a change audit;
   2. ``score_annotations.load_materials`` -- run the frozen validator
      (master hash, pair IDs, source-text integrity, label legality, strata);
   3. ``score_annotations.main`` -- only when all three sheets are complete and
